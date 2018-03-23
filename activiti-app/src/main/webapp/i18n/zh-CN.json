@@ -1,0 +1,100 @@
+{
+  "GENERAL": {
+    "MAIN-TITLE": "微图工作流平台",
+    "ERROR": {
+      "GENERIC": "出现错误...",
+      "UNKNOWN": "执行请求的操作时出现错误。",
+      "BAD_REQUEST": "执行请求的操作时出现错误",
+      "NOT_FOUND": "您尝试访问的资源不存在",
+      "UNAUTHORIZED": "您需要登录才能执行请求的操作。",
+      "FORBIDDEN": "您不可以执行请求的操作",
+      "INTERNAL_SERVER_ERROR": "执行请求的操作时出现意外错误。",
+      "QUOTA-EXCEEDED-RUNTIME-APPS": "作为试用用户，您同时只能部署 {{quota}} 个 App。",
+      "QUOTA-EXCEEDED-LICENSE-APPS": "许可证仅允许同时部署 {{quota}} 个 App。"
+    },
+    "ACTION": {
+      "LOGOUT": "注销",
+      "HELP": "帮助",
+      "EDIT-PROFILE": "编辑个人资料",
+      "SAVE": "保存",
+      "CANCEL": "取消",
+      "CLOSE": "关闭",
+      "DEPLOY": "部署",
+      "ABOUT": "关于"
+    }
+  },
+  "LOGIN": {
+    "TITLE": "登录",
+    "USERNAME": "用户名",
+    "USERNAME-PLACEHOLDER": "输入用户名",
+    "PASSWORD": "密码",
+    "PASSWORD-PLACEHOLDER": "输入密码",
+    "INVALID-CREDENTIALS": "用户名或密码错误",
+    "ACTION": {
+      "CONFIRM": "登录"
+    }
+  },
+  "ACCOUNT": {
+    "ACTIVATE": {
+      "TITLE": "激活帐户",
+      "ACTIVATING-MESSAGE": "请稍等，{{userFullName}}，我们正在激活您的帐户...",
+      "SUCCESS-MESSAGE": "您的帐号已经激活, 请在下面登录以开始设计和运行流程。",
+      "FAILURE-MESSAGE": "您的帐户无法启动, 它或者已经被激活或者激活链接已经过期。"
+    },
+    "RESET-PASSWORD-REQUEST": {
+      "MESSAGE": "忘记密码了吗？ 在下面输入您的电子邮件地址以接收重设密码的电子邮件。",
+      "TITLE": "重设密码",
+      "EMAIL": "电子邮件地址",
+      "EMAIL-PLACEHOLDER": "输入你的电子邮箱",
+      "SECURITY-SECTION": "安全检查",
+      "CONFIRM": "请求重置密码",
+      "SUCCESS-MESSAGE": "您将很快收到一封邮件，并附有链接以重置您的密码。",
+      "ERROR": {
+        "UNEXISTING-USER": "给定电子邮件地址的用户不存在。"
+      }
+    },
+    "RESET-PASSWORD": {
+      "TITLE": "重设密码",
+      "PASSWORD": "密码",
+      "PASSWORD-CONFIRM": "确认密码",
+      "PASSWORD-PLACEHOLDER": "输入新密码",
+      "PASSWORD-CONFIRM-PLACEHOLDER": "确认密码",
+      "CONFIRM": "更改密码",
+      "LOADING": "重置密码...",
+      "SUCCESS-MESSAGE": "密码已修改。",
+      "LOGIN": "现在登录",
+      "FAILURE-MESSAGE": "您的密码无法重置, 重置链接无效或过期。"
+    }
+  },
+  "APP": {
+    "KICKSTART": {
+      "TITLE": "流程设计",
+      "DESCRIPTION": "创建流程模型、表单、决策表、App 定义、数据模型和模板定义，并将它们与其他人共享。"
+    },
+    "TASKS": {
+      "TITLE": "任务",
+      "DESCRIPTION": "访问您的完整任务列表，并处理从任何流程 App 指派给您的任何任务。另外，启动新的流程和任务。"
+    },
+    "IDENTITY-MANAGEMENT": {
+      "TITLE": "身份管理",
+      "TITLE-TENANT-ADMIN": "身份管理",
+      "DESCRIPTION": "管理您的配置文件：更改图片、名称和其他设置。",
+      "DESCRIPTION-TENANT-ADMIN": "管理您组织中的用户和组。"
+    },
+    "CUSTOM-APP": {
+      "TITLE-TASKS": "任务",
+      "TITLE-PROCESSES": "流程"
+    },
+    "POPUP": {
+      "ADD-APP-TITLE": "添加 App 到登录页",
+      "ADD-APP-SUMMARY": "添加 App 到您的登录页"
+    },
+    "ACTION": {
+      "DELETE": "删除 App",
+      "ADD": "添加新 App"
+    },
+    "MESSAGE": {
+      "DELETED": "已成功删除 App"
+    }
+  }
+}

@@ -1,0 +1,3802 @@
+{
+  "COMMON": {
+    "SELECT-FOLDER": "Select folder..."
+  },
+  "GENERAL": {
+    "MAIN-TITLE": "流程设计",
+    "NAVIGATION": {
+      "PROCESSES": "流程",
+      "FORMS": "表单",
+      "APPS": "APP",
+      "STENCILS": "模板",
+      "DECISION-TABLES": "决策表",
+      "DATA-MODELS": "数据模型"
+    },
+    "TITLE": {
+      "ADD-COMMENT": "创建新注释",
+      "SELECT-PEOPLE": "选择人员",
+      "INVOLVE-PEOPLE": "选择人员",
+      "SELECT-GROUP": "选择组",
+      "RECENT-PEOPLE": "最近的人员",
+      "MATCHING-PEOPLE": "匹配的人员",
+      "MATCHING-GROUPS": "匹配的组",
+      "FILTER": "筛选器",
+      "COMMENTS": "注释",
+      "HISTORY": "历史记录"
+    },
+    "ACTION": {
+      "ABOUT": "关于",
+      "EDIT-PROFILE": "编辑配置文件",
+      "CHANGE-PASSWORD": "更改密码",
+      "LOGOUT": "退出",
+      "RETURN-TO-LIST": "显示所有定义",
+      "CANCEL": "取消",
+      "SKIP": "跳过",
+      "CLOSE": "关闭",
+      "EDIT": "编辑",
+      "SAVE": "保存",
+      "OPEN": "打开",
+      "OK": "确定",
+      "SHOW": "显示",
+      "CONFIRM": "确认",
+      "CONFIRM-AND-CLOSE": "确认并关闭",
+      "NEW-FORM": "新表单",
+      "CREATE-FORM": "创建表单",
+      "NEW-DECISION-TABLE": "新决策表",
+      "CREATE-DECISION-TABLE": "创建决策表",
+      "NEW-SUBPROCESS": "新子流程",
+      "CREATE-SUBPROCESS": "创建子流程",
+      "HELP-DOCS-LINK": "帮助",
+      "SELECT-FORM": "< 选择表单",
+      "SELECT-DECISION-TABLE": "< 选择决策表",
+      "SELECT-SUB-PROCESS": "< 选择子流程",
+      "MAP-VARIABLES": "映射变量 >",
+      "OVERWRITE": "覆盖"
+    },
+    "MESSAGE": {
+      "SELECT-PEOPLE-HELP": "使用 &uparrow; 和 &downarrow; 选择并按 Enter 以确认",
+      "SELECT-GROUP-HELP": "使用 &uparrow; 和 &downarrow; 选择并按 Enter 以确认",
+      "ADD-COMMENT-PLACEHOLDER": "输入新注释",
+      "PEOPLE-NO-MATCHING-RESULTS": "找不到匹配的用户",
+      "GROUP-NO-MATCHING-RESULTS": "找不到匹配的组",
+      "GROUP-SOURCE-TYPE": "组源",
+      "GROUP-SOURCE-SEARCH-OPTION": "组搜索",
+      "GROUP-SOURCE-FIELD-OPTION": "表单字段",
+      "SEARCH-GROUP": "搜索组"
+    },
+    "ERROR": {
+      "UNKNOWN": "执行请求的操作时出现错误。",
+      "BAD_REQUEST": "执行请求的操作时出现错误",
+      "NOT_FOUND": "您尝试访问的资源不存在",
+      "UNAUTHORIZED": "您需要登录才能执行请求的操作。",
+      "FORBIDDEN": "您不可以执行请求的操作",
+      "INTERNAL_SERVER_ERROR": "执行请求的操作时出现意外错误。",
+      "CAPTCHA": {
+        "EXPIRED": "验证码已过期。通过新验证。",
+        "WRONG": "您提供的验证码解决方案无法通过验证。通过新验证。"
+      },
+      "QUOTA-EXCEEDED-APPS": "作为试用用户，您同时只能有 {{quota}} 个 APP 定义。",
+      "QUOTA-EXCEEDED-LICENSE-APPS": "这个许可证仅允许同时有 {{quota}} 个 APP 定义。",
+      "INVALID-URL-MODEL-ID": "URL 包含模型 ID 参数 ('{{param}}')，该参数可能只包含数字作为值"
+    },
+    "ABOUT": {
+      "TYPE": "类型",
+      "LICENSED-TO": "授权给",
+      "EXPIRES": "过期",
+      "COPYRIGHT": "© 2005-2018 Alfresco Software Inc. 保留所有权利。",
+      "LEGAL": "法律和许可"
+    }
+  },
+  "EDITOR": {
+    "POPUP": {
+      "UNSAVED-CHANGES": {
+        "TITLE": "您有未保存的更改",
+        "DESCRIPTION": "您要用未保存的更改做什么？",
+        "ACTION": {
+          "SAVE": "保存更改",
+          "DISCARD": "丢弃更改",
+          "CONTINUE": "继续编辑"
+        }
+      },
+      "YES-NO": {
+        "TITLE": "是/否问题。",
+        "DESCRIPTION": "确定要{{action}}所选项？"
+      },
+      "ACTION": {
+        "YES": "是",
+        "NO": "否"
+      }
+    }
+  },
+  "PROCESS-LIST": {
+    "TITLE": "业务流程模型",
+    "SEARCH-PLACEHOLDER": "搜索",
+    "LOADING": "正在获取模型...",
+    "ACTION": {
+      "CREATE": "创建流程",
+      "IMPORT": "导入流程",
+      "CREATE-INLINE": "立即创建新业务流程模型！",
+      "SHOW-MORE": "显示更多..."
+    },
+    "FILTER": {
+      "MY-PROCESSES": "我的流程",
+      "MY-PROCESSES-COUNT": "您共有 {{total}} 个业务流程模型",
+      "MY-PROCESSES-ONE": "您有一个业务流程模型",
+      "MY-PROCESSES-EMPTY": "似乎您尚未创建任何业务流程模型。您可以设计流程模型、用户表单，然后将它们捆绑到一个流程 APP，与同事共享。第一步是创建流程模型：",
+      "MY-PROCESSES-BPMN-HINT": "如果熟悉 BPMN 标准，您可使用 BPMN 编辑器。",
+      "MY-PROCESSES-BPMN-IMPORT-HINT": "您也可以导入现有的 BPMN 模型。",
+      "MY-PROCESSES-STEP-HINT": "如果您是流程设计的初学者，则可以使用步骤编辑器。",
+      "FILTER-TEXT": "，匹配 \"{{filterText}}\"",
+      "FILTER-TEXT-EMPTY": "您没有匹配 \"{{filterText}}\" 的业务流程模型",
+      "SHARED-WITH-ME": "与我共享",
+      "SHARED-WITH-ME-COUNT": "共与您共享了 {{total}} 个业务流程模型",
+      "SHARED-WITH-ME-ONE": "与您共享了一个业务流程模型",
+      "SHARED-WITH-ME-EMPTY": "没有与您共享的业务流程模型",
+      "SHARED-WITH-OTHERS": "与其他人共享",
+      "SHARED-WITH-OTHERS-COUNT": "您与他人共享了共 {{total}} 个业务流程模型",
+      "SHARED-WITH-OTHERS-ONE": "您与他人共享了一个业务流程模型",
+      "SHARED-WITH-OTHERS-EMPTY": "您没有与他人共享业务流程模型",
+      "FAVORITES": "已收藏",
+      "FAVORITES-COUNT": "您共有 {{total}} 个收藏的模型",
+      "FAVORITES-ONE": "您有一个收藏的模型",
+      "FAVORITES-EMPTY": "您没有收藏的模型",
+      "EVERYONE": "所有人的",
+      "EVERYONE-COUNT": "当前租户中共有 {{total}} 个模型",
+      "EVERYONE-ONE": "当前租户中只有一个模型",
+      "EVERYONE-EMPTY": "当前租户中没有模型",
+      "RECENT": "最近",
+      "RECENT-COUNT": "最近共使用 {{total}} 个模型",
+      "RECENT-ONE": "最近使用一个模型",
+      "RECENT-EMPTY": "最近没有使用模型"
+    },
+    "SORT": {
+      "MODIFIED-ASC": "最早",
+      "MODIFIED-DESC": "最近一次修改时间",
+      "NAME-ASC": "名称，A-Z",
+      "NAME-DESC": "名称，Z-A"
+    }
+  },
+  "FORMS-LIST": {
+    "TITLE": "表单",
+    "SEARCH-PLACEHOLDER": "搜索",
+    "LOADING": "正在获取表单...",
+    "ACTION": {
+      "CREATE": "创建表单",
+      "IMPORT": "导入表单",
+      "CREATE-INLINE": "立即创建新表单！",
+      "SHOW-MORE": "显示更多..."
+    },
+    "FILTER": {
+      "MY-REUSABLE-FORMS": "我可重复使用的表单",
+      "MY-REUSABLE-FORMS-COUNT": "您共有 {{total}} 个可重复使用的表单",
+      "MY-REUSABLE-FORMS-ONE": "您有一个可重复使用的表单",
+      "MY-REUSABLE-FORMS-EMPTY": "您没有可重复使用的表单。要添加表单，请单击创建表单。",
+      "FILTER-TEXT": "，匹配 \"{{filterText}}\"",
+      "FILTER-TEXT-EMPTY": "您没有匹配 \"{{filterText}}\" 的表单",
+      "ALL-MY-FORMS": "我的所有表单",
+      "ALL-MY-FORMS-COUNT": "您共有 {{total}} 个表单",
+      "ALL-MY-FORMS-ONE": "您有一个表单",
+      "ALL-MY-FORMS-EMPTY": "您没有表单。要添加表单，请单击创建表单。",
+      "SHARED-WITH-ME": "与我共享",
+      "SHARED-WITH-ME-COUNT": "共与您共享了 {{total}} 个表单",
+      "SHARED-WITH-ME-ONE": "与您共享了一个表单",
+      "SHARED-WITH-ME-EMPTY": "没有与您共享的表单",
+      "SHARED-WITH-OTHERS": "与其他人共享",
+      "SHARED-WITH-OTHERS-COUNT": "您与他人共享了共 {{total}} 个表单",
+      "SHARED-WITH-OTHERS-ONE": "您与他人共享了一个表单",
+      "SHARED-WITH-OTHERS-EMPTY": "您没有与他人共享任何表单",
+      "FAVORITES": "已收藏",
+      "FAVORITES-COUNT": "您共有 {{total}} 个收藏的表单",
+      "FAVORITES-ONE": "您有一个收藏的表单",
+      "FAVORITES-EMPTY": "您没有收藏的表单",
+      "EVERYONE": "所有人的",
+      "EVERYONE-COUNT": "当前租户中共有 {{total}} 个表单",
+      "EVERYONE-ONE": "当前租户中只有一个表单",
+      "EVERYONE-EMPTY": "当前租户中没有表单",
+      "RECENT": "最近",
+      "RECENT-COUNT": "最近共使用 {{total}} 个表单",
+      "RECENT-ONE": "最近使用一个表单",
+      "RECENT-EMPTY": "最近没有使用表单"
+    },
+    "SORT": {
+      "MODIFIED-ASC": "最早",
+      "MODIFIED-DESC": "最近一次修改时间",
+      "NAME-ASC": "名称，A-Z",
+      "NAME-DESC": "名称，Z-A"
+    }
+  },
+  "APPS-LIST": {
+    "TITLE": "APP 定义",
+    "SEARCH-PLACEHOLDER": "搜索",
+    "LOADING": "正在获取 APP 定义...",
+    "ACTION": {
+      "CREATE": "创建 APP",
+      "CREATE-INLINE": "立即创建新 APP 定义！",
+      "IMPORT": "导入 APP",
+      "SHOW-MORE": "显示更多..."
+    },
+    "FILTER": {
+      "MY-APPS": "我的 APP 定义",
+      "MY-APPS-COUNT": "您共有 {{total}} 个 APP 定义",
+      "MY-APPS-ONE": "您有一个 APP 定义",
+      "MY-APPS-EMPTY": "您没有 APP 定义。要添加 APP 定义，请单击创建 APP 定义。",
+      "FILTER-TEXT": "，匹配 \"{{filterText}}\"",
+      "FILTER-TEXT-EMPTY": "您没有匹配 \"{{filterText}}\" 的 APP 定义",
+      "SHARED-WITH-ME": "与我共享",
+      "SHARED-WITH-ME-COUNT": "共与您共享了 {{total}} 个 APP 定义",
+      "SHARED-WITH-ME-ONE": "与您共享了一个 APP 定义",
+      "SHARED-WITH-ME-EMPTY": "没有与您共享的 APP 定义",
+      "SHARED-WITH-OTHERS": "与其他人共享",
+      "SHARED-WITH-OTHERS-COUNT": "您与他人共享了共 {{total}} 个 APP 定义",
+      "SHARED-WITH-OTHERS-ONE": "您与他人共享了一个 APP 定义",
+      "SHARED-WITH-OTHERS-EMPTY": "您没有与他人共享任何 APP 定义",
+      "FAVORITES": "已收藏",
+      "FAVORITES-COUNT": "您共有 {{total}} 个收藏的 APP 定义",
+      "FAVORITES-ONE": "您有一个收藏的 APP 定义",
+      "FAVORITES-EMPTY": "您没有收藏的 APP 定义",
+      "EVERYONE": "所有人的",
+      "EVERYONE-COUNT": "当前租户中共有 {{total}} 个应用程序",
+      "EVERYONE-ONE": "当前租户中只有一个应用程序",
+      "EVERYONE-EMPTY": "当前租户中没有应用程序",
+      "RECENT": "最近",
+      "RECENT-COUNT": "最近共使用 {{total}} 个 APP 定义",
+      "RECENT-ONE": "最近共使用一个 APP 定义",
+      "RECENT-EMPTY": "最近没有使用 APP 定义",
+      "NO-APPS": "您可通过发布流程模型的一个捆绑包创建流程 Process Services APP，并将其与同事共享。您也可以在您的主页上添加与您共享的任何 APP。如果只是希望对简单的合作任务进行分组，您甚至可以创建没有流程的流程 APP。",
+      "NO-APPS-CALL-TO-ACTION": "您现在可以创建流程 APP 了。",
+      "NO-APPS-NOTE": "请记住，准备好使用流程应用程序时要先进行发布。"
+    },
+    "SORT": {
+      "MODIFIED-ASC": "最早",
+      "MODIFIED-DESC": "最近一次修改时间",
+      "NAME-ASC": "名称，A-Z",
+      "NAME-DESC": "名称，Z-A"
+    }
+  },
+  "STENCIL-LIST": {
+    "TITLE": "模板",
+    "SEARCH-PLACEHOLDER": "搜索",
+    "LOADING": "正在获取模板...",
+    "ACTION": {
+      "CREATE": "创建模板",
+      "CREATE-INLINE": "立即创建新模板！",
+      "SHOW-MORE": "显示更多...",
+      "IMPORT": "导入模板"
+    },
+    "FILTER": {
+      "MY-STENCILS": "我的模板",
+      "MY-STENCILS-COUNT": "您共有 {{total}} 个模板",
+      "MY-STENCILS-ONE": "您有一个模板",
+      "MY-STENCILS-EMPTY": "您没有模板。要添加模板，请单击创建模板。",
+      "FILTER-TEXT": "，匹配 \"{{filterText}}\"",
+      "FILTER-TEXT-EMPTY": "您没有匹配 \"{{filterText}}\" 的模板",
+      "SHARED-WITH-ME": "与我共享",
+      "SHARED-WITH-ME-COUNT": "共与您共享了 {{total}} 个模板",
+      "SHARED-WITH-ME-ONE": "与您共享了一个模板",
+      "SHARED-WITH-ME-EMPTY": "没有与您共享的模板",
+      "SHARED-WITH-OTHERS": "与其他人共享",
+      "SHARED-WITH-OTHERS-COUNT": "您与他人共享了共 {{total}} 个模板",
+      "SHARED-WITH-OTHERS-ONE": "您与他人共享了一个模板",
+      "SHARED-WITH-OTHERS-EMPTY": "您没有与他人共享任何模板",
+      "FAVORITES": "已收藏",
+      "FAVORITES-COUNT": "您共有 {{total}} 个收藏的模板",
+      "FAVORITES-ONE": "您有一个收藏的模板",
+      "FAVORITES-EMPTY": "您没有收藏的模板",
+      "EVERYONE": "所有人的",
+      "EVERYONE-COUNT": "当前租户中共有 {{total}} 个模板",
+      "EVERYONE-ONE": "当前租户中只有一个模板",
+      "EVERYONE-EMPTY": "当前租户中没有模板",
+      "RECENT": "最近",
+      "RECENT-COUNT": "最近共使用 {{total}} 个模板",
+      "RECENT-ONE": "最近使用一个模板",
+      "RECENT-EMPTY": "最近没有使用模板"
+    },
+    "SORT": {
+      "MODIFIED-ASC": "最早",
+      "MODIFIED-DESC": "最近一次修改时间",
+      "NAME-ASC": "名称，A-Z",
+      "NAME-DESC": "名称，Z-A"
+    }
+  },
+  "DECISION-TABLES-LIST": {
+    "TITLE": "决策表",
+    "SEARCH-PLACEHOLDER": "搜索",
+    "LOADING": "正在获取决策表...",
+    "ACTION": {
+      "CREATE": "创建决策表",
+      "IMPORT": "导入决策表",
+      "CREATE-INLINE": "立即创建新决策表！",
+      "SHOW-MORE": "显示更多..."
+    },
+    "FILTER": {
+      "MY-REUSABLE-DECISION-TABLES": "我的可重复使用的决策表",
+      "MY-REUSABLE-DECISION-TABLES-COUNT": "您共有 {{total}} 个可重复使用的决策表",
+      "MY-REUSABLE-DECISION-TABLES-ONE": "您有一个可重复使用的决策表",
+      "MY-REUSABLE-DECISION-TABLES-EMPTY": "您没有决策表。要添加决策表，请单击创建决策表。",
+      "FILTER-TEXT": "，匹配 \"{{filterText}}\"",
+      "FILTER-TEXT-EMPTY": "您没有匹配 \"{{filterText}}\" 的决策表",
+      "ALL-MY-DECISION-TABLES": "我的所有决策表",
+      "ALL-MY-DECISION-TABLES-COUNT": "您共有 {{total}} 个决策表",
+      "ALL-MY-DECISION-TABLES-ONE": "您有一个决策表",
+      "ALL-MY-DECISION-TABLES-EMPTY": "您没有决策表。要添加决策表，请单击创建决策表。",
+      "SHARED-WITH-ME": "与我共享",
+      "SHARED-WITH-ME-COUNT": "共与您共享了 {{total}} 个决策表",
+      "SHARED-WITH-ME-ONE": "与您共享了一个决策表",
+      "SHARED-WITH-ME-EMPTY": "没有与您共享的决策表",
+      "SHARED-WITH-OTHERS": "与其他人共享",
+      "SHARED-WITH-OTHERS-COUNT": "您与他人共享了共 {{total}} 个决策表",
+      "SHARED-WITH-OTHERS-ONE": "您与他人共享了一个决策表",
+      "SHARED-WITH-OTHERS-EMPTY": "您没有与他人共享任何决策表",
+      "FAVORITES": "已收藏",
+      "FAVORITES-COUNT": "您共有 {{total}} 个收藏的决策表",
+      "FAVORITES-ONE": "您有一个收藏的决策表",
+      "FAVORITES-EMPTY": "您没有收藏的决策表",
+      "EVERYONE": "所有人的",
+      "EVERYONE-COUNT": "当前租户中共有 {{total}} 个决策表",
+      "EVERYONE-ONE": "当前租户中只有一个决策表",
+      "EVERYONE-EMPTY": "当前租户中没有决策表",
+      "RECENT": "最近",
+      "RECENT-COUNT": "最近共使用 {{total}} 个决策表",
+      "RECENT-ONE": "最近使用一个决策表",
+      "RECENT-EMPTY": "最近没有使用决策表"
+    },
+    "SORT": {
+      "MODIFIED-ASC": "最早",
+      "MODIFIED-DESC": "最近一次修改时间",
+      "NAME-ASC": "名称，A-Z",
+      "NAME-DESC": "名称，Z-A"
+    }
+  },
+  "DATA-MODELS-LIST": {
+    "TITLE": "数据模型",
+    "SEARCH-PLACEHOLDER": "搜索",
+    "LOADING": "正在获取数据模型...",
+    "ACTION": {
+      "CREATE": "创建数据模型",
+      "CREATE-INLINE": "立即创建新数据模型！",
+      "IMPORT": "导入数据模型",
+      "SHOW-MORE": "显示更多...",
+      "DETAILS": "显示详情",
+      "OPEN-IN-EDITOR": "编辑模型"
+    },
+    "FILTER": {
+      "MY-DATA-MODELS": "我的数据模型",
+      "MY-DATA-MODELS-COUNT": "您共有 {{total}} 个数据模型",
+      "MY-DATA-MODELS-ONE": "您有一个数据模型",
+      "MY-DATA-MODELS-EMPTY": "您没有数据模型。要添加数据模型，请单击创建数据模型。",
+      "FILTER-TEXT": "，匹配 \"{{filterText}}\"",
+      "FILTER-TEXT-EMPTY": "您没有匹配 \"{{filterText}}\" 的数据模型",
+      "SHARED-WITH-ME": "与我共享",
+      "SHARED-WITH-ME-COUNT": "共与您共享了 {{total}} 个数据模型",
+      "SHARED-WITH-ME-ONE": "与您共享了一个数据模型",
+      "SHARED-WITH-ME-EMPTY": "没有与您共享的数据模型",
+      "SHARED-WITH-OTHERS": "与其他人共享",
+      "SHARED-WITH-OTHERS-COUNT": "您与他人共享了共 {{total}} 个数据模型",
+      "SHARED-WITH-OTHERS-ONE": "您与他人共享了一个数据模型",
+      "SHARED-WITH-OTHERS-EMPTY": "您没有与他人共享任何数据模型",
+      "EVERYONE": "所有人的",
+      "EVERYONE-COUNT": "当前租户中共有 {{total}} 个数据模型",
+      "EVERYONE-ONE": "当前租户中只有一个数据模型",
+      "EVERYONE-EMPTY": "当前租户中没有数据模型",
+      "FAVORITES": "已收藏",
+      "FAVORITES-COUNT": "您共有 {{total}} 个收藏的数据模型",
+      "FAVORITES-ONE": "您有一个收藏的数据模型",
+      "FAVORITES-EMPTY": "您没有收藏的数据模型"
+    },
+    "SORT": {
+      "MODIFIED-ASC": "最早",
+      "MODIFIED-DESC": "最近一次修改时间",
+      "NAME-ASC": "名称，A-Z",
+      "NAME-DESC": "名称，Z-A"
+    }
+  },
+  "APP-DEFINITION": {
+    "MESSAGE": {
+      "NOT-FOUND": "未找到具有给定 ID 的应用程序定义"
+    }
+  },
+  "DATA-MODEL-DEFINITION": {
+    "MESSAGE": {
+      "NOT-FOUND": "未找到具有给定 ID 的数据模型定义"
+    }
+  },
+  "DECISION-TABLE-DEFINITION": {
+    "MESSAGE": {
+      "NOT-FOUND": "未找到具有给定 ID 的决策表定义"
+    }
+  },
+  "FORM-MODEL": {
+    "MESSAGE": {
+      "NOT-FOUND": "未找到具有给定 ID 的表单模型"
+    }
+  },
+  "PROCESS-MODEL": {
+    "MESSAGE": {
+      "NOT-FOUND": "未找到具有给定 ID 的流程模型"
+    }
+  },
+  "STENCIL-MODEL": {
+    "MESSAGE": {
+      "NOT-FOUND": "未找到具有给定 ID 的模板模型"
+    }
+  },
+  "MODEL": {
+    "MESSAGE": {
+      "ERROR": "错误：{{details}}",
+      "INVALID-TYPE": "此模型不是 {{expected}}"
+    }
+  },
+  "LOGIN": {
+    "TITLE": "用户登录",
+    "NO-ACCOUNT": "没有帐户？",
+    "FORGOT-PASSWORD": "忘记密码?",
+    "FORM": {
+      "USERNAME": "电子邮件地址",
+      "USERNAME.PLACEHOLDER": "输入电子邮件",
+      "PASSWORD": "密码",
+      "PASSWORD.PLACEHOLDER": "输入密码",
+      "REMEMBERME": "自动登录",
+      "BUTTON": "登录"
+    },
+    "MESSAGES": {
+      "ERROR": {
+        "AUTHENTICATION": "登录失败！检查您的登录详细信息并重试。"
+      }
+    }
+  },
+  "PROCESS": {
+    "NAME": "模型名称",
+    "KEY": "模型编码",
+    "DESCRIPTION": "说明",
+    "VERSION-COMMENT": "版本注释",
+    "EDITOR-TYPE": "编辑器类型",
+    "STENCIL": "模板",
+    "ACTION": {
+      "DETAILS": "显示详细信息",
+      "EDIT": "修改模型属性",
+      "DUPLICATE": "复制这个模型",
+      "COMPARE": "与另一版本比较",
+      "SHARE": "共享这个模型",
+      "SHARE-CONFIRM": "确认更改",
+      "EXPORT_BPMN20": "导出到 BPMN 2.0",
+      "DELETE": "删除这个模型",
+      "ADD-COMMENT": "添加注释",
+      "ADD-COMMENT-CONFIRM": "添加注释",
+      "CREATE-CONFIRM": "创建新模型",
+      "DUPLICATE-CONFIRM": "复制模型",
+      "OPEN-IN-EDITOR": "可视化编辑器",
+      "EDIT-CONFIRM": "保存",
+      "DELETE-CONFIRM": "删除流程模型",
+      "USE-AS-NEW-VERSION": "用作新版本",
+      "USE-AS-NEW-VERSION-CONFIRM": "用作新版本",
+      "FAVORITE": "收藏这个模型"
+    },
+    "DETAILS": {
+      "TITLE": "业务流程模型详细信息 {{name}}",
+      "COMPARE-WITH-TITLE": "比较对象",
+      "STENCIL": "模板：",
+      "HISTORY-TITLE": "历史记录",
+      "COMMENTS-TITLE": "注释",
+      "LAST-UPDATED-BY": "最近更新者 {{lastUpdatedByFullName}} - {{lastUpdated | dateformat}}",
+      "CREATED-BY": "创建者 {{createdByFullName}}",
+      "VERSION": "（版本 {{version}}）",
+      "NO-DESCRIPTION": "这个模型没有说明。修改模型属性以添加注释"
+    },
+    "EDIT": {
+      "TITLE": "编辑流程"
+    },
+    "POPUP": {
+      "ADD-COMMENT-TITLE": "添加注释",
+      "ADD-COMMENT-DESCRIPTION": "在下面为 \"{{name}}\" 输入新注释",
+      "ADD-COMMENT-SIZE-ERROR": "注释不能超过 4000 个字符",
+      "CREATE-TITLE": "创建新业务流程模型",
+      "DUPLICATE-TITLE": "复制业务流程模型",
+      "CREATE-DESCRIPTION": "您需要为新模型起个名字，并且您可能希望同时添加描述。",
+      "DUPLICATE-DESCRIPTION": "您可以为新模型起个名字，并且您可能希望同时更改描述。",
+      "EDIT-DESCRIPTION": "更改下面的任意模型属性，然后单击保存以更新模型。",
+      "EDIT-TITLE": "编辑模型详细信息",
+      "DELETE-TITLE": "删除模型",
+      "DELETE-DESCRIPTION": "确定要删除业务流程模型 \"{{name}}\"？",
+      "DELETE-CASCADE-FALSE": "仅删除这个模型的当前版本 (v{{version}})",
+      "DELETE-CASCADE-TRUE": "还会删除这个模型的所有先前版本",
+      "DELETE-LOADING-RELATIONS": "正在检查模型使用情况...",
+      "DELETE-RELATIONS-DESCRIPTION-SINGLE": "无法删除这个模型，因为另一个模型正在使用它：",
+      "DELETE-RELATIONS-DESCRIPTION": "无法删除这个模型，因为它已被其他模型使用：",
+      "DELETE-PROCESS-RELATION": "流程模型",
+      "DELETE-FORM-RELATION": "表单模型",
+      "DELETE-APP-RELATION": "APP 模型",
+      "IMPORT-DESCRIPTION": "浏览或拖放扩展名为 .bpmn 或 .bpmn20.xml 的 BPMN XML 定义",
+      "IMPORT-TITLE": "导入流程模型",
+      "USE-AS-NEW-TITLE": "用作新版本",
+      "USE-AS-NEW-DESCRIPTION": "您确定要使用版本 {{version}} 来创建 \"{{name}}\" 的新版本吗？",
+      "USE-AS-NEW-UNRESOLVED-MODELS-ERROR": "无法将 APP 模型完全还原到所选版本：因为被引用的模型已经被删除。相应更新 APP 模型。缺失模型：",
+      "USE-AS-NEW-UNRESOLVED-MODEL": "模型 '{{name}}'（内部 ID {{id}}，创建者 {{createdBy}}）",
+      "SHARE-TITLE": "共享流程模型",
+      "SHARE-DESCRIPTION": "您可以确定希望与谁共享这个业务流程以及他们是否可以编辑它。",
+      "NOT-SHARED": "这个业务流程模型没有与任何人共享。",
+      "SHARED-WITH": "共享",
+      "PERMISSION": "权限",
+      "ACTIONS": "操作",
+      "IMPORT": {
+        "DROPZONE": "拖放 .bpmn 或 .bpmn20.xml BPMN XML 文件",
+        "CANCEL-UPLOAD": "取消上传",
+        "ERROR": "处理 BPMN XML 文件时出现错误",
+        "NO-DROP": "不支持拖放",
+        "WRONG-FILE-IMPORT": "无效的文件名，仅支持 .bpmn 和 .bpmn20.xml 文件，不支持"
+      },
+      "EDIT-METADATA-TITLE": "编辑属性",
+      "SAVE-EMBEDDED": "将这个流程嵌入到父级模型中？",
+      "SAVE-EMBEDDED-COPY": "将创建这个流程的副本，因为其他流程也在使用它"
+    },
+    "ALERT": {
+      "EDIT-CONFIRM": "已更新模型",
+      "FAVORITE-CONFIRM": "现在已收藏这个模型",
+      "UN-FAVORITE-CONFIRM": "不再收藏这个模型",
+      "DELETE-CONFIRM": "已删除模型",
+      "SHARE-CONFIRM": "已更新模型共享选项",
+      "NEW-VERSION-CONFIRM": "已创建业务流程模型的新版本",
+      "COMMENT-ADDED-CONFIRM": "新注释已添加到模型"
+    },
+    "ERROR": {
+      "NOT-FOUND": "请求的模型不存在"
+    }
+  },
+  "SUBPROCESS": {
+    "NAME": "子流程名称",
+    "DESCRIPTION": "说明",
+    "TITLE": "子流程",
+    "ACTION": {
+      "CREATE-CONFIRM": "创建新子流程"
+    },
+    "POPUP": {
+      "CREATE-TITLE": "创建新子流程",
+      "CREATE-DESCRIPTION": "您需要为新子流程起个名字，并且您可能希望同时添加说明。"
+    },
+    "POPOVER": {
+      "SELECT-TITLE": "选择子流程",
+      "NONE-SELECTED": "无选中的子流程...",
+      "CREATE": "+ 创建子流程",
+      "OPEN": "打开",
+      "CLEAR": "清除",
+      "SEARCH-PLACEHOLDER": "搜索子流程",
+      "MATCHING": "匹配的子流程",
+      "NONE-MATCHING": "无匹配的子流程"
+    }
+  },
+  "FORM": {
+    "NAME": "表单名称",
+    "KEY": "表单编码",
+    "DESCRIPTION": "说明",
+    "REUSABLE": "可重复使用的表单",
+    "VERSION-COMMENT": "版本注释",
+    "ACTION": {
+      "DETAILS": "显示详细信息",
+      "EDIT": "修改模型属性",
+      "COMPARE": "与另一版本比较",
+      "SHARE": "共享这个表单",
+      "SHARE-CONFIRM": "确认更改",
+      "DELETE": "删除这个表单",
+      "ADD-COMMENT": "+ 添加注释",
+      "ADD-COMMENT-CONFIRM": "添加注释",
+      "CREATE-CONFIRM": "创建新表单",
+      "DUPLICATE-CONFIRM": "复制表单",
+      "OPEN-IN-EDITOR": "表单编辑器",
+      "EXPORT": "导出表单",
+      "EDIT-CONFIRM": "保存",
+      "DELETE-CONFIRM": "删除表单",
+      "USE-AS-NEW-VERSION": "用作新版本",
+      "USE-AS-NEW-VERSION-CONFIRM": "用作新版本",
+      "FAVORITE": "收藏这个表单",
+      "DUPLICATE": "复制这个表单"
+    },
+    "DETAILS": {
+      "TITLE": "表单详细信息 {{name}}",
+      "COMPARE-WITH-TITLE": "比较对象",
+      "HISTORY-TITLE": "历史记录",
+      "COMMENTS-TITLE": "注释",
+      "LAST-UPDATED-BY": "最近更新者 {{lastUpdatedByFullName}} - {{lastUpdated | dateformat}}",
+      "CREATED-BY": "创建者 {{createdByFullName}}",
+      "VERSION": "（版本 {{version}}）"
+    },
+    "EDIT": {
+      "TITLE": "编辑表单"
+    },
+    "POPUP": {
+      "ADD-COMMENT-TITLE": "添加注释",
+      "ADD-COMMENT-DESCRIPTION": "在下面为 \"{{name}}\" 输入新注释",
+      "ADD-COMMENT-SIZE-ERROR": "注释不能超过 4000 个字符",
+      "CREATE-TITLE": "创建新表单",
+      "DUPLICATE-TITLE": "复制表单",
+      "CREATE-DESCRIPTION": "您需要为新表单起个名字，并且您可能希望同时添加说明。",
+      "DUPLICATE-DESCRIPTION": "您需要为新表单起个名字，并且您可能希望同时添加说明。",
+      "SAVE-FORM-TITLE": "保存表单",
+      "EDIT-DESCRIPTION": "更改下面的任意表单属性，然后单击保存以更新表单。",
+      "EDIT-TITLE": "编辑表单详细信息",
+      "DELETE-TITLE": "删除表单",
+      "DELETE-DESCRIPTION": "确定要删除表单 \"{{name}}\"？",
+      "DELETE-CASCADE-FALSE": "仅删除这个表单的当前版本 (v{{version}})",
+      "DELETE-CASCADE-TRUE": "还会删除这个表单的所有先前版本",
+      "USE-AS-NEW-TITLE": "用作新版本",
+      "USE-AS-NEW-DESCRIPTION": "您确定要使用版本 {{version}} 来创建 \"{{name}}\" 的新版本吗？",
+      "SHARE-TITLE": "共享表单",
+      "SHARE-DESCRIPTION": "您可以确定希望与谁共享这个表单以及他们是否可以编辑它。",
+      "NOT-SHARED": "这个表单没有与任何人共享。",
+      "IMPORT-DESCRIPTION": "浏览或拖放扩展名为 .json 的表单文件",
+      "IMPORT-TITLE": "导入流程模型",
+      "IMPORT-DROPZONE": "拖放 .json 表单文件",
+      "IMPORT-NO-DROP": "不支持拖放",
+      "IMPORT-CANCEL-UPLOAD": "取消上传",
+      "IMPORT-ERROR": "处理表单文件时出现错误",
+      "IMPORT-WRONG-FILE": "无效的文件名，仅支持 .json 文件，不支持",
+      "REUSABLE": "可重复使用的表单",
+      "SAVE-EMBEDDED": "将这个表单嵌入当前的流程模型？",
+      "SAVE-EMBEDDED-COPY": "将创建这个表单的副本，因为其他流程也在使用它"
+    },
+    "ALERT": {
+      "EDIT-CONFIRM": "已更新表单",
+      "FAVORITE-CONFIRM": "现在已收藏这个表单",
+      "UN-FAVORITE-CONFIRM": "不再收藏这个表单",
+      "DELETE-CONFIRM": "已删除表单",
+      "SHARE-CONFIRM": "已更新表单共享选项",
+      "NEW-VERSION-CONFIRM": "已创建表单的新版本",
+      "COMMENT-ADDED-CONFIRM": "新注释已添加到表单",
+      "SAVE-CONFIRM": "保存的表单 '{{name}}'",
+      "SAVE-ERROR": "无法保存表单 '{{name}}'"
+    },
+    "ERROR": {
+      "NOT-FOUND": "请求的表单不存在"
+    }
+  },
+  "APP": {
+    "NAME": "APP定义名称",
+    "KEY": "APP定义编码",
+    "DESCRIPTION": "说明",
+    "VERSION-COMMENT": "版本注释",
+    "ICON": "图标",
+    "THEME": "主题",
+    "ACTION": {
+      "DETAILS": "显示详细信息",
+      "EDIT": "修改 APP 定义属性",
+      "DUPLICATE": "复制这个应用程序（APP）",
+      "COMPARE": "与另一版本比较",
+      "SHARE": "共享这个 APP 定义",
+      "SHARE-CONFIRM": "确认更改",
+      "DELETE": "删除这个应用程序定义",
+      "ADD-COMMENT": "添加注释",
+      "ADD-COMMENT-CONFIRM": "添加注释",
+      "CREATE-CONFIRM": "创建新 APP 定义",
+      "DUPLICATE-CONFIRM": "复制 APP 定义",
+      "EDIT-CONFIRM": "保存",
+      "DELETE-CONFIRM": "删除 APP 定义",
+      "USE-AS-NEW-VERSION": "用作新版本",
+      "USE-AS-NEW-VERSION-CONFIRM": "用作新版本",
+      "FAVORITE": "收藏这个 APP 定义",
+      "OPEN-IN-EDITOR": "APP 编辑器",
+      "PUBLISH": "发布",
+      "PUBLISH-CONFIRM": "发布 APP 定义",
+      "SELECT-ICON": "更改图标...",
+      "SELECT-THEME": "更改主题...",
+      "EDIT-MODELS": "编辑包含的模型",
+      "EXPORT-ZIP": "将 APP 定义导出为 zip 文件"
+    },
+    "DETAILS": {
+      "TITLE": "APP 定义详细信息：{{name}}",
+      "COMPARE-WITH-TITLE": "比较对象",
+      "HISTORY-TITLE": "历史记录",
+      "COMMENTS-TITLE": "注释",
+      "MODELS-TITLE": "APP 定义中包含的模型",
+      "THEME-TITLE": "这是所选 APP 打印主题的预览。将光标悬停于预览上方，可选择不同的图标和主题颜色。",
+      "LAST-UPDATED-BY": "最近更新者 {{lastUpdatedByFullName}} - {{lastUpdated | dateformat}}",
+      "CREATED-BY": "创建者 {{createdByFullName}}",
+      "VERSION": "（版本 {{version}}）",
+      "NO-DESCRIPTION": "这个 APP 定义没有说明。修改 APP 定义属性以添加说明",
+      "NO-MODELS-SELECTED": "没有为这个 APP 选择模型",
+      "MODEL-ERRORS": "APP 的流程模型中有错误。<br/>修正这些错误之前，无法发布这个应用程序。",
+      "MODEL-RECURSION-ERROR": "在一个或多个流程中发现流程递归，这是不允许的。<br/>删除递归之前，无法发布或导出应用程序。"
+    },
+    "EDIT": {
+      "TITLE": "编辑 APP 定义"
+    },
+    "TITLE": {
+      "SELECT-ICON": "选择 APP 图标",
+      "SELECT-THEME": "选择 APP 颜色",
+      "PREVIEW": "预览",
+      "ERROR": "错误",
+      "PUBLISH-IDENTITIES-HEADER": "针对以下用户/组，直接将 APP 发布到仪表板",
+      "PUBLISH-TO-DASHBOARD": "发布到仪表板",
+      "NO-PUBLISH-IDENTITIES": "没有发布身份被定义"
+    },
+    "POPUP": {
+      "ADD-COMMENT-TITLE": "添加注释",
+      "ADD-COMMENT-DESCRIPTION": "在下面为 \"{{name}}\" 输入新注释",
+      "ADD-COMMENT-SIZE-ERROR": "注释不能超过 4000 个字符",
+      "CREATE-TITLE": "创建新 APP 定义",
+      "DUPLICATE-TITLE": "复制一个 APP 定义",
+      "SAVE-APP-TITLE": "保存 APP 定义",
+      "SAVE-APP-SAVE-SUCCESS": "保存的 APP 定义",
+      "SAVE-APP-SAVE-FAIL": "无法保存 APP 定义",
+      "CREATE-DESCRIPTION": "您需要为新 APP 定义起个名字，并且您可能希望同时添加说明。",
+      "DUPLICATE-DESCRIPTION": "您可以为新 APP 定义起个名字，并且您可能希望同时更改说明。",
+      "EDIT-DESCRIPTION": "更改下面的任意 APP 定义属性，然后单击保存以更新 APP 定义。",
+      "EDIT-TITLE": "编辑 APP 定义详细信息",
+      "PUBLISH-TITLE": "发布 APP 定义",
+      "PUBLISH-DESCRIPTION": "确定要发布 APP 定义 \"{{name}}\"？请注意，这个 APP 定义将受版本控制，并且工作流 APP 将被更新（如果已存在）。",
+      "PUBLISH-FIELD": "发布？请注意，如果启用了发布，这个 APP 定义将受版本控制，并且工作流程 APP 将被更新（如果已存在）。",
+      "PUBLISH-ERROR-PROCDEF-KEY-CONFLICT": "您的流程模型 \"{{modelInAppName}}\" 的标识符 \"{{processDefinitionKey}}\" 与 \"{{conflictingAppName}}\" 的现有已部署流程 \"{{conflictingModelName}}\" 的相同。将这个流程模型的 \"ID\" 属性改为不同的属性。",
+      "PUBLISH-ERROR-PROCESS-ALREADY-USED": "下列模型已在另一个 APP 中使用。这可以吗？",
+      "PUBLISH-ERROR-PROCESS-ALREADY-USED-APP": "APP",
+      "PUBLISH-ERROR-PROCDEF-DUPLICATE-KEYS": "无效的 APP：复制找到的流程标识符（更改冲突的流程模型的 \"ID\" 属性）：",
+      "PUBLISH-ERROR-DEC-TABLE-DUPLICATE-KEYS": "无效的 APP：复制找到的决策表 Key（更改冲突的决策表的\"决策表 Key\"）：",
+      "PUBLISH-ERROR-DEC-TABLE-KEY-CONFLICT": "您的决策表 \"{{modelInAppName}}\" 的标识符 \"{{decisionTableKey}}\" 与 APP \"{{conflictingAppName}}\" 的现有已部署决策表 \"{{conflictingModelName}}\" 的相同。将 \"决策表 Key\" 更改为不同。",
+      "DELETE-TITLE": "删除 APP 定义",
+      "DELETE-DESCRIPTION": "确定要删除 APP 定义 \"{{name}}\"？",
+      "DELETE-DESCRIPTION-WITH-RUNTIME": "确定要删除 APP 定义 \"{{name}}\"？请注意，这个 APP 定义已部署至任务登录页面，确认后，APP 将从任务应用程序登录页面删除。",
+      "DELETE-CASCADE-FALSE": "仅删除这个 APP 定义的当前版本 (v{{version}})",
+      "DELETE-CASCADE-TRUE": "同时删除这个 APP 定义的所有先前版本",
+      "USE-AS-NEW-TITLE": "用作新版本",
+      "USE-AS-NEW-DESCRIPTION": "您确定要使用版本 {{version}} 来创建 \"{{name}}\" 的新版本吗？",
+      "SHARE-TITLE": "共享 APP 定义",
+      "SHARE-DESCRIPTION": "您可以确定希望与谁共享这个 APP 定义以及他们是否可以编辑它。",
+      "NOT-SHARED": "这个 APP 定义没有与任何人共享。",
+      "HAS-CUSTOM-STENCILITEM": "模型 \"{{modelName}}\" 使用模板和自定义模板项。无法在 APP 定义中使用这个模型。",
+      "HAS-VALIDATIONERROR": "模型 \"{{modelName}}\" 存在验证错误，无法添加到 APP 定义。在编辑器中打开模型可查看有关验证错误的详细信息。",
+      "IMPORT-DESCRIPTION": "浏览或拖放扩展名为 .zip 的 APP 定义",
+      "IMPORT-TITLE": "导入一个 APP 定义模型",
+      "IMPORT": {
+        "DROPZONE": "拖放 .zip 的 APP 定义文件",
+        "CANCEL-UPLOAD": "取消上传",
+        "RENEWIDM-IDS": "导入步骤和 BPMN 模型时更新用户和组标识符。将 APP 定义导入不同的 Alfresco Process Services 环境时通常需要这个操作。它将尝试将人工步骤和用户任务链接到这个目标环境中的正确用户和组。",
+        "ERROR": "处理 APP 定义文件时出现错误",
+        "NO-DROP": "不支持拖放",
+        "WRONG-FILE-UPLOAD": "无效的文件名，仅支持 .zip 文件，不支持"
+      },
+      "INCLUDE-MODELS-TITLE": "APP 定义中包含的模型"
+    },
+    "ALERT": {
+      "EDIT-CONFIRM": "APP 定义已更新",
+      "FAVORITE-CONFIRM": "现在已收藏这个 APP 定义",
+      "UN-FAVORITE-CONFIRM": "不再收藏这个 APP 定义",
+      "DELETE-CONFIRM": "已删除 APP 定义",
+      "SHARE-CONFIRM": "已更新 APP 共享选项",
+      "NEW-VERSION-CONFIRM": "已创建 APP 定义的新版本",
+      "COMMENT-ADDED-CONFIRM": "新注释已添加到 APP 定义",
+      "PUBLISH-ERROR": "无法发布 APP 定义。检查引用流程模型的有效性"
+    },
+    "ERROR": {
+      "NOT-FOUND": "请求的应用程序定义不存在"
+    },
+    "KICKSTART": {
+      "TITLE": "流程设计",
+      "TITLE-PROCESSES": "流程模型",
+      "TITLE-FORMS": "表单模型",
+      "TITLE-APPS": "App 模型",
+      "TITLE-STENCILS": "模板",
+      "TITLE-DECISION-TABLES": "决策表",
+      "TITLE-DATA-MODELS": "数据模型"
+    },
+    "ADMINISTRATOR": {
+      "TITLE": "Admin APP"
+    },
+    "TASKS": {
+      "TITLE": "任务",
+      "TITLE-TASKS": "任务",
+      "TITLE-PROCESSES": "流程",
+      "TITLE-PROCESSES?MODE=START": "启动"
+    },
+    "IDENTITY-MANAGEMENT": {
+      "TITLE": "配置文件",
+      "TITLE-TENANT-ADMIN": "身份管理",
+      "TITLE-TENANT-ADMIN-TENANT-MGMT": "租户",
+      "TITLE-TENANT-ADMIN-USER-MGMT": "用户",
+      "TITLE-TENANT-ADMIN-SYSTEM-GROUP-MGMT": "功能",
+      "TITLE-TENANT-ADMIN-FUNCTIONAL-GROUP-MGMT": "组织",
+      "TITLE-TENANT-ADMIN-PROFILE": "配置文件",
+      "TITLE-PROFILE": "配置文件"
+    },
+    "ANALYTICS": {
+      "TITLE": "报表与分析 APP"
+    },
+    "CUSTOM-APP": {
+      "TITLE-TASKS": "任务",
+      "TITLE-PROCESSES": "流程"
+    }
+  },
+  "SHARE-INFO": {
+    "PERMISSION": "权限",
+    "PERMISSION-READ": "查看模型",
+    "PERMISSION-WRITE": "编辑模型",
+    "PERMISSION-REMOVE": "停止共享这个模型",
+    "STENCIL-PERMISSION-READ": "查看模板",
+    "STENCIL-PERMISSION-WRITE": "编辑模板",
+    "STENCIL-PERMISSION-REMOVE": "停止共享这个模板",
+    "ADD-PERSON": "添加人员",
+    "ADD-PERSON-PLACEHOLDER": "您要与之共享的人员的电子邮件地址",
+    "ADD-PERSON-PLACEHOLDER-ON-PREM": "搜索要与之共享的用户",
+    "ACTION": {
+      "ADD": "添加另一个人员",
+      "ADD-GROUP": "添加另一个组"
+    }
+  },
+  "ACCOUNT": {
+    "POPUP": {
+      "EDIT": {
+        "TITLE": "编辑帐户",
+        "FIRSTNAME": "名字",
+        "LASTNAME": "姓氏",
+        "FIRSTNAME-PLACEHOLDER": "输入名字",
+        "LASTNAME-PLACEHOLDER": "输入姓氏",
+        "COMPANY": "公司（可选）",
+        "COMPANY-PLACEHOLDER": "输入公司名称",
+        "CONFIRM": "保存配置文件"
+      },
+      "CHANGE-PASSWORD": {
+        "TITLE": "输入密码",
+        "OLD-PASSWORD": "当前密码",
+        "OLD-PASSWORD-PLACEHOLDER": "输入当前密码",
+        "NEW-PASSWORD": "新密码",
+        "NEW-PASSWORD-PLACEHOLDER": "输入新密码",
+        "NEW-PASSWORD-REPEAT": "重复密码",
+        "NEW-PASSWORD-STRENGTH": "密码强度：",
+        "CONFIRM": "更改密码",
+        "UNKNOWN-ERROR": "您的密码未更改，更新时出现错误。",
+        "OLD_PASSWORD-ERROR": "您提供的当前密码不正确。",
+        "PASSWORDS-NOT-EQUAL": "密码不匹配"
+      }
+    },
+    "ALERT": {
+      "UPDATED": "您的配置文件已更新。",
+      "PASSWORD-CHANGED": "您的密码已更改。"
+    }
+  },
+  "MODELER": {
+    "ALERT": {
+      "VALIDATION-OK": "流程模型不包含验证错误。",
+      "VALIDATION-ERROR": "流程模型包含验证错误。"
+    }
+  },
+  "GROUPS": {
+    "CONTENT": "内容相关的步骤"
+  },
+  "PROCESS-BUILDER": {
+    "TITLE": {
+      "PREVIEW": "预览",
+      "DESIGN": "设计",
+      "DETAILS": "详细信息",
+      "SHARING": "分享",
+      "PROCESS-START": "流程开始",
+      "PROCESS-TRIGGER": "流程触发器",
+      "START-FORM": "启动表单",
+      "ADD-STEP": "选择要添加的步骤",
+      "ADVANCED-CONDITION-EDITOR": "高级条件",
+      "METADATA": "属性"
+    },
+    "FIELD": {
+      "METADATA": {
+        "TITLE": "属性",
+        "DISPLAY": "已配置 {{length}} 字段",
+        "EMPTY": "没有属性被定义"
+      },
+      "ASSIGNMENT-SELECT": {
+        "NONE": "没有设置指派",
+        "ASSIGNED-TO-INITIATOR": "已指派至流程发起者",
+        "ASSIGNED-TO-GROUP-MANAGER-FOR-INITIATOR": "已指派至流程发起者的组管理员",
+        "ASSIGNED-TO-SINGLE-USER": "已指派至单个用户",
+        "ASSIGNED-TO-GROUP-MANAGER": "已指派至组管理员",
+        "ASSIGNED-TO-CANDIDATE-USERS": "候选用户",
+        "ASSIGNED-TO-CANDIDATE-GROUPS": "候选组"
+      },
+      "FORM-SELECT": {
+        "VARIABLE-MAPPING": "映射变量",
+        "VARIABLE-MAPPING-DESCRIPTION": "定义表单内外的变量映射",
+        "CURRENT-FORM": "当前表单",
+        "NO-FORM-SELECTED": "无选中的表单...",
+        "FORM-FIELDS": "表单字段",
+        "OPEN-FORM": "打开表单",
+        "NO-FIELDS": "表单还没有字段...",
+        "POPOVER": {
+          "TITLE": "选择表单",
+          "CREATE-FORM": "+ 创建表单",
+          "CLEAR-FORM": "清除表单",
+          "SEARCH-FORM": "搜索表单",
+          "MATCHING-FORMS": "匹配表单",
+          "NO-MATCHING-FORMS": "无匹配表单"
+        }
+      },
+      "FIELD-SELECT": {
+        "NO-FIELD-SELECTED": "无选中的字段",
+        "SELECT-FIELD": "选择字段",
+        "NO-FIELDS": "无字段可用"
+      },
+      "FIELDS-SELECT": {
+        "SELECTED-FIELDS": "选择的字段",
+        "NO-FIELDS": "无选中的字段...",
+        "FIELDS": "字段",
+        "ADD-FIELD": "添加字段"
+      },
+      "DUEDATE": {
+        "CALCULATION-TYPE": "计算类型",
+        "TASK-DUE-DATE-OPTIONS": {
+          "NO-DUEDATE": "这个任务无截止日期",
+          "STATIC": "创建后的固定持续时间",
+          "FIELD": "基于字段",
+          "VARIABLE": "基于变量"
+        },
+        "CALCULATION-OPTIONS": {
+          "ADD": "添加",
+          "SUBTRACT": "删减"
+        }
+      },
+      "TIMER": {
+        "DATE-FIELD": "包含日期的字段",
+        "DATE-VARIABLE": "包含日期的变量",
+        "YEARS": "年",
+        "MONTHS": "月",
+        "DAYS": "天",
+        "HOURS": "小时",
+        "MINUTES": "分",
+        "SECONDS": "秒",
+        "DUE-ACTION": "要执行的操作",
+        "REASSIGN": "重新指派",
+        "DUE-DATE-OPTIONS": {
+          "NO-TIMER": "这个任务无计时器",
+          "DURATION": "创建后的固定持续时间",
+          "FIELD": "基于字段",
+          "VARIABLE": "基于变量"
+        },
+        "DUE-ACTION-OPTIONS": {
+          "NO-ACTION": "无操作",
+          "REASSIGN": {
+            "TITLE": "重新指派任务",
+            "DESCRIPTION": "将任务重新指派至特定的用户，或将其设置为特定用户或组可申请。"
+          },
+          "KEEP": {
+            "TITLE": "保留任务",
+            "DESCRIPTION": "保留任务，但在日期到来时执行其他步骤。"
+          },
+          "END": {
+            "TITLE": "结束任务",
+            "DESCRIPTION": "结束任务并在日期到来时执行其他步骤。"
+          },
+          "END-PROCESS": {
+            "TITLE": "结束流程",
+            "DESCRIPTION": "结束流程。所有活动步骤将被取消，决不会执行所有未来的步骤。"
+          }
+        }
+      },
+      "DECISION-TABLE-SELECT": {
+        "CURRENT-DECISION-TABLE": "当前的决策表",
+        "NO-DECISION-TABLE-SELECTED": "无选中的决策表...",
+        "DECISION-TABLE-FIELDS": "决策表字段",
+        "OPEN-DECISION-TABLE": "打开决策表",
+        "NO-FIELDS": "决策表没有字段...",
+        "VARIABLE-MAPPING": "映射变量",
+        "VARIABLE-MAPPING-DESCRIPTION": "定义决策表内外的变量映射",
+        "POPOVER": {
+          "SEARCH-DECISION-TABLE": "搜索决策表",
+          "SELECT-DECISION-TABLE": "选择决策表",
+          "CREATE-DECISION-TABLE": "+ 创建决策表",
+          "CLEAR-DECISION-TABLE": "清除决策表",
+          "MATCHING-DECISION-TABLE": "匹配决策表",
+          "NO-MATCHING-DECISION-TABLE": "无匹配决策表"
+        }
+      },
+      "SUB-PROCESS-SELECT": {
+        "VARIABLE-MAPPING": "映射变量",
+        "VARIABLE-MAPPING-DESCRIPTION": "定义子流程内外的变量映射"
+      },
+      "GENERIC": {
+        "ASSIGNMENT": "指派",
+        "EDIT": "编辑"
+      }
+    },
+    "UI-GRID": {
+      "HEADER-COLUMN-NAME": "名称",
+      "HEADER-COLUMN-VALUE": "值"
+    },
+    "GENERAL-STEP": {
+      "TAB": {
+        "DETAILS": "详细信息"
+      },
+      "LABELS": {
+        "NAME": "名称",
+        "DESCRIPTION": "说明"
+      },
+      "PLACEHOLDERS": {
+        "NAME": "输入名称",
+        "DESCRIPTION": "输入说明"
+      }
+    },
+    "START-STEP": {
+      "START-TYPES": {
+        "USER": "由用户启动",
+        "FORM": "由填充表单的用户启动"
+      }
+    },
+    "HUMAN-STEP": {
+      "TITLE": "人工步骤",
+      "TAB": {
+        "FORM": "表单",
+        "TIMER": "计时器",
+        "DUEDATE": "截止日期",
+        "DUE": "截止时间"
+      },
+      "LABELS": {
+        "ASSIGNEE": "选择被指派者"
+      },
+      "ASSIGN": {
+        "TITLE": "选择被指派者"
+      },
+      "ALLOW-SEND-EMAIL": "允许发送电子邮件通知",
+      "EMAIL-TEMPLATE": "电子邮件模板",
+      "CANDIDATES": {
+        "TITLE": "添加候选者"
+      },
+      "GROUPS": {
+        "TITLE": "选择组"
+      },
+      "ASSIGNMENT": {
+        "ASSIGNEE": "被指派者",
+        "USER": "用户",
+        "GROUP": "组",
+        "SELECT-ASSIGNEE": "选择被指派者...",
+        "SELECT-GROUP": "选择组...",
+        "SELECT-USER": "选择用户...",
+        "CANDIDATES": "候选者",
+        "GROUPS": "组",
+        "ADD-CANDIDATE": "添加候选者",
+        "ADD-GROUP": "添加组",
+        "NO-CANDIDATES": "无选中的候选者...",
+        "NO-GROUPS": "无选中的组...",
+        "INITIATOR-CAN-COMPLETE": "允许流程发起者完成任务"
+      },
+      "DUE": {
+        "DATE-REACHED": "已经到达定时器所设定日期"
+      },
+      "SUMMARY": {
+        "ASSIGNEE": "任务，已指派至 {{name}}",
+        "GROUP-MANAGER": "任务，已指派至 {{name}} 的组管理员",
+        "USERS": "任务，已指派至 {{length}} 候选用户",
+        "GROUPS": "任务，已指派至 {{length}} 候选组",
+        "INITIATOR": "任务，已指派至流程发起者",
+        "GROUP-MANAGER-FOR-INITIATOR": "任务，已指派至流程发起者的组管理员"
+      },
+      "TIMER": {
+        "SELECT-REST-RESPONSE-VARIABLE": "选择一个变量",
+        "NO-REST-RESPONSE-VARIABLE-AVAILABLE": "无日期变量可用"
+      }
+    },
+    "EMAIL-STEP": {
+      "TITLE": "电子邮件步骤",
+      "TAB": {
+        "EMAIL": "电子邮件"
+      },
+      "LABELS": {
+        "SUBJECT": "主题",
+        "EMAILTEXT": "电子邮件文本"
+      },
+      "PLACEHOLDERS": {
+        "SUBJECT": "输入标题",
+        "EMAILTEXT": "输入电子邮件文本"
+      },
+      "SUMMARY": {
+        "TO-INITIATOR": "发送电子邮件至流程发起者",
+        "TO-USER": "发送电子邮件至 {{name}}",
+        "TO-USERS": "发送电子邮件至 {{size}} 个收件人"
+      },
+      "RECIPIENT": {
+        "TYPE": "收件人类型",
+        "USER": "收件人",
+        "SELECT-USER": "选择收件人...",
+        "USERS": "收件人",
+        "ADD": "+ 添加收件人",
+        "USERS-NONE": "无选中的收件人...",
+        "POPOVER": {
+          "USER-TITLE": "选择一个收件人",
+          "USERS-TITLE": "选择收件人",
+          "SELECT-INITIATOR": "流程发起者收件人",
+          "SELECT-USER": "单个用户收件人",
+          "SELECT-USERS": "多个用户收件人"
+        }
+      }
+    },
+    "CHOICE-STEP.CHOICE.REMOVE.TOOLTIP": "删除这个选项",
+    "CHOICE-STEP": {
+      "TITLE": "选项步骤",
+      "TAB": {
+        "CHOICES": "选项"
+      },
+      "LABELS": {
+        "FIRST-CHOICE": "第一个选择",
+        "SECOND-CHOICE": "第二个选择",
+        "NEW-CHOICE": "新选择"
+      },
+      "EDIT": {
+        "TITLE": "编辑选项",
+        "NAME": "名称",
+        "CONDITION": "条件",
+        "FORM-FIELD": "表单字段",
+        "FORM-OUTCOME": "表单结果",
+        "REST-RESPONSE-VARIABLE": "变量",
+        "NO-CONDITION": "无条件",
+        "DEFAUL-FLOW": "默认 flow"
+      },
+      "CONDITION": {
+        "EQUALS": "等于",
+        "NOTEQUALS": "不等于",
+        "GREATERTHAN": "大于",
+        "LESSTHAN": "小于",
+        "SELECT-OPERATOR": "选择运算符",
+        "SELECT-FIELD": "选择字段",
+        "SELECT-OUTCOME": "选择结果",
+        "SELECT-FORM": "选择表单",
+        "SELECT-REST-RESPONSE-VARIABLE": "选择变量",
+        "REMOVE-CHOICE": "删除选项",
+        "NO-FIELDS-AVAILABLE": "无字段可用",
+        "NO-OUTCOMES-AVAILABLE": "无结果可用",
+        "NO-FORMS-AVAILABLE": "无表单可用",
+        "NO-REST-RESPONSE-VARIABLE-AVAILABLE": "无变量可用"
+      },
+      "SUMMARY": {
+        "NO-CHOICES": "选项步骤，没有选项被定义",
+        "WITH-CHOICES": "选择步骤和 {{count}} 个选项"
+      }
+    },
+    "SUBPROCESS-STEP": {
+      "TITLE": "子流程步骤",
+      "LABELS": {
+        "SELECT-SUBPROCESS": "选择子流程"
+      },
+      "SUMMARY": {
+        "SUBPROCESS-SELECTED": "子流程 {{name}}",
+        "NO-SUBPROCESS": "无选中的子流程"
+      }
+    },
+    "PUBLISH-STEP": {
+      "TITLE": "发布至 Alfresco",
+      "TAB": {
+        "CONTENT": "内容",
+        "DESTINATION": "目标"
+      },
+      "LABELS": {
+        "SOURCE": "要发布的内容"
+      },
+      "SOURCE-OPTIONS": {
+        "ALL": "发布流程中上传的所有内容",
+        "FIELD": "发布字段中上传的内容"
+      },
+      "SOURCE": {
+        "FORM-FIELD": "表单字段",
+        "VARIABLE": "变量"
+      },
+      "DESTINATION": {
+        "NO-ACCOUNTS": "没有 Alfresco 帐户被配置",
+        "ACCOUNT": "帐户",
+        "DESTINATION": "目标",
+        "NO-DESTINATION": "无选中的目标...",
+        "NETWORK": "网络",
+        "SELECT-USER": "选择用户...",
+        "PUBLISH-AS-LABEL": "发布为",
+        "SPECIFIC-USER": "特定用户",
+        "PROCESS-INITIATOR": "流程发起者",
+        "SITE": "站点",
+        "PATH": "路径",
+        "DOCUMENT-LIBRARY": "文档库",
+        "SUB-FOLDER": "子文件夹",
+        "USE-SUB-FOLDER": "创建或重新使用子文件夹",
+        "FIELD": "基于字段",
+        "NO-ASSIGNEE": "无...",
+        "SEARCH": "搜索"
+      },
+      "METADATA-MAPPING": {
+        "POPUP": {
+          "TITLE": "属性映射",
+          "PROPERTY-VALUE-TYPE": "映射类型：",
+          "PROPERTY-NAME": "外部属性 ID：",
+          "PROPERTY-NAME-PLACEHOLDER": "输入文件属性名称",
+          "PROPERTY-TYPE": "类型：",
+          "NEW-VARIABLE": "新变量",
+          "NAME": "名称",
+          "PROPERTY-TYPE-PROCESS-VAR": "变量",
+          "PROPERTY-TYPE-FIELD": "表单字段",
+          "READONLY-TEXT-SELECT-PROCESS-VARIABLE": "选择一个变量..."
+        }
+      },
+      "DOCUMENT-DEFINITION": {
+        "POPUP": {
+          "TITLE": "文档定义",
+          "DOCUMENT-ASPECTS-TABLE-ASPECT-NAME-HEADER": "切面名称",
+          "DOCUMENT-ASPECTS-TABLE-TITLE": "切面",
+          "DOCUMENT-TYPE": "类型"
+        }
+      }
+    },
+    "BOX-PUBLISH-STEP": {
+      "TITLE": "发布至 Box",
+      "TAB": {
+        "CONTENT": "内容",
+        "DESTINATION": "目标"
+      },
+      "LABELS": {
+        "SOURCE": "要发布的内容"
+      },
+      "SOURCE-OPTIONS": {
+        "ALL": "发布流程中上传的所有内容",
+        "FIELD": "发布字段中上传的内容"
+      },
+      "SOURCE": {
+        "FORM-FIELD": "表单字段"
+      },
+      "DESTINATION": {
+        "ACCOUNT": "帐户",
+        "DESTINATION": "目标",
+        "NO-DESTINATION": "无选中的目标...",
+        "NETWORK": "网络",
+        "SELECT-USER": "选择用户...",
+        "PUBLISH-AS-LABEL": "发布为",
+        "SPECIFIC-USER": "特定用户",
+        "PROCESS-INITIATOR": "流程发起者",
+        "SITE": "站点",
+        "PATH": "路径",
+        "DOCUMENT-LIBRARY": "文档库",
+        "SUB-FOLDER": "子文件夹",
+        "USE-SUB-FOLDER": "创建或重新使用子文件夹",
+        "FIELD": "基于字段"
+      }
+    },
+    "GOOGLE-DRIVE-PUBLISH-STEP": {
+      "TITLE": "发布至 Google Drive",
+      "TAB": {
+        "CONTENT": "内容",
+        "DESTINATION": "目标"
+      },
+      "LABELS": {
+        "SOURCE": "要发布的内容"
+      },
+      "SOURCE-OPTIONS": {
+        "ALL": "发布流程中上传的所有内容",
+        "FIELD": "发布字段中上传的内容"
+      },
+      "SOURCE": {
+        "FORM-FIELD": "表单字段"
+      },
+      "DESTINATION": {
+        "ACCOUNT": "帐户",
+        "DESTINATION": "目标",
+        "NO-DESTINATION": "无选中的目标...",
+        "NETWORK": "网络",
+        "SELECT-USER": "选择用户...",
+        "PUBLISH-AS-LABEL": "发布为",
+        "SPECIFIC-USER": "特定用户",
+        "PROCESS-INITIATOR": "流程发起者",
+        "SITE": "站点",
+        "PATH": "路径",
+        "DOCUMENT-LIBRARY": "文档库",
+        "SUB-FOLDER": "子文件夹",
+        "USE-SUB-FOLDER": "创建或重新使用子文件夹",
+        "FIELD": "基于字段",
+        "SEARCH": "搜索"
+      }
+    },
+    "VARIABLE-MAPPING-MESSAGE": {
+      "INPROCESSVARIABLE": "源流程变量",
+      "FORMVARIABLE": "表单变量",
+      "SUBPROCESSVARIABLE": "子流程变量",
+      "OUTPROCESSVARIABLE": "目标流程变量",
+      "EMBEDDEDFORM": "这个功能仅适用于可重复使用的表单",
+      "LOADING": "获取表单数据",
+      "NOFORMATTACHED": "没有表单被附加到这个任务。选择一个表单后再继续",
+      "NOSUBPROCESSATTACHED": "没有子流程被附加到这个任务。选择一个子流程后再继续",
+      "INPROCESSVARIABLE.PLACEHOLDER": "输入源流程变量",
+      "OUTPROCESSVARIABLE.PLACEHOLDER": "输入目标流程变量",
+      "FORMVARIABLE.PLACEHOLDER": "输入表单变量",
+      "POPUP": {
+        "PROPERTY-VALUE-TYPE": "值类型：",
+        "PROPERTY-TYPE-FIELD": "表单字段",
+        "PROPERTY-NEW-VARIABLE": "新变量",
+        "PROPERTY-TYPE-VARIABLE": "变量",
+        "PROPERTY-TYPE-FIELD-OR-VARIABLE": "表单字段或变量：",
+        "PROPERTY-VALUE": "值",
+        "INPUT-MAPPING": "输入映射",
+        "OUTPUT-MAPPING": "输出映射",
+        "INOUT-MAPPING": "输入/输出映射",
+        "PROPERTY-TYPE-MAPPING": "映射类型",
+        "PROPERTY-TYPE-SUBPROCESS": "子流程变量"
+      }
+    },
+    "VARIABLE-MAPPING-REUSABLE-TABLE-MESSAGE": {
+      "INPROCESSVARIABLE": "源流程变量",
+      "TABLEVARIABLE": "决策表变量",
+      "OUTPROCESSVARIABLE": "目标流程变量",
+      "EMBEDDEDTABLE": "这个功能仅适用于可重复使用的表",
+      "LOADING": "获取表数据",
+      "NOTABLEATTACHED": "无表附加到这个任务。选择一个表后再继续",
+      "INPROCESSVARIABLE.PLACEHOLDER": "输入源流程变量",
+      "OUTPROCESSVARIABLE.PLACEHOLDER": "输入目标流程变量",
+      "FORMVARIABLE.PLACEHOLDER": "输入表单变量",
+      "POPUP": {
+        "PROPERTY-VALUE-TYPE": "值类型：",
+        "PROPERTY-TABLE-FIELD": "表字段",
+        "PROPERTY-FORM-FIELD": "表单字段",
+        "PROPERTY-TYPE-VARIABLE": "变量",
+        "PROPERTY-NEWVARIABLE": "新变量",
+        "INPUT-MAPPING": "输入映射",
+        "OUTPUT-MAPPING": "输出映射",
+        "INOUT-MAPPING": "输入/输出映射",
+        "PROPERTY-TYPE-MAPPING": "映射类型"
+      }
+    },
+    "METADATA-GET-STEP": {
+      "ALFRESCO": {
+        "TITLE": "检索 Alfresco 属性"
+      },
+      "DESCRIPTION": "获取链接的文档的属性并存储到表单字段或变量",
+      "FILE": "文件",
+      "TAB": {
+        "METADATA": "属性"
+      },
+      "METADATA-MAPPING": {
+        "POPUP": {
+          "TITLE": "属性映射",
+          "PROPERTY-VALUE-TYPE": "值类型：",
+          "PROPERTY-NAME": "外部属性 ID：",
+          "PROPERTY-TYPE": "类型：",
+          "PROPERTY-TYPE-PROCESS-VAR": "变量",
+          "PROPERTY-TYPE-FIELD": "表单字段",
+          "NEW-VARIABLE": "新变量",
+          "READONLY-TEXT-SELECT-PROCESS-VARIABLE": "选择一个变量..."
+        }
+      },
+      "SOURCE": {
+        "FORM-FIELD": "表单字段",
+        "VARIABLE": "变量"
+      },
+      "DESTINATION": {
+        "SELECT-USER": "选择用户...",
+        "RETRIEVE-AS-LABEL": "检索为",
+        "UPDATE-AS-LABEL": "更新为",
+        "SPECIFIC-USER": "特定用户",
+        "PROCESS-INITIATOR": "流程发起者"
+      }
+    },
+    "METADATA-PUT-STEP": {
+      "ALFRESCO": {
+        "TITLE": "更新 Alfresco 属性"
+      },
+      "DESCRIPTION": "从表单字段或变量更新链接的文档中的属性",
+      "FILE": "文件",
+      "TAB": {
+        "METADATA": "属性"
+      },
+      "METADATA-MAPPING": {
+        "POPUP": {
+          "TITLE": "属性映射",
+          "PROPERTY-VALUE-TYPE": "值类型：",
+          "PROPERTY-NAME": "外部属性 ID：",
+          "PROPERTY-TYPE": "类型：",
+          "PROPERTY-TYPE-PROCESS-VAR": "变量",
+          "PROPERTY-TYPE-FIELD": "表单字段",
+          "NEW-VARIABLE": "新变量",
+          "READONLY-TEXT-SELECT-PROCESS-VARIABLE": "选择一个变量..."
+        }
+      },
+      "SOURCE": {
+        "FORM-FIELD": "表单字段",
+        "VARIABLE": "变量"
+      },
+      "DESTINATION": {
+        "SELECT-USER": "选择用户...",
+        "RETRIEVE-AS-LABEL": "检索为",
+        "UPDATE-AS-LABEL": "更新为",
+        "SPECIFIC-USER": "特定用户",
+        "PROCESS-INITIATOR": "流程发起者"
+      }
+    },
+    "CALL-ALFRESCO-ACTION-STEP": {
+      "TITLE": "调用 Alfresco 操作",
+      "TAB": {
+        "TARGET": "目标",
+        "ACTION": {
+          "TITLE": "操作",
+          "PARAMETERS": "操作参数",
+          "PARAM-NAME": "名称",
+          "PARAM-VALUE": "值",
+          "TYPES": {
+            "EXTRACT-METADATA": "提取常用元数据字段",
+            "MOVE": "移动",
+            "ADD-FEATURES": "添加切面",
+            "SPECIALISE-TYPE": "专业类型",
+            "SCRIPT": "执行脚本",
+            "CHECK-IN": "签入",
+            "TRANSFORM": "转换和复制内容",
+            "REMOVE-FEATURES": "移除切面",
+            "CHECK-OUT": "签出",
+            "COPY": "复制",
+            "TRANSFORM-IMAGE": "转换和复制图像"
+          }
+        }
+      },
+      "SOURCE": "内容",
+      "ACCESS-AS": "充当",
+      "REPOSITORY": "存储库",
+      "ACTION": "操作",
+      "PARAMS": "操作参数"
+    },
+    "REST-CALL-STEP": {
+      "TITLE": "REST 调用",
+      "TAB": {
+        "ENDPOINT": "Endpoint",
+        "REQUEST-MESSAGE": "请求",
+        "RESPONSE-MESSAGE": "响应"
+      },
+      "LABELS": {
+        "ENDPOINT": "Endpoint",
+        "REQUEST-MESSAGE": "请求消息",
+        "RESPONSE-MESSAGE": "响应消息",
+        "HTTP-METHOD": "HTTP 方法"
+      },
+      "REQUEST-MESSAGE": {
+        "JSON-PROPERTY": "JSON 属性",
+        "JSON-STATIC-VALUE": "固定值",
+        "JSON-VALUE": "值",
+        "JSON-FORMFIELD-VALUE": "表单字段",
+        "POPUP": {
+          "TITLE": "创建新的请求映射",
+          "PROPERTY-NAME": "属性名称：",
+          "PROPERTY-SOURCE": "属性源：",
+          "PROPERTY-VALUE-TYPE": "值类型：",
+          "PROPERTY-TYPE-STATIC": "固定",
+          "PROPERTY-TYPE-FIELD": "表单字段",
+          "PROPERTY-TYPE-VARIABLE": "变量",
+          "PROPERTY-VALUE": "值：",
+          "PROPERTY-TYPE": "属性类型："
+        }
+      },
+      "RESPONSE-MESSAGE": {
+        "JSON-PROPERTY": "JSON 属性",
+        "PROCESS-VARIABLE": "变量",
+        "POPUP": {
+          "TITLE": "创建新的响应映射",
+          "PROPERTY-NAME": "属性名称：",
+          "VARIABLE-TYPE": "变量类型：",
+          "VARIABLE-NAME": "变量名称："
+        }
+      },
+      "REQUEST-HEADERS": {
+        "HEADER-NAME": "Header 名称",
+        "HEADER-VALUE": "Header 值"
+      },
+      "TEST_BUTTON_LABEL": "测试"
+    },
+    "GOTO-STEP": {
+      "TITLE": "转至步骤",
+      "SELECT": "选择步骤...",
+      "NONE": "无步骤变量",
+      "SUMMARY": {
+        "STEP-SELECTED": "转至步骤：{{name}}",
+        "NO-STEP": "无选中的转至步骤"
+      }
+    },
+    "END-PROCESS-STEP": {
+      "TITLE": "结束流程步骤"
+    },
+    "GENERATE-DOC-STEP": {
+      "TITLE": "生成文档",
+      "TAB": {
+        "TEMPLATE": "模板",
+        "VARIABLE": "变量"
+      },
+      "LABELS": {
+        "VARIABLE": "变量",
+        "TEMPLATE": "模板",
+        "NO-TEMPLATE": "无模板",
+        "OUTPUT-FORMAT": "输出格式",
+        "OUTPUT-FORMAT-PDF": "PDF",
+        "OUTPUT-FORMAT-WORD": "Word",
+        "UPLOAD-TEMPLATE": "上传模板",
+        "TENANT-TEMPLATE": "标准模板",
+        "OUTPUT-FILENAME": "输出名称",
+        "TEMPLATE-SOURCE": "模板源"
+      },
+      "PLACEHOLDERS": {
+        "VARIABLE": "输入变量名称",
+        "FILENAME": "输入文件名称"
+      }
+    },
+    "DECISION-STEP": {
+      "TITLE": "决策步骤",
+      "TAB": {
+        "DECISION-TABLE": "决策表"
+      }
+    },
+    "EMAIL-TEMPLATE-SOURCE": {
+      "EMAIL": "电子邮件",
+      "TEMPLATE": "模板",
+      "SRC-DEFAULT": "默认值",
+      "SRC-TEMPLATE": "电子邮件模板",
+      "SRC-CUSTOM": "自定义模板",
+      "CUSTOM-EMAIL-SUBJECT": "主题",
+      "CUSTOM-EMAIL-CONTENT": "电子邮件内容",
+      "CUSTOM-EMAIL-SUBJECT-PLACEHOLDER": "输入电子邮件标题",
+      "CUSTOM-EMAIL-CONTENT-PLACEHOLDER": "输入电子邮件内容",
+      "SELECT-TEMPLATE": "选择模板",
+      "NO-TEMPLATE-SELECTED": "无选中的模板",
+      "POPUP": {
+        "TITLE": "选择电子邮件模板",
+        "SEARCH-TEMPLATE": "搜索电子邮件模板",
+        "MATCHING-TEMPLATES": "匹配的模板",
+        "NO-MATCHING-RESULTS": "无匹配模板",
+        "PREVIOUS": "显示上一个",
+        "NEXT": "显示下一个"
+      }
+    }
+  },
+  "KICKSTART-MODEL": {
+    "VERSION": "版本 {{version}}",
+    "LAST-UPDATED": "最近更新者 {{lastUpdatedByFullName}}，{{lastUpdated | dateformat}}",
+    "ALERT": {
+      "SAVED": "已保存模型",
+      "ERROR-SAVE": "模型无法保存，因为出现意外错误",
+      "DEPLOYED": "已成功部署模型",
+      "DELETED": "已成功删除模型"
+    }
+  },
+  "FORM-BUILDER": {
+    "PALLETTE": {
+      "TEXT": "文本",
+      "CONTAINER": "容器",
+      "MULTILINE-TEXT": "多行文本",
+      "NUMBER": "数字",
+      "CHECKBOX": "复选框",
+      "DATE": "日期",
+      "DATETIME": "日期和时间",
+      "DROPDOWN": "下拉列表",
+      "TYPEAHEAD": "预先输入",
+      "AMOUNT": "数量",
+      "RADIO": "单选按钮",
+      "PEOPLE": "人员",
+      "GROUP-OF-PEOPLE": "成组的人员",
+      "TABLE": "动态表",
+      "HYPERLINK": "超链接",
+      "HEADER": "Header",
+      "UPLOAD": "附加文件",
+      "SELECT-FOLDER": "附加文件夹",
+      "DISPLAY-VALUE": "显示值",
+      "DISPLAY-TEXT": "显示文本",
+      "EXPRESSION": "表达式"
+    },
+    "TABS": {
+      "GENERAL": "常规",
+      "ADVANCED": "高级",
+      "OPTIONS": "选项",
+      "AMOUNT": "数量",
+      "GROUP": "Header",
+      "UPLOAD-OPTIONS": "附加文件选项",
+      "SELECT-FOLDER-OPTIONS": "附加文件夹选项",
+      "TABLE-COLUMNS": "表列",
+      "URL-OPTIONS": "URL 选项",
+      "GROUP-RESTRICTIONS": "组限制",
+      "VISIBILITY": "可见性",
+      "STYLE": "样式"
+    },
+    "VERSION": "版本 {{version}}",
+    "LAST-UPDATED": "最近更新者 {{lastUpdatedByFullName}}，{{lastUpdated | dateformat}}",
+    "TITLE": {
+      "PREVIEW": "预览",
+      "DESIGN": "设计",
+      "TABS": "标签",
+      "DETAILS": "详细信息",
+      "OUTCOME": "结果",
+      "JAVASCRIPT": "Javascript",
+      "COMPONENTS": "表单组件",
+      "EDIT-COMPONENT": "编辑表单组件",
+      "STYLE": "样式",
+      "METADATA": "属性"
+    },
+    "POPUP": {
+      "EDIT-TITLE": "编辑 {{'FORM-BUILDER.FIELD-TYPE.'+type | uppercase | translate}} field '{{name}}'",
+      "EDIT-CUSTOM-TITLE": "编辑自定义字段 '{{name}}'"
+    },
+    "FIELD-TYPE": {
+      "TEXT": "文本",
+      "CONTAINER": "容器",
+      "MULTI-LINE-TEXT": "多行文本",
+      "INTEGER": "数字",
+      "BOOLEAN": "复选框",
+      "DATE": "日期",
+      "DATETIME": "datetime",
+      "DROPDOWN": "下拉列表",
+      "TYPEAHEAD": "预先输入",
+      "AMOUNT": "数量",
+      "RADIO-BUTTONS": "单选按钮",
+      "PEOPLE": "人员",
+      "FUNCTIONAL-GROUP": "成组的人员",
+      "DYNAMIC-TABLE": "动态表",
+      "HYPERLINK": "超链接",
+      "GROUP": "header",
+      "SELECT-FOLDER": "选择文件夹",
+      "UPLOAD": "附加",
+      "READONLY": "显示值",
+      "READONLY-TEXT": "显示文本"
+    },
+    "MESSAGE": {
+      "EMPTY-CANVAS": "表单当前为空。通过拖动左侧列表中所需的组件，将组件添加到表单。单击画布上的组件以更改标签和其他属性...",
+      "SELECT-FIELD": "（无选中的字段）",
+      "FIELD-VALUE": "显示 \"{{name}}\" 的值",
+      "SELECT-READONLY-FIELD": "字段：",
+      "READONLY-TEXT-HELP": "您也可以显示先前作为文本的一部分在任何表单中提交的值。选择下面的字段以在光标位置将其插入。",
+      "REST-HELP": "您也可以显示先前作为 REST URL 的一部分在任何表单中提交的值。选择下面的字段以在光标位置将其插入。",
+      "REST-URL-HELP": "要添加 URL 参数，使用请求配置选项卡。",
+      "READONLY-TEXT-INSERT-FIELD": "插入表单字段值...",
+      "READONLY-TEXT-INSERT-RESPONSE-VARIABLE": "插入变量...",
+      "READONLY-TEXT-SELECT-FIELD": "选择表单字段值...",
+      "READONLY-TEXT-SELECT-RESPONSE-VARIABLE": "选择变量...",
+      "HYPERLINK-HELP": "您也可以显示先前作为超链接 URL 的一部分在任何表单中提交的值。选择下面的字段以在光标位置将其插入。",
+      "HYPERLINK-HELP-RESPONSE-VARIABLE": "您也可以将变量作为超链接 URL 的一部分显示。选择下面的字段以在光标位置将其插入。",
+      "DISPLAY-TEXT-HELP": "您也可以显示先前作为显示文本的一部分在任何表单中提交的值。选择下面的字段以在光标位置将其插入。",
+      "RESPONSE-VARIABLE-HELP": "您也可以将变量作为 REST URL 的一部分显示。选择下面的字段以在光标位置将其插入。",
+      "REQUEST-HEADER-INSERT-FIELD-HELP": "您也可以显示先前作为 Header 值的一部分在任何表单中提交的值。选择下面的字段以在光标位置将其插入。",
+      "REQUEST-HEADER-INSERT-VARIABLE-HELP": "您也可以将变量作为 Header 值的一部分显示。选择下面的字段以在光标位置将其插入。"
+    },
+    "LABEL": {
+      "FUNCTIONAL-GROUP": "选择组...",
+      "PERSON": "选择人员...",
+      "SEARCH": "搜索",
+      "SEARCH-GROUP": "搜索组",
+      "IMPORT-OR-UPLOAD": "上传或导入内容..."
+    },
+    "COMPONENT": {
+      "LABEL": "标签：",
+      "NAME": "名称：",
+      "OVERRIDEID": "覆盖 ID？",
+      "ID": "ID：",
+      "CLASSNAME": "Classname",
+      "NUMBER-OF-COLUMNS": "列数：",
+      "COLSPAN": "Colspan：",
+      "PLACEHOLDER": "占位符：",
+      "OPTIONS-TYPE": "选项类型：",
+      "OPTIONS": "选项",
+      "RADIO-BUTTON-DEFAULT_1": "选项 1",
+      "RADIO-BUTTON-DEFAULT_2": "选项 2",
+      "DROPDOWN-DEFAULT-EMPTY-SELECTION": "选择一个...",
+      "DROPDOWN-EMPTY-VALUE-HELP": "这是'空值'选项。这个选项在运行时选择，意味着'无值'或'空'。这个选项适用于可选字段，但不适用于所需字段。",
+      "DROPDOWN-MOVE-HELP": "将这个选项拖放到首选位置。",
+      "DROPDOWN-REMOVE-HELP": "单击以删除这个选项。",
+      "DISPLAY-TEXT-DEFAULT": "作为表单的一部分显示文本",
+      "BASE-ENDPOINT": "基本 Endpoint",
+      "NO-ENDPOINT-SELECTED": "无选中的 Endpoint",
+      "NO-ENDPOINT-URL": "无 Endpoint URL",
+      "REST-URL": "重置 URL",
+      "REST-RESPONSE-PATH": "JSON 响应中到数组的路径 ",
+      "REST-ID-PROPERTY": "ID 属性",
+      "REST-LABEL-PROPERTY": "标签属性",
+      "REST-INSERT-FIELD": "表单字段",
+      "REQUIRED": "必需",
+      "READONLY": "只读",
+      "ADD-OPTION": "+ 添加新选项",
+      "UPLOAD-ALLOW-MULTIPLE": "允许附加多个文件",
+      "DOCUMENTS-EDITABLE": "允许在 Office 中编辑文档",
+      "SHOW-DOCUMENT-CONTENT": "显示表单中嵌入的文档内容",
+      "TABLE-EDITABLE": "允许编辑表",
+      "READONLY-TEXT": "要显示的文本",
+      "ONLY-LINKS": "仅链接所选内容，不复制",
+      "ONLY-LINKS-HELP": "仅链接到文件，不复制文件到 Alfresco Process Services（这也意味着无法从用户的一个设备上传文件）",
+      "HEADER-ID": "属性 ID",
+      "PLACEHOLDER-ID": "输入属性 ID",
+      "HEADER-NAME": "属性名称",
+      "PLACEHOLDER-NAME": "输入属性名称",
+      "HEADER-TYPE": "属性类型",
+      "EDITABLE": "可编辑",
+      "SORTABLE": "可排序",
+      "VISIBLE": "在表中显示",
+      "PROPERTY-UNSELECTED": "无选中的属性",
+      "HYPERLINK-URL": "超链接 URL",
+      "DISPLAY-TEXT": "显示文本",
+      "NO-ENDPOINT": "无选中的 Endpoint",
+      "AMOUNT-CURRENCY-PROPERTY": "货币",
+      "AMOUNT-ENABLE-FRACTIONS": "启用十进制",
+      "UPLOAD-NOT-ALLOW-NAVIGATE": "不允许用户导航文件夹",
+      "UPLOAD-NO-FOLDER-SELECTED": "无选中的文件夹...",
+      "REQUEST-HEADERS-LABEL": "Request Header",
+      "REQUEST-HEADER-NAME": "Header 名称",
+      "REQUEST-HEADER-VALUE": "Header 值",
+      "PLACEHOLDER-REQUEST-HEADER-NAME": "输入 Header 名称",
+      "PLACEHOLDER-REQUEST-HEADER-VALUE": "输入 Header 值",
+      "REQUEST-KEY-VALUE-MAPPING": "键值",
+      "REQUEST-JSON-TEMPLATE-MAPPING": "JSON 模板",
+      "ATTACH-FILE": {
+        "ALL-FILE-SOURCES": "所有文件源",
+        "LOCAL-FILE": "本地文件",
+        "FILE-SOURCE": "文件源：",
+        "START-FOLDER": "开始文件夹：",
+        "METADATA-LABEL": "属性：",
+        "METADATA": {
+          "HEADER-FORM-FIELD": "表单字段",
+          "HEADER-FILE-PROPERTY": "文件属性",
+          "HEADER-VARIABLE": "变量"
+        },
+        "VALUE-TYPE": "值类型",
+        "VARIABLE-NAME": "变量名称",
+        "PROPERTY-TYPE": "属性类型",
+        "FILE-PROPERTY": "文件属性",
+        "VARIABLE": "变量",
+        "NO-ACCOUNTS": "没有内容帐户被配置"
+      },
+      "ATTACH-FOLDER": {
+        "FOLDER-SOURCE": "存储库源：",
+        "START-FOLDER": "开始文件夹：",
+        "NO-ACCOUNTS": "未配置内容帐户"
+      },
+      "ALLOW-COLLAPSE": "允许折叠",
+      "COLLAPSE-BY-DEFAULT": "默认折叠",
+      "MIN-LENGTH": "最小长度",
+      "MAX-LENGTH": "最大长度",
+      "REGEX-PATTERN": "正则表达式模式",
+      "MIN-VALUE": "最小值",
+      "MAX-VALUE": "最大值",
+      "DATEPICKER": {
+        "SELECT-DATE": "选择日期",
+        "CLEAR-DATE": "清除日期",
+        "DATE-TODAY": "今天的日期"
+      },
+      "MASKED-INPUT": {
+        "TITLE": "输入掩码",
+        "PLACEHOLDER": "输入掩码占位符",
+        "REVERSED": "保留",
+        "EXAMPLES": {
+          "TITLE": "示例：",
+          "PHONE": "电话",
+          "MIXED": "混合",
+          "NUMBERS-ONLY": "仅编号",
+          "PERCENT": "百分比（逆序）",
+          "MONEY": "资金（逆序）"
+        }
+      },
+      "DATE-DISPLAY-FORMAT": {
+        "TITLE": "日期显示格式 (yyyy-mm-dd)",
+        "PLACEHOLDER": "MM（月）、DD（日）和 YY（年）之间带有分隔符",
+        "CURRENT-DATE-CUSTOM-LABEL": "使用自定义格式的当前日期：",
+        "CURRENT-DATE-DEFAULT-LABEL": "使用默认格式的当前日期："
+      },
+      "DATETIME-DISPLAY-FORMAT": {
+        "TITLE": "日期和时间显示格式 (yyyy-mm-dd hh:mm)",
+        "PLACEHOLDER": "MM（月）、DD（日）、YY（年）、hh（小时）和 mm（分钟）之间带有分隔符",
+        "CURRENT-DATE-CUSTOM-LABEL": "使用自定义格式的当前日期：:",
+        "CURRENT-DATE-DEFAULT-LABEL": "使用默认格式的当前日期：:"
+      }
+    },
+    "OPTIONS": {
+      "MANUAL": "手动",
+      "REST": "重置服务",
+      "DATASOURCE": "数据源",
+      "LABEL-ID": "ID：",
+      "LABEL-LABEL": "标签：",
+      "PLACEHOLDER-ID": "选项ID",
+      "PLACEHOLDER-LABEL": "选项标签",
+      "COLUMN-LABEL": "列",
+      "VALUE-LABEL": "值",
+      "OPERATOR-LABEL": "运算符",
+      "CLEAR-SELECTION": "(clear selection)"
+    },
+    "OUTCOMES": {
+      "DESCRIPTION": "您可以为这个任务定义多个结果。完成任务时，用户选择一个可以在流程中进一步使用的一个变量结果，例如某个条件下。",
+      "NO-OUTCOMES-OPTION": "不要使用自定义结果，仅显示'完成'按钮。",
+      "OUTCOMES-OPTION": "将自定义结果用于这个表单。",
+      "POSSIBLE-OUTCOMES": "可能的结果",
+      "NEW-OUTCOME-PLACEHOLDER": "输入新结果",
+      "ADD": "添加结果",
+      "REMOVE": "删除"
+    },
+    "VALIDATOR-POPUP": {
+      "DESCRIPTION": "说明",
+      "WARNING": "警告",
+      "VALIDATOR-SET": "验证程序已设置"
+    },
+    "VISIBILITY": {
+      "TITLE": "可见性条件",
+      "CONDITION": "条件",
+      "LEFT-FORM-FIELD": "依赖于",
+      "OPERATOR": "如果其",
+      "RIGHT-FORM-FIELD": "表单字段",
+      "RIGHT-VALUE": "值",
+      "RIGHT-TYPE": "比较类型",
+      "NEXT-CONDITION-OPERATOR": "下一个条件运算符",
+      "ADD-CONDITION": "添加条件",
+      "REMOVE-CONDITION": "删除条件",
+      "RESPONSE-VARIABLE": "变量",
+      "OPERATORS": {
+        "EQUALS": "等于",
+        "NOTEQUALS": "不等于",
+        "ISEMPTY": "空",
+        "ISNOTEMPTY": "不为空",
+        "DATE": {
+          "BEFORE": "之前",
+          "AFTER": "之后",
+          "BEFOREOREQUAL": "之前或在同一日期",
+          "AFTEROREQUAL": "之后或在同一日期"
+        },
+        "DATETIME": {
+          "BEFORE": "之前",
+          "AFTER": "之后",
+          "BEFOREOREQUAL": "之前或在同一日期",
+          "AFTEROREQUAL": "之后或在同一日期"
+        },
+        "INTEGER": {
+          "LESSTHAN": "小于",
+          "GREATERTHAN": "大于",
+          "LESSTHANOREQUAL": "小于或等于",
+          "GREATERTHANOREQUAL": "大于或等于"
+        },
+        "CONDITION": {
+          "AND": "AND",
+          "ANDNOT": "AND NOT",
+          "OR": "OR",
+          "ORNOT": "OR NOT"
+        }
+      },
+      "RIGHT_TYPES": {
+        "STRING": "字符串",
+        "NUMBER": "数字",
+        "DATE": "日期"
+      },
+      "RIGHT_VALUE_OPTIONS": {
+        "BOOLEAN": {
+          "CHECKED": "已选中",
+          "UNCHECKED": "已取消选中"
+        }
+      },
+      "RIGHT_VALUE_DATE": {
+        "DATE-FORMAT-MESSAGE": "使用 YYYY-M -d 格式",
+        "PICKER-TITLE": "选择日期",
+        "PICKER-CLEAR-DATE": "清除日期",
+        "PICKER-DATE-TODAY": "今天的日期"
+      },
+      "RIGHT_VALUE_DATETIME": {
+        "DATETIME-FORMAT-MESSAGE": "使用 YYYY-M-d HH:mm 格式",
+        "PICKER-TITLE": "选择日期和时间",
+        "PICKER-CLEAR-DATE": "清除日期",
+        "PICKER-DATE-TODAY": "今天的日期"
+      },
+      "VALIDATION_MESSAGES": {
+        "LEFT_FORMFIELD_REQUIRED": "需要相关的表单字段",
+        "OPERATOR_REQUIRED": "需要运算符",
+        "RIGHT_FORMFIELD_REQUIRED": "需要比较字段",
+        "RIGHT_VALUE_REQUIRED": "需要比较值",
+        "RIGHT_FORMFIELD_OR_VALUE_REQUIRED": "需要比较字段或比较值",
+        "NEXT_CONDITION_OPERATOR_REQUIRED": "需要下一个条件运算符",
+        "NEXT_CONDITION_OPERATOR_PROVIDED": "一个条件运算符不为空"
+      }
+    },
+    "FORM-VARIABLES": {
+      "TITLE": "变量",
+      "COLUMNS": {
+        "NAME": "名称",
+        "TYPE": "类型",
+        "VALUE": "值"
+      },
+      "DEFAULT-VALUE": "默认值"
+    },
+    "JAVASCRIPT": {
+      "TITLE": "自定义 javascript",
+      "EVENT": "事件"
+    },
+    "METADATA": {
+      "TITLE": "自定义属性",
+      "ADD-FIELD": "添加字段",
+      "REMOVE-FIELD": "删除",
+      "KEY": "Key",
+      "VALUE": "值"
+    },
+    "GROUP-RESTRICTION": {
+      "LABEL": "由组限制",
+      "NONE": "无..."
+    },
+    "ALERT": {
+      "VALIDATION-OK": "表单不包含验证错误。",
+      "VALIDATION-ERROR": "表单包含验证错误。"
+    }
+  },
+  "REST-ENDPOINT-TEST-MODAL": {
+    "MODAL-TITLE": "Endpoint 检查",
+    "TEST-DATA-INPUT-HEADER-URL": "您提供的 Endpoint 包含 URL 参数。更改以下框中的值：",
+    "TEST-DATA-INPUT-HEADER-REQUEST-MAPPING": "您提供的 Endpoint 包含请求映射。更改以下框中的值：",
+    "TEST-DATA-INPUT-HEADER-REQUEST-HEADER": "您提供的 Endpoint 包含 request header。更改以下框中的值：",
+    "TEST-DATA-INPUT-HEADER-NOT-NEEDED": "不需要测试数据",
+    "TEST-DATA-INPUT-PLACEHOLDER": "输入值",
+    "TEST-DATA-RESULT-HEADER": "响应：",
+    "TEST-DATA-TEST": "测试",
+    "TEST-DATA-BACK": "返回"
+  },
+  "RECAPTCHA": {
+    "RECAPTCHA-IMAGE": "输入下面您看到的单词",
+    "RECAPTCHA-AUDIO": "输入您听到的数字",
+    "RECAPTCHA-PLACEHOLDER": "输入您的响应",
+    "RECAPTCHA-RELOAD": "获取另一个验证码",
+    "RECAPTCHA-GET-AUDIO": "使用音频验证码",
+    "RECAPTCHA-GET-IMAGE": "显示图像验证码",
+    "RECAPTCHA-HELP": "帮助"
+  },
+  "TOUR": {
+    "WELCOME-TITLE": "欢迎，{{userName}}",
+    "WELCOME-CONTENT": "这是 Process 编辑器的一个简短教程。接下来的几个步骤将引导您浏览这个应用程序的不同部分以开始了解。按 Esc 键停止浏览。",
+    "PALETTE-TITLE": "调色板",
+    "PALETTE-CONTENT": "您可以在此处找到创建业务流程需要的全部可用结构。它们以逻辑分组排列。要打开某个组，只需单击它即可：",
+    "CANVAS-TITLE": "画布",
+    "CANVAS-CONTENT": "这是创建业务流程的工作区域。将左侧调色板中的元素拖放到这个画布即可开始建模。",
+    "DRAGDROP-TITLE": "拖放示例",
+    "DRAGDROP-CONTENT": "此处是如何开始建模的示例：",
+    "PROPERTIES-TITLE": "属性",
+    "PROPERTIES-CONTENT": "此处您可以配置业务流程结构的属性。只需在画布上选择项目，其属性便会显示。如果您要编辑属性，单击它即可",
+    "TOOLBAR-TITLE": "工具栏",
+    "TOOLBAR-CONTENT": "您可以在工具栏中找到所有操作：保存或验证模型、复制和粘贴流程的一部分，等等。将光标在按钮上悬停可获取操作的说明。",
+    "END-TITLE": "结束",
+    "END-CONTENT": "就这样！现在您可开始进行流程建模。如果您有任何问题，请随时在 <a href=\"https://community.alfresco.com/community/bpm\" target=\"_blank\">Alfresco BPM 论坛</a> 上提问 ",
+    "PREVIOUS-BUTTON": "« 上一个",
+    "NEXT-BUTTON": "下一个 »",
+    "END-TOUR-BUTTON": "明白！"
+  },
+  "FEATURE-TOUR": {
+    "BENDPOINT": {
+      "TITLE": "转折点教程",
+      "DESCRIPTION": "使用 sequence flow （流程步骤之间的箭头）将流程步骤彼这个连接时，您可能发现这些 sequence flow 彼此交叉，或者您希望以不同方式排列它们。为此，您可以在 sequence flow 中添加或删除转折点。<br/><br/>如下图所示，您首先单击'添加转折点'，然后单击 sequence flow 以添加它。请注意，sequence flow 将显示一个微小的绿色指示标，表示线的该位置可添加的转折点。<br/><br/>重新删除转折点的方法相似：单击'删除转折点'按钮并单击要重新删除的转折点。"
+    }
+  },
+  "STENCIL": {
+    "NAME": "模板名称",
+    "DESCRIPTION": "说明",
+    "VERSION-COMMENT": "版本注释",
+    "ACTION": {
+      "DETAILS": "显示详细信息",
+      "EDIT": "修改模板属性",
+      "COMPARE": "与另一版本比较",
+      "SHARE": "共享这个模板",
+      "SHARE-CONFIRM": "确认更改",
+      "DELETE": "删除这个模板",
+      "ADD-COMMENT": "添加注释",
+      "ADD-COMMENT-CONFIRM": "添加注释",
+      "CREATE-CONFIRM": "创建新模板",
+      "OPEN-IN-EDITOR": "模板编辑器",
+      "EDIT-CONFIRM": "保存",
+      "DELETE-CONFIRM": "删除模板",
+      "USE-AS-NEW-VERSION": "用作新版本",
+      "USE-AS-NEW-VERSION-CONFIRM": "用作新版本",
+      "FAVORITE": "收藏这个模板",
+      "RETURN-TO-LIST": "显示所有模板",
+      "EXPORT-JSON": "导出模板"
+    },
+    "DETAILS": {
+      "TITLE": "模板详细信息 {{name}}",
+      "COMPARE-WITH-TITLE": "比较对象",
+      "STENCIL": "模板：",
+      "HISTORY-TITLE": "历史记录",
+      "COMMENTS-TITLE": "注释",
+      "LAST-UPDATED-BY": "最近更新者 {{lastUpdatedByFullName}} - {{lastUpdated | dateformat}}",
+      "CREATED-BY": "创建者 {{createdByFullName}}",
+      "VERSION": "（版本 {{version}}）",
+      "NO-DESCRIPTION": "这个模板没有说明。修改模板属性以添加说明"
+    },
+    "EDIT": {
+      "TITLE": "编辑模板"
+    },
+    "POPUP": {
+      "ADD-COMMENT-TITLE": "添加注释",
+      "ADD-COMMENT-DESCRIPTION": "在下面为 \"{{name}}\" 输入新注释",
+      "ADD-COMMENT-SIZE-ERROR": "注释不能超过 4000 个字符",
+      "USE-AS-NEW-TITLE": "用作新版本",
+      "USE-AS-NEW-DESCRIPTION": "您确定要使用版本 {{version}} 来创建 \"{{name}}\" 的新版本吗？",
+      "SHARE-TITLE": "共享模板",
+      "SHARE-DESCRIPTION": "您可以确定希望与谁共享这个模板以及他们是否可以编辑它。",
+      "NOT-SHARED": "这个模板没有与任何人共享。",
+      "IMPORT-DESCRIPTION": "浏览或拖放扩展名为 .zip 的模板定义",
+      "IMPORT-TITLE": "导入模板",
+      "IMPORT": {
+        "DROPZONE": "拖放 .zip 文件",
+        "CANCEL-UPLOAD": "取消上传",
+        "ERROR": "处理模板 zip 文件时出现错误",
+        "NO-DROP": "不支持拖放",
+        "WRONG-FILE-UPLOAD": "无效的模板文件，未找到有效的模板 json"
+      }
+    },
+    "ALERT": {
+      "EDIT-CONFIRM": "模板已更新",
+      "FAVORITE-CONFIRM": "现在已收藏这个模板",
+      "UN-FAVORITE-CONFIRM": "不再收藏这个模板",
+      "DELETE-CONFIRM": "模板已删除",
+      "SHARE-CONFIRM": "已更新模板共享选项",
+      "NEW-VERSION-CONFIRM": "已创建模板的新版本",
+      "COMMENT-ADDED-CONFIRM": "新注释已添加到模板",
+      "SAVE-CONFIRM": "模板已保存",
+      "UPDATE-CONFIRM": "模板已更新"
+    },
+    "ERROR": {
+      "NOT-FOUND": "请求的模板不存在"
+    }
+  },
+  "STENCILS": {
+    "TITLE": "模板",
+    "LOADING": "正在获取模板数据",
+    "VERSION": "版本 {{version}}",
+    "CREATE-DATE": "创建日期：{{createDate}}",
+    "NEW-GROUP-NAME": "新建组",
+    "NEW-ITEM-NAME": "新建项",
+    "GROUP": {
+      "TITLE": "组"
+    },
+    "EMPTY-MESSAGES": {
+      "my": "您没有模板。要添加模板，请单击\"创建新模板\"",
+      "shared": "没有与您共享任何模板",
+      "all": "您没有模板。要添加模板，请单击\"创建新模板\"",
+      "CREATE-ACTION": "立即创建新模板！"
+    },
+    "FILTER": {
+      "MY": "我的模板",
+      "SHARED": "共享的模板",
+      "ALL": "所有模板",
+      "ORDER-BY-NAME": "按字母顺序排序",
+      "ORDER-BY-NAME-SHORT": "A-Z",
+      "ORDER-BY-RECENT": "按最近更新时间排序",
+      "ORDER-BY-RECENT-SHORT": "按日期"
+    },
+    "ITEM": {
+      "NAME": "名称",
+      "DESCRIPTION": "说明",
+      "ID": "内部标识符：",
+      "ICON": "图标：",
+      "COLOR": "颜色：",
+      "CUSTOM-TYPE": "任务类型",
+      "SERVICE-TASK": "服务任务",
+      "SCRIPT-TASK": "脚本任务",
+      "CLASSNAME": "Classname",
+      "STYLE": "样式",
+      "EXPRESSION": "表达式",
+      "DELEGATE-EXPRESSION": "委派表达式",
+      "SCRIPT": "脚本",
+      "SCRIPT-FORMAT": "脚本格式",
+      "ASYNCHRONOUS": "异步",
+      "EXCLUSIVE": "专有",
+      "EXECUTION-LISTENERS": "Execution 监听器",
+      "EXECUTION-LISTENERS-EMPTY": "无选中的 Execution 监听器",
+      "VARIABLES": "变量",
+      "VARIABLES-EMPTY": "无选中的变量",
+      "VARIABLENAME": "变量名称",
+      "VARIABLENAME-PLACEHOLDER": "输入变量名称",
+      "VARIABLETYPE": " 变量类型",
+      "FORM-WIDTH": "字段宽度（1 或 2）",
+      "FORM-FIELD-VALUE": "字段值属性",
+      "FORM-VALUE-TYPE": "字段值类型",
+      "FORM-RUNTIME-TEMPLATE": "表单运行时模板",
+      "FORM-EDITOR-TEMPLATE": "表单编辑器模板",
+      "SCRIPT-LIBRARY-IMPORTS": "脚本库导入",
+      "JAVASCRIPT-CONTROLLER": "定义自定义组件控制器",
+      "EDIT": "编辑",
+      "PROPERTIES": "属性",
+      "TABS-AND-PROPERTIES": "选项卡和属性",
+      "TAB": {
+        "NAME": "选项卡名称"
+      },
+      "SCRIPT-FILES": {
+        "NAME": "名称",
+        "FILENAME": "文件名",
+        "CREATED-BY": "创建者",
+        "CREATED-AT": "创建时间"
+      }
+    },
+    "PROPERTY": {
+      "TYPE": "类型",
+      "HIDELABEL": "隐藏标签",
+      "INCLUDEINXML": "属性作为字段扩展名包含在 BPMN XML 中",
+      "XMLNAME": "字段扩展的名称"
+    },
+    "ACTION": {
+      "CREATE": "创建新模板",
+      "SAVE": "保存这个模板",
+      "EDIT-DETAILS": "编辑详细信息",
+      "REVERT": "恢复模板",
+      "DELETE": "删除模板",
+      "ADD-GROUP": "添加新组",
+      "ADD-ITEM": "添加新项",
+      "RESTORE-ITEM": "还原项",
+      "UPLOAD-ICON": "更改图标",
+      "CLEAR-GROUP": "（清除）",
+      "EDIT-PROPERTIES": "编辑",
+      "SHOW-PROPERTIES": "显示详细信息",
+      "ADD-PROPERTY": "添加新属性",
+      "ADD-EXISTING-PROPERTY": "从调色板添加一个现有属性",
+      "RESTORE-PROPERTY": "还原属性",
+      "ADD-TAB": "添加新选项卡",
+      "ADD-TAB-VALUE": "标签"
+    },
+    "ALERT": {
+      "SHARE-CONFIRM": "已更新模板共享选项"
+    },
+    "POPUP": {
+      "CREATE-TITLE": "创建新模板",
+      "CREATE-HELP": "您需要为新模板起个名字，并且您可能希望同时添加说明。",
+      "CREATE-NAME": "模板名称",
+      "CREATE-DESCRIPTION": "说明",
+      "CREATE-TYPE": "编辑器类型",
+      "STENCIL-TYPE": {
+        "BPMN": "BPMN 编辑器",
+        "FORM": "表单编辑器",
+        "STEP": "步骤编辑器"
+      },
+      "EDIT-STENCIL-TITLE": "编辑详细信息",
+      "EDIT-STENCIL-NAME": "名称",
+      "EDIT-STENCIL-DESCRIPTION": "说明",
+      "REVERT-STENCIL-TITLE": "恢复到先前版本",
+      "ACTION-REVERT": "恢复到所选版本",
+      "REVERT-VERSION": "版本",
+      "REVERT-DATE": "日期",
+      "REVERT-COMMENT": "注释",
+      "REVERT-SAVE-COMMENT": "用于指示恢复原因的可选注释：",
+      "DELETE-STENCIL-TITLE": "删除模板",
+      "DELETE-STENCIL-ERROR-STILL-MODELS": "模板无法删除：仍有流程模型在使用这个模板。如果您要删除这个模板，首先删除这些模型。",
+      "DELETE-STENCIL-YOU-SURE": "确定要删除这个模板？这会删除这个模板的当前版本和所有先前版本。",
+      "CREATE-ITEM-TITLE": "创建新模板项",
+      "CREATE-ITEM-NAME": "名称",
+      "CREATE-ITEM-ID": "ID（对整个模板是唯一的）",
+      "CREATE-ITEM-DESCRIPTION": "说明",
+      "CREATE-ITEM-GROUP": "组",
+      "CREATE-ITEM-CLASSNAME": "类名称",
+      "CREATE-ITEM-EXPRESSION": "表达式",
+      "CREATE-ITEM-DELEGATE-EXPRESSION": "委派表达式",
+      "CREATE-ITEM-ICON": "图标",
+      "CREATE-ITEM-COLOR": "颜色： ",
+      "CREATE-ITEM-ACTION-CREATE": "创建",
+      "CREATE-ITEM-ERROR-ID-NOT-UNIQUE": "ID 值已被使用。ID 必须是唯一的",
+      "RESTORE-ITEM-TITLE": "选择要还原的模板项",
+      "ACTION-RESTORE": "还原 ({{length}})",
+      "UPLOAD-ITEM-ICON-TITLE": "上传模板项图标",
+      "UPLOAD-ITEM-ICON-DESCRIPTION": "从计算机中选择一个图像或将其拖放到下面的区域",
+      "UPLOAD-ITEM-ICON-DROPZONE": "将图像放到此处",
+      "UPLOAD-ITEM-ICON-CANCEL-UPLOAD": "取消上传",
+      "UPLOAD-ITEM-ICON-ERROR": "上传图像时出现错误",
+      "EDIT-CONTROLLER-TITLE": "编辑控制器脚本",
+      "DETAILS-CONTROLLER-TITLE": "详细说明控制器脚本",
+      "UPLOAD-SCRIPT-FILE-TITLE": "上传脚本文件",
+      "UPLOAD-SCRIPT-FILE-NAME": "脚本文件名称",
+      "UPLOAD-SCRIPT-FILE-DROPZONE": "将脚本文件放到此处",
+      "UPLOAD-SCRIPT-FILE-ERROR": "上传脚本文件时出现错误",
+      "EDIT-PROPERTIES-TITLE": "编辑模板属性",
+      "PROPERTIES-TITLE": "模板属性",
+      "NEW-PROPERTY-TITLE": "新属性",
+      "ADD-EXISTING-PROPERTY-TITLE": "从调色板添加一个现有属性",
+      "ADD-EXISTING-PROPERTY-BUTTON": "添加",
+      "SAVE-PROPERTY-BUTTON": "保存属性",
+      "RESTORE-PROPERTY-TITLE": "还原已删除的属性",
+      "RESTORE-PROPERTY-BUTTON": "还原属性",
+      "SAVE-STENCIL-TITLE": "保存模板",
+      "SAVE-STENCIL-HELP": "您可在此处提供可选的注释。这对未来了解特定更改的原因有用。",
+      "SAVE-STENCIL-INITIAL-SAVE": "从默认 BPMN 2.0 调色板初始适应",
+      "SHARE-TITLE": "共享模板",
+      "SHARE-DESCRIPTION": "您可以确定希望与谁共享这个模板以及他们是否可以编辑它。",
+      "NOT-SHARED": "这个模板没有与任何人共享。",
+      "NO-DROP": "不支持拖放"
+    }
+  },
+  "DECISION-TABLE": {
+    "NAME": "决策表名称",
+    "KEY": "决策表编码",
+    "DESCRIPTION": "说明",
+    "REUSABLE": "可重复使用的决策表",
+    "VERSION-COMMENT": "版本注释",
+    "HIT-POLICY": "命中策略：",
+    "ACTION": {
+      "DETAILS": "显示详细信息",
+      "EDIT": "修改模型属性",
+      "COMPARE": "与另一版本比较",
+      "SHARE": "共享这个决策表",
+      "SHARE-CONFIRM": "确认更改",
+      "DELETE": "删除这个决策表",
+      "ADD-COMMENT": "+ 添加注释",
+      "ADD-COMMENT-CONFIRM": "添加注释",
+      "CREATE-CONFIRM": "创建新决策表",
+      "DUPLICATE-CONFIRM": "复制决策表",
+      "OPEN-IN-EDITOR": "决策表编辑器",
+      "EXPORT": "导出决策表",
+      "EDIT-CONFIRM": "保存",
+      "DELETE-CONFIRM": "删除决策表",
+      "USE-AS-NEW-VERSION": "用作新版本",
+      "USE-AS-NEW-VERSION-CONFIRM": "用作新版本",
+      "FAVORITE": "收藏这个决策表",
+      "DUPLICATE": "复制这个决策表"
+    },
+    "DETAILS": {
+      "TITLE": "决策表详细信息 {{name}}",
+      "COMPARE-WITH-TITLE": "比较对象",
+      "HISTORY-TITLE": "历史记录",
+      "COMMENTS-TITLE": "注释",
+      "LAST-UPDATED-BY": "最近更新者 {{lastUpdatedByFullName}} - {{lastUpdated | dateformat}}",
+      "CREATED-BY": "创建者 {{createdByFullName}}",
+      "VERSION": "（版本 {{version}}）"
+    },
+    "EDIT": {
+      "TITLE": "编辑决策表"
+    },
+    "HIT-POLICIES": {
+      "FIRST": "首个（单次通过）",
+      "ANY": "任何（单次通过）"
+    },
+    "POPUP": {
+      "ADD-COMMENT-TITLE": "添加注释",
+      "ADD-COMMENT-DESCRIPTION": "在下面为 \"{{name}}\" 输入新注释",
+      "ADD-COMMENT-SIZE-ERROR": "注释不能超过 4000 个字符",
+      "CREATE-TITLE": "创建新决策表",
+      "DUPLICATE-TITLE": "复制决策表",
+      "CREATE-DESCRIPTION": "您需要为新决策表起个名字，并且您可能希望同时添加说明。",
+      "SAVE-DESCRIPTION": "您需要为新决策表起个名字和提供唯一的 Key，并且您可能希望同时添加说明。",
+      "DUPLICATE-DESCRIPTION": "您需要为新决策表起个名字，并且您可能希望同时添加说明。",
+      "SAVE-DECISION-TABLE-TITLE": "保存决策表",
+      "EDIT-DESCRIPTION": "更改下面的任意决策表属性，然后单击保存以更新决策表。",
+      "EDIT-TITLE": "编辑决策表详细信息",
+      "DELETE-TITLE": "删除决策表",
+      "DELETE-DESCRIPTION": "确定要删除决策表 \"{{name}}\"？",
+      "DELETE-CASCADE-FALSE": "仅删除这个决策表的当前版本 (v{{version}})",
+      "DELETE-CASCADE-TRUE": "还会删除这个决策表的所有先前版本",
+      "USE-AS-NEW-TITLE": "用作新版本",
+      "USE-AS-NEW-DESCRIPTION": "您确定要使用版本 {{version}} 来创建 \"{{name}}\" 的新版本吗？",
+      "SHARE-TITLE": "共享决策表",
+      "SHARE-DESCRIPTION": "您可以确定希望与谁共享这个决策表以及他们是否可以编辑它。",
+      "NOT-SHARED": "这个决策表没有与任何人共享。",
+      "IMPORT-DESCRIPTION": "浏览或拖放扩展名为 .dmn 或 .xml 的决策表文件",
+      "IMPORT-TITLE": "导入决策表",
+      "IMPORT-DROPZONE": "拖放 .dmn 或 .xml 决策表文件",
+      "IMPORT-NO-DROP": "不支持拖放",
+      "IMPORT-CANCEL-UPLOAD": "取消上传",
+      "IMPORT-ERROR": "处理决策表文件时出现错误",
+      "IMPORT-WRONG-FILE": "无效的文件名，仅支持 .dmn 或 .xml 文件",
+      "REUSABLE": "可重复使用的决策表",
+      "SAVE-EMBEDDED": "将这个决策表嵌入当前的流程模型？",
+      "SAVE-EMBEDDED-COPY": "将创建决策表的副本，因为其他流程也在使用它"
+    },
+    "ALERT": {
+      "EDIT-CONFIRM": "决策表已更新",
+      "FAVORITE-CONFIRM": "现在已收藏这个决策表",
+      "UN-FAVORITE-CONFIRM": "不再收藏这个决策表",
+      "DELETE-CONFIRM": "决策表已删除",
+      "SHARE-CONFIRM": "已更决策表共享选项",
+      "NEW-VERSION-CONFIRM": "已创建决策表的新版本",
+      "COMMENT-ADDED-CONFIRM": "新注释已添加到决策表"
+    },
+    "ERROR": {
+      "NOT-FOUND": "请求的决策表不存在"
+    },
+    "VALIDATION": {
+      "MVEL": {
+        "OPERATOR-NOT-FOUND": "没有在表达式中找到运算符",
+        "INVALID-OPERATOR": "在表达式 '{{reference}}' 中找到无效的运算符",
+        "VALUE-IS-NOT-A-STRING": "表达式中输入了无效的字符串 '{{reference}}'",
+        "VALUE-IS-NOT-A-NUMBER": "表达式中输入了无效的数字 '{{reference}}'",
+        "VALUE-IS-NOT-A-BOOLEAN": "表达式中输入了无效的布尔值 '{{reference}}'",
+        "VALUE-IS-NOT-A-DATE": "表达式中输入了无效的日期 '{{reference}}'",
+        "PARAMETER-IS-NOT-A-NUMBER": "计算参数 '{{reference}}' 不是数字",
+        "BOOLEAN-REFERENCE-NOT-FOUND": "找不到引用的布尔值 '{{reference}}'",
+        "STRING-REFERENCE-NOT-FOUND": "找不到引用的字符串 '{{reference}}'",
+        "NUMBER-REFERENCE-NOT-FOUND": "找不到引用的数字 '{{reference}}'",
+        "DATE-REFERENCE-NOT-FOUND": "找不到引用的日期 '{{reference}}'",
+        "NUMBER-CALCULATION-METHOD-NOT-FOUND": "'{{reference}}' 被认为是不存在的数值计算方法",
+        "DATE-CALCULATION-OR-VALUE-METHOD-NOT-FOUND": "'{{reference}}' 被认为是日期计算或值方法，但不存在",
+        "NO-VALUE-FOUND": "无法在表达式中找到值（'{{reference}}' 类型）"
+      },
+      "EXPRESSION-VARIABLE-MANDATORY": "所有表达式必须引用表单字段或变量",
+      "INPUT-EXPRESSION-MANDATORY": "至少需要一个输入表达式",
+      "EXPRESSION-VARIABLE-REFERENCE-NOT-FOUND": "找不到引用的变量",
+      "EXPRESSION-FORM-FIELD-REFERENCE-NOT-FOUND": "找不到引用的表单字段",
+      "OUTPUT-EXPRESSION-MANDATORY": "至少需要一个输出表达式",
+      "RULES-MANDATORY": "至少需要一个规则",
+      "KEY-MANDATORY": "必须指定决策表 Key",
+      "KEY-INVALID": "决策表 Key 必须以字母开头，并且只能包含字母和数字",
+      "XML-VALIDATION-ERROR": "模型包含依据 DML XML 规范：{{reference}} 无效的值",
+      "XML-CONVERSION-ERROR": "将决策表 json 模型转换为 XML：{{reference}} 时发生错误"
+    }
+  },
+  "DECISION-TABLE-EDITOR": {
+    "EMPTY-MESSAGES": {
+      "NO-COLUMN": "您需要创建至少 1 个条件和 1 个操作列，然后开始添加决策行到表。",
+      "NO-CONDITION-COLUMN": "非常棒！现在 '{{variable}}' 有了一个操作列，可以继续并创建条件列...",
+      "NO-ACTION-COLUMN": "非常棒！现在 '{{variable}}' 有了一个条件列，可以继续并创建操作列...",
+      "NO-VARIABLE-SELECTED": "未定义"
+    },
+    "POPUP": {
+      "EXPRESSION-EDITOR": {
+        "INPUT-TITLE": "编辑输入列",
+        "INPUT-DESCRIPTION": "选择输入变量作为列的输入",
+        "OUTPUT-TITLE": "编辑输出列",
+        "OUTPUT-DESCRIPTION": "选择现有的输出变量或创建新的输出变量",
+        "EXPRESSION-LABEL": "列标签：",
+        "EXPRESSION-PLACEHOLDER": "输入可选的标签",
+        "EXPRESSION-TYPE-LABEL": "列类型：",
+        "EXPRESSION-TYPE-VARIABLE": "表达式",
+        "EXPRESSION-TYPE-SCRIPT": "脚本",
+        "EXPRESSION-VARIABLE-TYPE-LABEL": "变量类型：",
+        "EXPRESSION-VARIABLE-TYPE-BOOLEAN": "布尔值",
+        "EXPRESSION-VARIABLE-TYPE-DATE": "日期",
+        "EXPRESSION-VARIABLE-TYPE-DATE_EXECUTION": "执行日期",
+        "EXPRESSION-VARIABLE-TYPE-NUMBER": "数字",
+        "EXPRESSION-VARIABLE-TYPE-STRING": "字符串",
+        "EXPRESSION-VARIABLE-TYPE-FORMFIELD": "表单字段",
+        "EXPRESSION-VARIABLE-TYPE-VARIABLE": "变量",
+        "EXPRESSION-VARIABLE-TYPE-STATIC": "静态",
+        "EXPRESSION-VARIABLE-NAME": "变量名称：",
+        "EXPRESSION-VARIABLE-NAME-PLACEHOLDER": "输入变量名称",
+        "INPUT-EXISTING-VARIABLE": "现有",
+        "INPUT-NEW-VARIABLE": "新建",
+        "OUTPUT-EXISTING-VARIABLE": "现有",
+        "OUTPUT-NEW-VARIABLE": "新建",
+        "OUTPUT-NEW-VARIABLE-ID": "变量 ID：",
+        "OUTPUT-ENTER-NEW-VARIABLE-ID": "输入变量 ID",
+        "OUTPUT-NEW-VARIABLE-TYPE": "变量类型："
+      },
+      "RULE-EDITOR": {
+        "TITLE": "编辑列 \"{{name }}\" 的规则表达式",
+        "DESCRIPTION": "编写 \"{{columnType}}\" 表达式",
+        "OPERATOR-LABEL": "运算符：",
+        "DATE-TYPE-LABEL": "日期类型：",
+        "DATE-LABEL": "日期：",
+        "METHOD-LABEL": "方法：",
+        "YEARS-LABEL": "年：",
+        "MONTHS-LABEL": "月：",
+        "DAYS-LABEL": "天：",
+        "DATE-TYPE-FIXED": "固定",
+        "DATE-TYPE-DYNAMIC": "动态",
+        "NUMBER-LABEL": "数字：",
+        "NUMBER-FORMAT-MESSAGE": "123.45",
+        "BOOLEAN-LABEL": "布尔值：",
+        "STRING-LABEL": "字符串：",
+        "SELECT-VALUE": "选择值...",
+        "DATE_CALCULATION-LABEL": "计算：",
+        "DATE_EXECUTION-LABEL": "执行日期：",
+        "DATE_EXECUTION-TEXT": "执行决策表时将使用的日期",
+        "ERROR": "图形表及其无法理解单元格表达式。这并不意味着表达式无效。<br/>要保留表达式，单击\"取消\"。要创建新的表达式，只需填写表单并单击\"确定\"。",
+        "NUMBER_CALCULATION-LABEL": "计算：",
+        "NUMBER_CALCULATION-PARAM1-LABEL": "数字："
+      }
+    },
+    "OPERATOR": {
+      "STRING": {
+        "==": "等于",
+        "!=": "不等于",
+        ".startsWith": "起始于",
+        ".endsWith": "结束于",
+        ".contains": "包含",
+        "__isEmpty__": "为空",
+        "__isNotEmpty__": "不为空"
+      },
+      "BOOLEAN": {
+        "==": "等于",
+        "!=": "不等于",
+        "__isEmpty__": "为空",
+        "__isNotEmpty__": "不为空"
+      },
+      "DATE": {
+        "==": "相同",
+        "!=": "其他",
+        ">": "之后",
+        "<": "之前",
+        ">=": "之后或相同",
+        "<=": "之前或相同",
+        ".startsWith": "起始于",
+        ".endsWith": "结束于",
+        ".contains": "包含",
+        "__isEmpty__": "为空",
+        "__isNotEmpty__": "不为空"
+      },
+      "NUMBER": {
+        "==": "等于",
+        "!=": "不等于",
+        ">": "大于",
+        "<": "小于",
+        ">=": "大于或等于",
+        "<=": "小于或等于",
+        "__isEmpty__": "为空",
+        "__isNotEmpty__": "不为空"
+      }
+    },
+    "CALCULATION": {
+      "DATE": {
+        "NONE": "",
+        "ADD": "添加",
+        "SUBTRACT": "删减"
+      },
+      "NUMBER": {
+        "NONE": "",
+        "ADD": "添加",
+        "SUBTRACT": "删减",
+        "DIVIDE": "除",
+        "MULTIPLY": "乘"
+      }
+    },
+    "BUTTON-ADD-INPUT-LABEL": "添加输入",
+    "BUTTON-ADD-OUTPUT-LABEL": "添加输出",
+    "BUTTON-ADD-RULE-LABEL": "添加规则",
+    "BUTTON-MOVE-RULE-UPWARDS-LABEL": "上移",
+    "BUTTON-MOVE-RULE-DOWNWARDS-LABEL": "下移",
+    "BUTTON-REMOVE-RULE-LABEL": "删除规则",
+    "ALERT": {
+      "EXPRESSION-VARIABLE-REQUIRED-ERROR": "所有输入和输出表达式必须引用表单字段或变量。",
+      "SAVE-CONFIRM": "保存的决策表 '{{name}}'",
+      "SAVE-ERROR": "无法保存决策表 '{{name}}'",
+      "VALIDATION-OK": "决策表模型不包含验证错误。",
+      "VALIDATION-ERROR": "决策表模型包含验证错误。"
+    }
+  },
+  "DATA-MODEL": {
+    "NAME": "数据模型名称",
+    "DESCRIPTION": "说明",
+    "VERSION-COMMENT": "版本注释",
+    "ACTION": {
+      "DETAILS": "显示详细信息",
+      "EDIT": "修改模型属性",
+      "COMPARE": "与另一版本比较",
+      "SHARE": "共享这个数据模型",
+      "SHARE-CONFIRM": "确认更改",
+      "DELETE": "删除这个数据模型",
+      "ADD-COMMENT": "+ 添加注释",
+      "ADD-COMMENT-CONFIRM": "添加注释",
+      "CREATE-CONFIRM": "创建新数据模型",
+      "DUPLICATE-CONFIRM": "复制数据模型",
+      "OPEN-IN-EDITOR": "数据模型编辑器",
+      "EDIT-CONFIRM": "保存",
+      "DELETE-CONFIRM": "删除数据模型",
+      "USE-AS-NEW-VERSION": "用作新版本",
+      "USE-AS-NEW-VERSION-CONFIRM": "用作新版本",
+      "FAVORITE": "收藏这个数据模型",
+      "DUPLICATE": "复制这个数据模型",
+      "EXPORT": "导出数据模型"
+    },
+    "DETAILS": {
+      "TITLE": "数据模型详细信息 {{name}}",
+      "COMPARE-WITH-TITLE": "比较对象",
+      "HISTORY-TITLE": "历史记录",
+      "COMMENTS-TITLE": "注释",
+      "LAST-UPDATED-BY": "最近更新者 {{lastUpdatedByFullName}} - {{lastUpdated | dateformat}}",
+      "CREATED-BY": "创建者 {{createdByFullName}}",
+      "VERSION": "（版本 {{version}}）",
+      "NO-DESCRIPTION": "这个模型没有说明。修改模型属性以添加注释"
+    },
+    "EDIT": {
+      "TITLE": "编辑数据模型"
+    },
+    "POPUP": {
+      "ADD-COMMENT-TITLE": "添加注释",
+      "ADD-COMMENT-DESCRIPTION": "在下面为 \"{{name}}\" 输入新注释",
+      "ADD-COMMENT-SIZE-ERROR": "注释不能超过 4000 个字符",
+      "CREATE-TITLE": "创建新数据模型",
+      "DUPLICATE-TITLE": "复制数据模型",
+      "CREATE-DESCRIPTION": "您需要为新数据模型起个名字，并且可能希望同时添加说明。",
+      "DUPLICATE-DESCRIPTION": "您需要为新数据模型起个名字，并且可能希望同时添加说明。",
+      "SAVE-DATA-MODEL-TITLE": "保存数据模型",
+      "EDIT-DESCRIPTION": "更改下面的任意数据模型属性，然后单击保存以更新数据模型。",
+      "EDIT-TITLE": "编辑数据模型详细信息",
+      "DELETE-TITLE": "删除数据模型",
+      "DELETE-DESCRIPTION": "确定要删除数据模型 \"{{name}}\"？",
+      "DELETE-CASCADE-FALSE": "仅删除这个数据模型的当前版本 (v{{version}})",
+      "DELETE-CASCADE-TRUE": "还会删除这个数据模型的所有先前版本",
+      "USE-AS-NEW-TITLE": "用作新版本",
+      "USE-AS-NEW-DESCRIPTION": "您确定要使用版本 {{version}} 来创建 \"{{name}}\" 的新版本吗？",
+      "SHARE-TITLE": "共享数据模型",
+      "SHARE-DESCRIPTION": "您可以确定希望与谁共享这个数据模型以及他们是否可以编辑它。",
+      "NOT-SHARED": "这个数据模型没有与任何人共享。",
+      "IMPORT-TITLE": "导入数据模型",
+      "IMPORT-DESCRIPTION": "浏览或拖放扩展名为 .json 的数据模型文件",
+      "IMPORT-DROPZONE": "拖放 .json 数据模型文件",
+      "IMPORT-NO-DROP": "不支持拖放",
+      "IMPORT-CANCEL-UPLOAD": "取消上传",
+      "IMPORT-ERROR": "处理数据模型文件时出现错误",
+      "IMPORT-CONFIRM-OVERWRITE": "有些条目已存在，是否要覆盖它们？",
+      "IMPORT-WRONG-FILE": "无效的文件名，仅支持 .json 文件，不支持",
+      "IMPORT-ENTITIES-FROM-DATA-SOURCE": "处理数据来源的实体时出现错误。",
+      "PROCESS-ENTITY-ATTRIBUTES-FROM-DATA-SOURCE": "处理实体属性时出现错误。"
+    },
+    "ALERT": {
+      "EDIT-CONFIRM": "数据模型已更新",
+      "FAVORITE-CONFIRM": "现在已收藏这个数据模型",
+      "UN-FAVORITE-CONFIRM": "不再收藏这个数据模型",
+      "DELETE-CONFIRM": "数据模型已删除",
+      "SHARE-CONFIRM": "已更新数据模型共享选项",
+      "NEW-VERSION-CONFIRM": "已创建数据模型的新版本",
+      "COMMENT-ADDED-CONFIRM": "新注释已添加到数据模型",
+      "SAVE-CONFIRM": "保存的数据模型 '{{name}}'",
+      "SAVE-ERROR": "无法保存数据模型 '{{name}}'",
+      "VALIDATION-OK": "数据模型不包含验证错误。",
+      "VALIDATION-ERROR": "数据模型包含验证错误。"
+    },
+    "ERROR": {
+      "NOT-FOUND": "请求的决策表不存在"
+    },
+    "TABLES": {
+      "ENTITY-NAME": "名称",
+      "ATTRIBUTES-NAME": "名称",
+      "ATTRIBUTES-TYPE": "类型"
+    }
+  },
+  "DATA-MODEL-EDITOR": {
+    "LABEL": {
+      "DATASOURCE-TYPE-DATABASE": "数据库",
+      "DATASOURCE-TYPE-REST": "其他",
+      "DATASOURCE-TYPE-CUSTOM": "自定义",
+      "DATASOURCE-TYPE-ALFRESCO": "Alfresco",
+      "ENTITIES": "实体",
+      "ATTRIBUTES": "属性",
+      "ENDPOINTS": "Endpoint",
+      "ENDPOINT-HELP": "通过从下拉列表中选择属性，您可以在 URL 中插入动态部分，例如路径变量和请求参数",
+      "SELECT-ATTRIBUTE": "选择一个属性",
+      "NO-ATTRIBUTES": "无属性可用",
+      "ENDPOINT-REQUEST-JSON-BODY": "请求 JSON 正文",
+      "REQUEST-JSON-BODY-TITLE": "JSON 正文属性",
+      "JSON-BODY-PROPERTY-NAME": "JSON 正文属性名称",
+      "ATTRIBUTE-REFERENCE": "属性引用",
+      "REST-TYPE": {
+        "IDENTITY": "通过身份值获取实体",
+        "ONE": "获取一个实体",
+        "MULTIPLE": "获取多个实体",
+        "UPDATE": "更新实体",
+        "CREATE": "创建实体",
+        "DELETE": "删除实体"
+      }
+    },
+    "FIELD": {
+      "DATA-SOURCE": "数据源",
+      "REPO-SOURCE": "存储库源",
+      "BASE-ENDPOINT": "基本 Endpoint",
+      "ENTITY-NAME": "实体名称",
+      "TABLE-NAME": "表名称",
+      "NODE_TYPE": "节点类型和切面 (F:myc:project; cmis:folder; F:myc:project,P:cm:titled)",
+      "ENTITY-DESCRIPTION": "实体说明",
+      "ATTRIBUTE-NAME": "属性名称",
+      "ATTRIBUTE-TYPE": "属性类型",
+      "ATTRIBUTE-DESCRIPTION": "属性说明",
+      "COLUMN-NAME": "列名称",
+      "PROPERTY-NAME": "节点属性（完全符合条件的名称，例如 cm:name）",
+      "MAPPED-NAME": "REST 属性名称",
+      "PRIMARY-KEY": "Primary key",
+      "GENERATED-VALUE": "数据库生成的值（自动增量）",
+      "IDENTITY": "身份",
+      "REQUIRED": "必需",
+      "ENDPOINT-TYPE": "Endpoint 类型",
+      "HTTP-TYPE": "HTTP 类型",
+      "ENDPOINT-URL": "Endpoint URL"
+    },
+    "BUTTON": {
+      "IMPORT-ENTITIES": "导入",
+      "ADD-ENTITY": "添加实体",
+      "REMOVE-ENTITY": "删除实体",
+      "IMPORT-ATTRIBUTES": "导入属性",
+      "ADD-ATTRIBUTE": "添加属性",
+      "REMOVE-ATTRIBUTE": "删除属性",
+      "ADD-ENDPOINT": "添加 Endpoint",
+      "REMOVE-ENDPOINT": "删除 Endpoint",
+      "EDIT-PROPERTY": "编辑属性",
+      "ADD-PROPERTY": "添加属性",
+      "REMOVE-PROPERTY": "删除属性"
+    }
+  },
+  "INTEGRATION": {
+    "ALFRESCO": {
+      "MESSAGE": {
+        "SELECT-FOLDER-DESCRIPTION": "从您的 Alfresco 帐户中选择文件夹",
+        "SELECT-FOLDER": "选择文件夹",
+        "CHOOSE-NETWORK": "选择网络",
+        "NETWORK": "网络",
+        "CHOOSE-SITE": "选择站点",
+        "NO-CONTENT": "这个文件夹中无内容"
+      }
+    },
+    "ALFRESCO-CLOUD": {
+      "TITLE": {
+        "BROWSE-CLOUD": "浏览 Alfresco Content Services in the Cloud",
+        "BROWSE-ON-PREM": "浏览 {{name}}"
+      }
+    },
+    "BOX": {
+      "MESSAGE": {
+        "ACCOUNT_NAME": "Box",
+        "FILTER": "筛选器",
+        "SEARCHING": "正在搜索",
+        "NO-CONTENT": "找不到匹配的结果",
+        "SELECT-FOLDER-DESCRIPTION": "从您的 Box 帐户中选择文件夹",
+        "SELECT-FILE-DESCRIPTION": "从您的 Box 帐户中选择文件以导入",
+        "SELECT-FOLDER": "选择文件夹"
+      }
+    },
+    "GOOGLE": {
+      "MESSAGE": {
+        "TITLE": "Google Drive",
+        "FILTER": "筛选器",
+        "SEARCHING": "正在搜索",
+        "NO-CONTENT": "找不到匹配的结果",
+        "SELECT-FILE-DESCRIPTION": "从您的 Google Drive 帐户中选择文件",
+        "SELECT-FOLDER-DESCRIPTION": "从您的 Google Drive 帐户中选择文件夹",
+        "SELECT-FOLDER": "选择文件夹"
+      }
+    }
+  },
+  "INVOLVE-PEOPLE": {
+    "NO-MATCHING-RESULTS": "使用上面的搜索框查找用户或 ",
+    "NO-MATCHING-RESULTS-NO-EMAIL": "使用上面的搜索框查找用户",
+    "SEARCH-PLACEHOLDER": "搜索用户",
+    "USE-EMAIL": "使用电子邮件地址选择某人",
+    "ASSIGN-YOURSELF-LEAD": "或",
+    "ASSIGN-YOURSELF": "指派自己",
+    "SELECT-YOURSELF-LEAD": "或",
+    "SELECT-YOURSELF": "选择自己",
+    "EMAIL-PLACEHOLDER": "输入电子邮件地址",
+    "EMAIL-HELP": "按 Enter 或单击按钮以继续。这个人员将收到电子邮件通知或被邀请注册",
+    "BACK-TO-SEARCH": "返回搜索",
+    "ACTION-SELECT": "选择",
+    "SOURCE": {
+      "TYPE": "源",
+      "SEARCH-OPTION": "用户搜索",
+      "FIELD-OPTION": "表单字段"
+    }
+  },
+  "BPMN-EDITOR": {
+    "GROUP": {
+      "ACTIVITIES": "活动",
+      "ALFRESCO": "Alfresco",
+      "BOX": "Box",
+      "GOOGLE-DRIVE": "Google Drive",
+      "ARTIFACTS": "构件",
+      "BOUNDARY-EVENTS": "边界事件",
+      "CONNECTING-OBJECTS": "连接对象",
+      "END-EVENTS": "结束事件",
+      "GATEWAYS": "分支",
+      "INTERMEDIATE-CATCH-EVENTS": "中间缓存事件",
+      "INTERMEDIATE-THROW-EVENTS": "中间抛出事件",
+      "START-EVENTS": "开始事件",
+      "STRUCTURAL": "结构性",
+      "SWIMLANES": "泳道"
+    },
+    "ITEM": {
+      "ASSOCIATION": {
+        "TITLE": "关联",
+        "DESCRIPTION": "将文本注释与元素关联"
+      },
+      "GET-METADATA-FROM-ALFRESCO": {
+        "TITLE": "检索 Alfresco 属性",
+        "DESCRIPTION": "检索属性的服务"
+      },
+      "PUT-METADATA-TO-ALFRESCO": {
+        "TITLE": "更新 Alfresco 属性",
+        "DESCRIPTION": "更新元数据的服务"
+      },
+      "BOUNDARY-ERROR-EVENT": {
+        "TITLE": "边界错误事件",
+        "DESCRIPTION": "捕获 BPMN 错误的边界"
+      },
+      "BOUNDARY-MESSAGE-EVENT": {
+        "TITLE": "边界消息事件",
+        "DESCRIPTION": "带有消息触发器的边界事件"
+      },
+      "BOUNDARY-SIGNAL-EVENT": {
+        "TITLE": "边界信号事件",
+        "DESCRIPTION": "带有信号触发器的边界事件"
+      },
+      "BOUNDARY-CANCEL-EVENT": {
+        "TITLE": "边界取消事件",
+        "DESCRIPTION": "一个边界取消事件"
+      },
+      "BOUNDARY-COMPENSATION-EVENT": {
+        "TITLE": "边界补偿事件",
+        "DESCRIPTION": "一个边界补偿事件"
+      },
+      "BOUNDARY-TIMER-EVENT": {
+        "TITLE": "边界计时器事件",
+        "DESCRIPTION": "带有计时器触发器的边界事件"
+      },
+      "BUSINESSRULETASK": {
+        "TITLE": "业务规则任务",
+        "DESCRIPTION": "带有规则逻辑的自动任务"
+      },
+      "CALL-ACTIVITY": {
+        "TITLE": "调用活动",
+        "DESCRIPTION": "一个调用活动"
+      },
+      "CAMELTASK": {
+        "TITLE": "Camel 任务",
+        "DESCRIPTION": "发送消息到 Camel 的任务"
+      },
+      "COLLAPSED-SUBPROCESS": {
+        "TITLE": "折叠的子流程",
+        "DESCRIPTION": "提供可重复使用的子流程定义的引用"
+      },
+      "DATA-ASSOCIATION": {
+        "TITLE": "数据关联",
+        "DESCRIPTION": "将数据元素与活动关联"
+      },
+      "DATASTORE": {
+        "TITLE": "数据存储器",
+        "DESCRIPTION": "引用数据存储器"
+      },
+      "END-ERROR-EVENT": {
+        "TITLE": "错误的结束事件",
+        "DESCRIPTION": "抛出错误事件的结束事件"
+      },
+      "END-NONE-EVENT": {
+        "TITLE": "结束事件",
+        "DESCRIPTION": "没有特定触发器的结束事件"
+      },
+      "END-CANCEL-EVENT": {
+        "TITLE": "结束取消事件",
+        "DESCRIPTION": "一个取消结束事件"
+      },
+      "END-TERMINATE-EVENT": {
+        "TITLE": "结束终止事件",
+        "DESCRIPTION": "一个终止结束事件"
+      },
+      "EVENT-GATEWAY": {
+        "TITLE": "事件分支",
+        "DESCRIPTION": "一个事件分支"
+      },
+      "EVENT-SUBPROCESS": {
+        "TITLE": "事件子流程",
+        "DESCRIPTION": "一个事件子流程范围"
+      },
+      "EXCLUSIVE-GATEWAY": {
+        "TITLE": "排他分支",
+        "DESCRIPTION": "选择分支"
+      },
+      "INCLUSIVE-GATEWAY": {
+        "TITLE": "多路分支",
+        "DESCRIPTION": "一个多路分支"
+      },
+      "INTERMEDIATE-MESSAGE-CATCH-EVENT": {
+        "TITLE": "中间消息捕获事件",
+        "DESCRIPTION": "带有消息触发器的中间捕获事件"
+      },
+      "INTERMEDIATE-SIGNAL-CATCH-EVENT": {
+        "TITLE": "中间信号捕获事件",
+        "DESCRIPTION": "带有信号触发器的中间捕获事件"
+      },
+      "INTERMEDIATE-TIMER-CATCH-EVENT": {
+        "TITLE": "中间计时器捕获事件",
+        "DESCRIPTION": "带有计时器触发器的中间捕获事件"
+      },
+      "INTERMEDIATE-NONE-THROW-EVENT": {
+        "TITLE": "中间无抛出事件",
+        "DESCRIPTION": "没有特定触发器的中间事件"
+      },
+      "INTERMEDIATE-SIGNAL-THROW-EVENT": {
+        "TITLE": "中间信号抛出事件",
+        "DESCRIPTION": "带有信号触发器的中间事件"
+      },
+      "LANE": {
+        "TITLE": "通道",
+        "DESCRIPTION": "构建流程定义的通道"
+      },
+      "MAILTASK": {
+        "TITLE": "邮件任务",
+        "DESCRIPTION": "一个邮件任务"
+      },
+      "MANUALTASK": {
+        "TITLE": "手动任务",
+        "DESCRIPTION": "不带有逻辑的自动任务"
+      },
+      "MESSAGE-FLOW": {
+        "TITLE": "消息 flow",
+        "DESCRIPTION": "连接不同池中元素的消息 flow"
+      },
+      "MULETASK": {
+        "TITLE": "Mule 任务",
+        "DESCRIPTION": "发送消息到 Mule 的任务"
+      },
+      "PARALLEL-GATEWAY": {
+        "TITLE": "并行分支",
+        "DESCRIPTION": "一个并行分支"
+      },
+      "POOL": {
+        "TITLE": "池",
+        "DESCRIPTION": "构建流程定义的池"
+      },
+      "PUBLISH-TO-ALFRESCO": {
+        "TITLE": "发布至 Alfresco 任务",
+        "DESCRIPTION": "上传文档到 Alfresco 的服务"
+      },
+      "PUBLISH-TO-BOX": {
+        "TITLE": "发布至 Box 任务",
+        "DESCRIPTION": "上传文档到 Box 的服务"
+      },
+      "PUBLISH-TO-GOOGLE-DRIVE": {
+        "TITLE": "发布至 Google Drive 任务",
+        "DESCRIPTION": "上传文档到 Google Drive 的服务"
+      },
+      "RECEIVETASK": {
+        "TITLE": "接收任务",
+        "DESCRIPTION": "等待信号的任务"
+      },
+      "SCRIPTTASK": {
+        "TITLE": "脚本任务",
+        "DESCRIPTION": "带脚本逻辑的自动任务"
+      },
+      "SERVICETASK": {
+        "TITLE": "服务任务",
+        "DESCRIPTION": "带服务逻辑的自动任务"
+      },
+      "SENDTASK": {
+        "TITLE": "发送任务",
+        "DESCRIPTION": "发送消息的任务"
+      },
+      "SEQUENCE-FLOW": {
+        "TITLE": "Sequence flow",
+        "DESCRIPTION": "Sequence flow 定义活动的执行顺序"
+      },
+      "START-ERROR-EVENT": {
+        "TITLE": "启动错误事件",
+        "DESCRIPTION": "捕获抛出的 BPMN 错误的启动事件"
+      },
+      "START-MESSAGE-EVENT": {
+        "TITLE": "启动消息事件",
+        "DESCRIPTION": "带有消息触发器的启动事件"
+      },
+      "START-NONE-EVENT": {
+        "TITLE": "启动事件",
+        "DESCRIPTION": "不带有特定触发器的启动事件"
+      },
+      "START-SIGNAL-EVENT": {
+        "TITLE": "启动信号事件",
+        "DESCRIPTION": "带有信号触发器的启动事件"
+      },
+      "START-TIMER-EVENT": {
+        "TITLE": "启动时间事件",
+        "DESCRIPTION": "带有计时器触发器的启动事件"
+      },
+      "STORE-ENTITY-TASK": {
+        "TITLE": "存储实体任务",
+        "DESCRIPTION": "创建/更新数据模型实体的任务"
+      },
+      "SUBPROCESS": {
+        "TITLE": "子流程",
+        "DESCRIPTION": "一个子流程范围"
+      },
+      "TEXTANNOTATION": {
+        "TITLE": "文本标注",
+        "DESCRIPTION": "使用说明文本标注元素"
+      },
+      "USERTASK": {
+        "TITLE": "用户任务",
+        "DESCRIPTION": "指派到特定人员的手动任务"
+      },
+      "REST-CALL-TASK": {
+        "TITLE": "REST 调用任务",
+        "DESCRIPTION": "调用 REST 服务的任务"
+      },
+      "GENERATE-DOCUMENT-TASK": {
+        "TITLE": "生成文档任务",
+        "DESCRIPTION": "基于 Microsoft Word (.docx) 文件和变量生成文档"
+      },
+      "DECISIONTASK": {
+        "TITLE": "决策任务",
+        "DESCRIPTION": "执行决策表的任务"
+      },
+      "ALFRESCO-ACTION-TASK": {
+        "TITLE": "调用 Alfresco 操作",
+        "DESCRIPTION": "调用 Alfresco 操作的任务"
+      }
+    },
+    "PROPERTY": {
+      "ALFRESCO-ACTION-SOURCE": {
+        "TITLE": "内容",
+        "DESCRIPTION": "要处理的内容。"
+      },
+      "ALFRESCO-ACTION-AS": {
+        "TITLE": "充当",
+        "DESCRIPTION": "执行操作的人员。"
+      },
+      "ALFRESCO-ACTION-REPOSITORY": {
+        "TITLE": "存储库",
+        "DESCRIPTION": "Alfresco 存储库。"
+      },
+      "ALFRESCO-ACTION-ACTION": {
+        "TITLE": "操作",
+        "DESCRIPTION": "要执行的 Alfresco 操作。"
+      },
+      "ALFRESCO-CONTENT": {
+        "TITLE": "Alfresco 内容",
+        "DESCRIPTION": "发布到 Alfresco 特定内容。"
+      },
+      "ALFRESCO-DESTINATION": {
+        "TITLE": "Alfresco 目标",
+        "DESCRIPTION": "发布到 Alfresco 特定目标。"
+      },
+      "ALFRESCO-PUT-METADATA": {
+        "TITLE": "Alfresco 属性",
+        "DESCRIPTION": "更新属性到 Alfresco。"
+      },
+      "ALFRESCO-GET-METADATA": {
+        "TITLE": "Alfresco 属性",
+        "DESCRIPTION": "从 Alfresco 检索属性。"
+      },
+      "BOX-CONTENT": {
+        "TITLE": "Box 内容",
+        "DESCRIPTION": "发布到 Box 特定内容。"
+      },
+      "BOX-DESTINATION": {
+        "TITLE": "Box 目标",
+        "DESCRIPTION": "发布到 Box 特定目标。"
+      },
+      "GOOGLE-DRIVE-CONTENT": {
+        "TITLE": "Google Drive 内容",
+        "DESCRIPTION": "发布到 Google Drive 特定内容。"
+      },
+      "GOOGLE-DRIVE-DESTINATION": {
+        "TITLE": "Google Drive 目标",
+        "DESCRIPTION": "发布到 Google Drive 特定目标。"
+      },
+      "ASYNC": {
+        "TITLE": "异步",
+        "DESCRIPTION": "定义活动为异步。"
+      },
+      "CALLED-ELEMENT": {
+        "TITLE": "调用的元素",
+        "DESCRIPTION": "引用子流程。"
+      },
+      "CAMEL-CONTEXT": {
+        "TITLE": "CamelContext",
+        "DESCRIPTION": "可选的 CamelContext 定义，如果留为空，则使用默认值。"
+      },
+      "CANCEL-ACTIVITY": {
+        "TITLE": "取消活动",
+        "DESCRIPTION": "活动应被取消。"
+      },
+      "COMPENSATION": {
+        "TITLE": "适用于补偿",
+        "DESCRIPTION": "确定这个活动是否适用于补偿目的的旗标。"
+      },
+      "COLLAPSED-SUBPROCESS-REFERENCE": {
+        "TITLE": "引用的子流程",
+        "DESCRIPTION": "引用折叠的子流程中包含的子流程。"
+      },
+      "DOCUMENTATION": {
+        "TITLE": "文档",
+        "DESCRIPTION": "BPMN 元素的描述性说明。"
+      },
+      "ENDPOINT-URL": {
+        "TITLE": "Endpoint URL",
+        "DESCRIPTION": "发送消息到 Mule 的所需 Endpoint URL。"
+      },
+      "ENTITY-ATTRIBUTE-MAPPING": {
+        "TITLE": "属性映射",
+        "DESCRIPTION": "映射带有流程变量和表单字段的实体属性。"
+      },
+      "ERROR-REF": {
+        "TITLE": "错误参考",
+        "DESCRIPTION": "定义错误名称。"
+      },
+      "EVENT-LISTENERS": {
+        "TITLE": "事件监听器",
+        "DESCRIPTION": "用于监听 Process Services 引擎中所发生事件的监听器。它也可以将事件重新抛出为信号、消息或错误事件。"
+      },
+      "EXCLUSIVE": {
+        "TITLE": "专有",
+        "DESCRIPTION": "定义活动为专有。"
+      },
+      "EXECUTION-LISTENERS": {
+        "TITLE": "Execution 监听器",
+        "DESCRIPTION": "监听活动、流程、sequence flow、启动和结束事件的监听器。"
+      },
+      "FORM-KEY": {
+        "TITLE": "表单 key",
+        "DESCRIPTION": "提供表单引用的表单 key。"
+      },
+      "FORM-PROPERTIES": {
+        "TITLE": "表单属性",
+        "DESCRIPTION": "通过一列表单属性定义表单。"
+      },
+      "FORM-REFERENCE": {
+        "TITLE": "引用的表单",
+        "DESCRIPTION": "引用表单。"
+      },
+      "VARIABLES-MAPPING": {
+        "TITLE": "变量映射",
+        "DESCRIPTION": "流程模型中的哪个字段/变量映射到表单中的哪个字段"
+      },
+      "VARIABLES-MAPPING-REUSABLE-TABLE": {
+        "TITLE": "变量映射",
+        "DESCRIPTION": "流程模型中的哪个字段/变量映射到表中的哪个变量"
+      },
+      "ID": {
+        "TITLE": "ID",
+        "DESCRIPTION": "元素的唯一标识符。"
+      },
+      "IN-PARAMETERS": {
+        "TITLE": "输入参数",
+        "DESCRIPTION": "输入参数的定义。"
+      },
+      "MAILTASK-BCC": {
+        "TITLE": "Bcc",
+        "DESCRIPTION": "电子邮件的密件抄送 (bcc)。多个收件人时，使用逗号分隔。"
+      },
+      "MAILTASK-CC": {
+        "TITLE": "Cc",
+        "DESCRIPTION": "电子邮件的抄送 (cc)。多个收件人时，使用逗号分隔。"
+      },
+      "MAILTASK-CHARSET": {
+        "TITLE": "字符集",
+        "DESCRIPTION": "允许更改电子邮件的字符集，这对许多非英语语言是必需的。"
+      },
+      "MAILTASK-FROM": {
+        "TITLE": "发件人",
+        "DESCRIPTION": "发件人的电子邮件地址。如果未提供，则使用默认配置的发件人地址。"
+      },
+      "MAILTASK-HTML": {
+        "TITLE": "HTML",
+        "DESCRIPTION": "作为电子邮件内容的一段 HTML 代码。"
+      },
+      "MAILTASK-SUBJECT": {
+        "TITLE": "主题",
+        "DESCRIPTION": "电子邮件的主题。"
+      },
+      "MAILTASK-TEXT": {
+        "TITLE": "文本",
+        "DESCRIPTION": "如果您需要发送普通文本电子邮件，则文本未电子邮件的内容。可以与 HTML 结合使用，适用于不支持富内容的电子邮件客户端。然后，客户端将依靠此仅问题替代内容。"
+      },
+      "MAILTASK-TO": {
+        "TITLE": "收件人",
+        "DESCRIPTION": "电子邮件的收件人。多个收件人时，使用逗号分隔。"
+      },
+      "MESSAGE-REF": {
+        "TITLE": "消息引用",
+        "DESCRIPTION": "定义消息名称。"
+      },
+      "MULETASK-LANGUAGE": {
+        "TITLE": "语言",
+        "DESCRIPTION": "解析 JUEL 等负载表达式所需的语言定义。"
+      },
+      "MULETASK-PAYLOAD": {
+        "TITLE": "负载表达式",
+        "DESCRIPTION": "发送到 Mule 的消息负载的所需定义。"
+      },
+      "MULETASK-RESULT-VARIABLE": {
+        "TITLE": "结果变量",
+        "DESCRIPTION": "返回的负载的可选结果变量。"
+      },
+      "MULTI-INSTANCE-CARDINALITY": {
+        "TITLE": "基数（多实例）",
+        "DESCRIPTION": "定义多实例的基数。"
+      },
+      "MULTI-INSTANCE-COLLECTION": {
+        "TITLE": "集合（多实例）",
+        "DESCRIPTION": "定义多实例的集合"
+      },
+      "MULTI-INSTANCE-CONDITION": {
+        "TITLE": "完成条件（多实例）",
+        "DESCRIPTION": "定义多实例的完成条件。"
+      },
+      "MULTI-INSTANCE-TYPE": {
+        "TITLE": "多实例类型",
+        "DESCRIPTION": "重复的活动执行（并行或顺序）可以通过不同的环类型显示。"
+      },
+      "MULTI-INSTANCE-VARIABLE": {
+        "TITLE": "元素变量（多实例）",
+        "DESCRIPTION": "定义多实例的元素变量。"
+      },
+      "NAME": {
+        "TITLE": "名称",
+        "DESCRIPTION": "BPMN 元素的描述性名称。"
+      },
+      "OUT-PARAMETERS": {
+        "TITLE": "输出参数",
+        "DESCRIPTION": "输出参数的定义"
+      },
+      "PROCESS-AUTHOR": {
+        "TITLE": "流程的作者",
+        "DESCRIPTION": "流程定义的作者。"
+      },
+      "PROCESS-ID": {
+        "TITLE": "流程标识符",
+        "DESCRIPTION": "流程定义的唯一标识符。"
+      },
+      "PROCESS-INITIATOR": {
+        "TITLE": "流程发起者",
+        "DESCRIPTION": "流程的发起者。"
+      },
+      "PROCESS-NAMESPACE": {
+        "TITLE": "目标命名空间",
+        "DESCRIPTION": "流程定义的目标命名空间。"
+      },
+      "PROCESS-VERSION": {
+        "TITLE": "流程版本字符串（仅归档）",
+        "DESCRIPTION": "适用于归档目的之版本标识符。"
+      },
+      "RULE-EXCLUDE": {
+        "TITLE": "排除",
+        "DESCRIPTION": "将规则属性用作排除项。"
+      },
+      "RULE-INPUT-VARIABLES": {
+        "TITLE": "输入变量",
+        "DESCRIPTION": "规则任务的输入变量。"
+      },
+      "RULE-RESULT-VARIABLE": {
+        "TITLE": "结果变量",
+        "DESCRIPTION": "规则任务的结果变量。"
+      },
+      "RULE-RULESDEF": {
+        "TITLE": "规则",
+        "DESCRIPTION": "规则任务的规则。"
+      },
+      "SCRIPTTASK-FORMAT": {
+        "TITLE": "脚本格式",
+        "DESCRIPTION": "脚本任务的脚本格式。"
+      },
+      "SCRIPTTASK-TEXT": {
+        "TITLE": "脚本",
+        "DESCRIPTION": "脚本任务的脚本文本。"
+      },
+      "SERVICETASK-CLASS": {
+        "TITLE": "类",
+        "DESCRIPTION": "实施服务任务逻辑的类。"
+      },
+      "SERVICETASK-DELEGATE-EXPRESSION": {
+        "TITLE": "委派表达式",
+        "DESCRIPTION": "使用委派表达式定义的服务任务逻辑。"
+      },
+      "SERVICETASK-EXPRESSION": {
+        "TITLE": "表达式",
+        "DESCRIPTION": "使用表达式定义的服务任务逻辑。"
+      },
+      "SERVICETASK-FIELDS": {
+        "TITLE": "类字段",
+        "DESCRIPTION": "服务任务的字段扩展。"
+      },
+      "SERVICETASK-RESULT-VARIABLE": {
+        "TITLE": "结果变量名称",
+        "DESCRIPTION": "存储服务任务结果使用的变量名称。"
+      },
+      "SEQUENCE-FLOW-CONDITION": {
+        "TITLE": "Flow 条件",
+        "DESCRIPTION": "sequence flow 的条件。"
+      },
+      "SEQUENCE-FLOW-CONDITIONAL": {
+        "TITLE": "条件 flow",
+        "DESCRIPTION": "使用条件定义 sequence flow。"
+      },
+      "SEQUENCE-FLOW-DEFAULT": {
+        "TITLE": "默认 flow",
+        "DESCRIPTION": "定义 sequence flow 为默认。"
+      },
+      "SEQUENCE-FLOW-ORDER": {
+        "TITLE": "Flow 的顺序。",
+        "DESCRIPTION": "转出顺序流的顺序。"
+      },
+      "SIGNAL-DEFINITIONS": {
+        "TITLE": "信号定义",
+        "DESCRIPTION": "流程中用于信号捕获和抛出事件的信号的定义。"
+      },
+      "MESSAGE-DEFINITIONS": {
+        "TITLE": "消息定义",
+        "DESCRIPTION": "流程中用于消息捕获和抛出事件的消息的定义。"
+      },
+      "SIGNAL-REF": {
+        "TITLE": "信号引用",
+        "DESCRIPTION": "定义信号名称。"
+      },
+      "TASK-LISTENERS": {
+        "TITLE": "Task 监听器",
+        "DESCRIPTION": "用户 Task 的监听器。"
+      },
+      "TEXT-ANNOTATION-TEXT": {
+        "TITLE": "文本",
+        "DESCRIPTION": "文本注释的文本。"
+      },
+      "TIMER-CYCLE": {
+        "TITLE": "时间周期（例如 R3/PT10H）",
+        "DESCRIPTION": "使用 ISO-8601 周期定义计时器。"
+      },
+      "TIMER-DATE": {
+        "TITLE": "以 ISO-8601 显示时间",
+        "DESCRIPTION": "使用 ISO-8601 日期定义来定义计时器。"
+      },
+      "TIMER-DURATION": {
+        "TITLE": "持续时间（例如 PT5M）",
+        "DESCRIPTION": "使用 ISO-8601 持续时间定义计时器。"
+      },
+      "USERTASK-ASSIGNMENT": {
+        "TITLE": "指派",
+        "DESCRIPTION": "用户任务的指派定义。"
+      },
+      "USERTASK-CATEGORY": {
+        "TITLE": "类别",
+        "DESCRIPTION": "用户任务的类别。"
+      },
+      "USERTASK-DUEDATE": {
+        "TITLE": "截止日期",
+        "DESCRIPTION": "用户任务的截止日期。"
+      },
+      "USERTASK-PRIORITY": {
+        "TITLE": "优先级",
+        "DESCRIPTION": "用户任务的优先级。"
+      },
+      "RESTCALLTASK-ENDPOINT": {
+        "TITLE": "Endpoint",
+        "DESCRIPTION": "REST 服务 Endpoint。"
+      },
+      "RESTCALLTASK-REQUEST-MAPPING": {
+        "TITLE": "请求映射",
+        "DESCRIPTION": "配置请求映射 REST 调用。"
+      },
+      "RESTCALLTASK-RESPONSE-MAPPING": {
+        "TITLE": "响应映射",
+        "DESCRIPTION": "配置响应映射 REST 调用。"
+      },
+      "RESTCALLTASK-REQUEST-HEADERS": {
+        "TITLE": "Request Header",
+        "DESCRIPTION": "配置 request header REST 调用。"
+      },
+      "USERTASK-SEND-EMAIL": {
+        "TITLE": "允许发送电子邮件通知",
+        "DESCRIPTION": "允许系统在任务指派后通知被指派者。"
+      },
+      "EXECUTION-VARIABLES": {
+        "TITLE": "变量",
+        "DESCRIPTION": "服务任务设置的变量。"
+      },
+      "FIELDS-TO-VARIABLES": {
+        "TITLE": "用于数据模型映射的表单字段",
+        "DESCRIPTION": "将表单字段值映射到数据模型变量。"
+      },
+      "EXECUTION-VARIABLE-STRING": {
+        "TITLE": "字符串变量",
+        "DESCRIPTION": "字符串变量。"
+      },
+      "EXECUTION-VARIABLE-DOCUMENT": {
+        "TITLE": "文档变量",
+        "DESCRIPTION": "生成文档任务设置的变量。"
+      },
+      "GENERATEDOCUMENTTASK-TEMPLATE": {
+        "TITLE": "模板",
+        "DESCRIPTION": "用于生成文档的模板。"
+      },
+      "GENERATEDOCUMENTTASK-OUTPUTFORMAT": {
+        "TITLE": "输出格式",
+        "DESCRIPTION": "定义所生成文档的存储格式。"
+      },
+      "GENERATEDOCUMENTTASK-VARIABLE": {
+        "TITLE": "变量",
+        "DESCRIPTION": "定义存储所生成文档引用的变量。"
+      },
+      "GENERATEDOCUMENTTASK-FILENAME": {
+        "TITLE": "文件名",
+        "DESCRIPTION": "定义输出文件的名称。"
+      },
+      "DECISIONTABLE-REFERENCE": {
+        "TITLE": "引用的决策表",
+        "DESCRIPTION": "引用一个决策表。"
+      },
+      "METADATA": {
+        "TITLE": "元数据",
+        "DESCRIPTION": "自定义属性"
+      },
+      "EMAIL-TEMPLATE": {
+        "TITLE": "电子邮件模板",
+        "DESCRIPTION": "用于发送电子邮件的电子邮件模板。"
+      },
+      "VARIABLES-MAPPING-SUBPROCESS": {
+        "TITLE": "变量映射",
+        "DESCRIPTION": "流程模型中的哪个字段/变量映射到子流程中的哪个字段/变量"
+      }
+    }
+  },
+  "HEADER.BRAND": "Process Services 编辑器",
+  "HEADER.BRAND_TAGLINE": "由 Alfresco 提供支持",
+  "PAGE.HEADER": "业务流程详细信息",
+  "ACTION.OK": "确定",
+  "ACTION.SAVE": "保存",
+  "ACTION.SAVE-AND-CLOSE": "保存并关闭编辑器",
+  "ACTION.SAVE-COPY": "保存副本",
+  "ACTION.SAVE-COPY-AND-CLOSE": "保存副本并关闭编辑器",
+  "ACTION.SEND": "发送",
+  "ACTION.CANCEL": "取消",
+  "ACTION.SELECT": "选择",
+  "ACTION.ADD": "添加",
+  "ACTION.REMOVE": "删除",
+  "ACTION.MOVE.UP": "上移条目",
+  "ACTION.MOVE.DOWN": "下移条目",
+  "TOOLBAR.ACTION.CLOSE": "关闭编辑器并返回到概览页面",
+  "TOOLBAR.ACTION.SAVE": "保存模型",
+  "TOOLBAR.ACTION.VALIDATE": "验证模型",
+  "TOOLBAR.ACTION.CUT": "剪切（选择业务流程的一个或多个元素）",
+  "TOOLBAR.ACTION.COPY": "复制（选择业务流程的一个或多个元素）",
+  "TOOLBAR.ACTION.PASTE": "粘贴",
+  "TOOLBAR.ACTION.DELETE": "删除所需元素",
+  "TOOLBAR.ACTION.UNDO": "撤消",
+  "TOOLBAR.ACTION.REDO": "重做",
+  "TOOLBAR.ACTION.ZOOMIN": "放大",
+  "TOOLBAR.ACTION.ZOOMOUT": "缩小",
+  "TOOLBAR.ACTION.ZOOMACTUAL": "缩放到实际大小",
+  "TOOLBAR.ACTION.ZOOMFIT": "缩放到适合",
+  "TOOLBAR.ACTION.MOVE": "移动",
+  "TOOLBAR.ACTION.IMPORT": "导入",
+  "TOOLBAR.ACTION.EXPORT": "导出",
+  "TOOLBAR.ACTION.BENDPOINT.ADD": "将 Endpoint 添加到所选顺序流",
+  "TOOLBAR.ACTION.BENDPOINT.REMOVE": "从所选 sequence flow 中删除 Endpoint",
+  "TOOLBAR.ACTION.ALIGNHORIZONTAL": "水平对齐模型",
+  "TOOLBAR.ACTION.ALIGNVERTICAL": "垂直对齐模型",
+  "TOOLBAR.ACTION.SAMESIZE": "相同尺寸",
+  "TOOLBAR.ACTION.HELP": "开始导览",
+  "TOOLBAR.ACTION.FEEDBACK": "提供反馈",
+  "KICKSTART.PROCESS_TOOLBAR.ACTION.SAVE": "保存模型",
+  "KICKSTART.PROCESS_TOOLBAR.ACTION.VALIDATE": "验证模型",
+  "KICKSTART.PROCESS_TOOLBAR.ACTION.HELP": "开始导览",
+  "KICKSTART.PROCESS_TOOLBAR.ACTION.FEEDBACK": "提供反馈",
+  "KICKSTART.PROCESS_TOOLBAR.ACTION.METADATA": "编辑属性",
+  "FORM_TOOLBAR.ACTION.SAVE": "保存模型",
+  "FORM_TOOLBAR.ACTION.VALIDATE": "验证模型",
+  "FORM_TOOLBAR.ACTION.HELP": "开始导览",
+  "FORM_TOOLBAR.ACTION.FEEDBACK": "提供反馈",
+  "DATA_MODEL_TOOLBAR.ACTION.SAVE": "保存数据模型",
+  "DATA_MODEL_TOOLBAR.ACTION.VALIDATE": "验证数据模型",
+  "DATA_MODEL_TOOLBAR.ACTION.CLOSE": "关闭",
+  "DECISION_TABLE_TOOLBAR.ACTION.SAVE": "保存决策表",
+  "DECISION_TABLE_TOOLBAR.ACTION.VALIDATE": "验证决策表",
+  "DECISION_TABLE_TOOLBAR.ACTION.HELP": "开始导览",
+  "DECISION_TABLE_TOOLBAR.ACTION.FEEDBACK": "提供反馈",
+  "DECISION_TABLE_TOOLBAR.ACTION.CLOSE": "关闭",
+  "DECISION_TABLE.SAVE.TITLE": "保存模型",
+  "DECISION_TABLE.NAME": "名称",
+  "DECISION_TABLE.DESCRIPTION": "说明",
+  "DECISION_TABLE.SAVE.NEWVERSION": "将这个保存为新版本？这意味着您可以始终返回到上一版本",
+  "DECISION_TABLE.SAVE.COMMENT": "注释",
+  "DECISION_TABLE.SAVE.SAVING": "保存模型",
+  "DECISION_TABLE.LASTMODIFIEDDATE": "最近保存时间",
+  "DECISION_TABLE.SAVE.ERROR": "意外错误：无法保存模型",
+  "DECISION_TABLE.VALIDATIONERRORS": "决策表包含验证错误。这意味着当前状态的决策表不能在 Process Services 引擎上部署。",
+  "DECISION_TABLE.CONFLICT.WRITE": "无法保存模型：'{{userFullName}}' 对这个模型进行了更改",
+  "DECISION_TABLE.CONFLICT.WRITE.OPTIONS": "选择一个选项以解决这个冲突：",
+  "DECISION_TABLE.CONFLICT.WRITE.OPTION.OVERWRITE": "覆盖其他模型",
+  "DECISION_TABLE.CONFLICT.WRITE.OPTION.DISCARDCHANGES": "丢弃我的更改",
+  "DECISION_TABLE.CONFLICT.WRITE.OPTION.SAVEAS": "另存为新模型",
+  "DECISION_TABLE.CONFLICT.WRITE.OPTION.NEWVERSION": "创建新版本",
+  "DECISION_TABLE.CONFLICT.SAVEAS": "另存为：",
+  "APP_DEFINITION_TOOLBAR.ACTION.SAVE": "保存 APP 定义",
+  "APP_DEFINITION_TOOLBAR.ACTION.VALIDATE": "验证 APP 定义",
+  "APP_DEFINITION_TOOLBAR.ACTION.HELP": "开始导览",
+  "APP_DEFINITION_TOOLBAR.ACTION.FEEDBACK": "提供反馈",
+  "BUTTON.ACTION.DELETE.TOOLTIP": "从模型中删除元素",
+  "BUTTON.ACTION.MORPH.TOOLTIP": "更改元素类型",
+  "ELEMENT.AUTHOR": "作者",
+  "ELEMENT.DATE_CREATED": "创建日期",
+  "ELEMENT.SELECTED_EMPTY_TITLE": "（无名称）",
+  "PROPERTY.REMOVED": "已删除",
+  "PROPERTY.EMPTY": "无值",
+  "PROPERTY.NONE": "无",
+  "PROPERTY.PARALLEL": "并行",
+  "PROPERTY.SEQUENTIAL": "顺序",
+  "PROPERTY.PROPERTY.EDIT.TITLE": "更改值 ",
+  "PROPERTY.FEEDBACK.TITLE": "填充反馈",
+  "PROPERTY.ASSIGNMENT.TITLE": "指派",
+  "PROPERTY.ASSIGNMENT.TYPE": "类型",
+  "PROPERTY.ASSIGNMENT.TYPE.IDENTITYSTORE": "身份存储",
+  "PROPERTY.ASSIGNMENT.TYPE.STATIC": "固定值",
+  "PROPERTY.ASSIGNMENT.ASSIGNEE": "被指派者",
+  "PROPERTY.ASSIGNMENT.NO_ASSIGNEE": "无选中的被指派者...",
+  "PROPERTY.ASSIGNMENT.MATCHING": "使用 &uparrow; 和 &downarrow; 选择并按 Enter 确认或使用鼠标",
+  "PROPERTY.ASSIGNMENT.ASSIGNEE_PLACEHOLDER": "输入被指派者",
+  "PROPERTY.ASSIGNMENT.EMPTY": "无选中的指派",
+  "PROPERTY.ASSIGNMENT.ASSIGNEE_DISPLAY": "被指派者 {{assignee}}",
+  "PROPERTY.ASSIGNMENT.CANDIDATE_USERS_DISPLAY": "{{length}} 候选用户",
+  "PROPERTY.ASSIGNMENT.CANDIDATE_USERS": "候选用户",
+  "PROPERTY.ASSIGNMENT.CANDIDATE_GROUPS_DISPLAY": "{{length}} 候选组",
+  "PROPERTY.ASSIGNMENT.CANDIDATE_GROUPS": "候选组",
+  "PROPERTY.ASSIGNMENT.GROUP_MANAGER": "组",
+  "PROPERTY.ASSIGNMENT.IDM.NO_ASSIGNEE": "无选中的被指派者...",
+  "PROPERTY.ASSIGNMENT.USER_IDM_DISPLAY": "用户 {{firstName}} {{lastName}}",
+  "PROPERTY.ASSIGNMENT.USER_IDM_EMAIL_DISPLAY": "用户 {{email}}",
+  "PROPERTY.ASSIGNMENT.USER_IDM_FIELD_DISPLAY": "字段 {{name}}",
+  "PROPERTY.ASSIGNMENT.GROUP_MANAGER_IDM_DISPLAY": "{{name}} 的组管理员",
+  "PROPERTY.ASSIGNMENT.GROUP_MANAGER_IDM_FIELD_DISPLAY": "字段{{name}} 中的组管理员",
+  "PROPERTY.ASSIGNMENT.IDM_EMPTY": "流程发起者",
+  "PROPERTY.ASSIGNMENT.PRIMARY_GROUP_MANAGER_FOR_INITIATOR_DISPLAY": "流程发起者的组管理员",
+  "PROPERTY.ASSIGNMENT.IDM.TYPE": "指派",
+  "PROPERTY.ASSIGNMENT.IDM.NO_CANDIDATE_USERS": "无选中的候选用户...",
+  "PROPERTY.ASSIGNMENT.IDM.NO_CANDIDATE_GROUPS": "无选中的候选组...",
+  "PROPERTY.ASSIGNMENT.IDM.DROPDOWN.INITIATOR": "已指派至流程发起者",
+  "PROPERTY.ASSIGNMENT.IDM.DROPDOWN.PRIMARY-GROUP-MANAGER-FOR-INITIATOR": "已指派至流程发起者的（主要）组管理员",
+  "PROPERTY.ASSIGNMENT.IDM.DROPDOWN.USER": "已指派至单个用户",
+  "PROPERTY.ASSIGNMENT.IDM.DROPDOWN.GROUP-MANAGER": "已指派至组管理员",
+  "PROPERTY.ASSIGNMENT.IDM.NO_GROUP-MANAGER": "无选中的组...",
+  "PROPERTY.ASSIGNMENT.IDM.DROPDOWN.USERS": "候选用户",
+  "PROPERTY.ASSIGNMENT.IDM.DROPDOWN.GROUPS": "候选组",
+  "PROPERTY.ASSIGNMENT.EMAIL.HELP": "输入电子邮件地址并按 Enter 继续",
+  "PROPERTY.ASSIGNMENT.INITIATOR-CAN-COMPLETE": "允许流程发起者完成任务",
+  "PROPERTY.ASSIGNMENT.IDM.NO_CANDIDATE": "没有选择指派候选者",
+  "PROPERTY.MAIL_TO.TITLE": "邮件收件人",
+  "PROPERTY.MAIL_TO.TYPE": "类型",
+  "PROPERTY.MAIL_TO.TYPE.IDENTITYSTORE": "身份存储",
+  "PROPERTY.MAIL_TO.TYPE.STATIC": "固定值",
+  "PROPERTY.MAIL_TO.RECIPIENT": "收件人",
+  "PROPERTY.MAIL_TO.NO_RECIPIENT": "无选中的收件人...",
+  "PROPERTY.MAIL_TO.MATCHING": "使用 &uparrow; 和 &downarrow; 选择并按 Enter 确认或使用鼠标",
+  "PROPERTY.MAIL_TO.RECIPIENT_PLACEHOLDER": "输入收件人",
+  "PROPERTY.MAIL_TO.EMPTY": "无选中的指派",
+  "PROPERTY.MAIL_TO.RECIPIENT_DISPLAY": "收件人 {{recipient}}",
+  "PROPERTY.MAIL_TO.USERS_DISPLAY": "{{length}} 用户",
+  "PROPERTY.MAIL_TO.USERS": "多个用户",
+  "PROPERTY.MAIL_TO.IDM.NO_RECIPIENT": "无选中的收件人...",
+  "PROPERTY.MAIL_TO.USER_IDM_DISPLAY": "用户 {{firstName}} {{lastName}}",
+  "PROPERTY.MAIL_TO.USER_IDM_EMAIL_DISPLAY": "用户 {{email}}",
+  "PROPERTY.MAIL_TO.USER_IDM_FIELD_DISPLAY": "字段 {{name}}",
+  "PROPERTY.MAIL_TO.IDM_EMPTY": "流程发起者",
+  "PROPERTY.MAIL_TO.IDM.TYPE": "收件人类型",
+  "PROPERTY.MAIL_TO.IDM.NO_USERS": "无选中的用户...",
+  "PROPERTY.MAIL_TO.IDM.DROPDOWN.INITIATOR": "发送至流程发起者",
+  "PROPERTY.MAIL_TO.IDM.DROPDOWN.USER": "发送至单个用户",
+  "PROPERTY.MAIL_TO.IDM.DROPDOWN.USERS": "多个用户",
+  "PROPERTY.MAIL_TO.EMAIL.HELP": "输入电子邮件地址并按 Enter 继续",
+  "PROPERTY.MAIL_TO.IDM.NO_CANDIDATE": "没有选择指派候选者",
+  "PROPERTY.MAIL_TO.EXPRESSION": "表达式",
+  "PROPERTY.EXECUTIONLISTENERS.DISPLAY": "{{length}} execution 监听器",
+  "PROPERTY.EXECUTIONLISTENERS.EMPTY": "没有 execution 监听器被配置",
+  "PROPERTY.EXECUTIONLISTENERS.EVENT": "事件",
+  "PROPERTY.EXECUTIONLISTENERS.EVENT.START": "开始",
+  "PROPERTY.EXECUTIONLISTENERS.EVENT.END": "结束",
+  "PROPERTY.EXECUTIONLISTENERS.EVENT.TAKE": "获取",
+  "PROPERTY.EXECUTIONLISTENERS.CLASS": "类",
+  "PROPERTY.EXECUTIONLISTENERS.CLASS.PLACEHOLDER": "输入类名称",
+  "PROPERTY.EXECUTIONLISTENERS.EXPRESSION": "表达式",
+  "PROPERTY.EXECUTIONLISTENERS.EXPRESSION.PLACEHOLDER": "输入表达式",
+  "PROPERTY.EXECUTIONLISTENERS.DELEGATEEXPRESSION": "委派表达式",
+  "PROPERTY.EXECUTIONLISTENERS.DELEGATEEXPRESSION.PLACEHOLDER": "输入委派表达式",
+  "PROPERTY.EXECUTIONLISTENERS.UNSELECTED": "无选中的 execution 监听器",
+  "PROPERTY.EXECUTIONLISTENERS.FIELDS.NAME": "名称",
+  "PROPERTY.EXECUTIONLISTENERS.FIELDS.NAME.PLACEHOLDER": "输入名称",
+  "PROPERTY.EXECUTIONLISTENERS.FIELDS.EXPRESSION": "表达式",
+  "PROPERTY.EXECUTIONLISTENERS.FIELDS.EXPRESSION.PLACEHOLDER": "输入表达式",
+  "PROPERTY.EXECUTIONLISTENERS.FIELDS.STRINGVALUE": "字符串值",
+  "PROPERTY.EXECUTIONLISTENERS.FIELDS.STRINGVALUE.PLACEHOLDER": "输入字符串值",
+  "PROPERTY.EXECUTIONLISTENERS.FIELDS.STRING": "字符串",
+  "PROPERTY.EXECUTIONLISTENERS.FIELDS.STRING.PLACEHOLDER": "输入字符串",
+  "PROPERTY.EXECUTIONLISTENERS.FIELDS.IMPLEMENTATION": "实现",
+  "PROPERTY.EXECUTIONLISTENERS.FIELDS.EMPTY": "无选中的字段",
+  "PROPERTY.FIELDS": "{{length}} 字段",
+  "PROPERTY.FIELDS.EMPTY": "无选中的字段",
+  "PROPERTY.FIELDS.NAME": "名称",
+  "PROPERTY.FIELDS.NAME.PLACEHOLDER": "输入名称",
+  "PROPERTY.FIELDS.EXPRESSION": "表达式",
+  "PROPERTY.FIELDS.EXPRESSION.PLACEHOLDER": "输入表达式",
+  "PROPERTY.FIELDS.STRINGVALUE": "字符串值",
+  "PROPERTY.FIELDS.STRINGVALUE.PLACEHOLDER": "输入字符串值",
+  "PROPERTY.FIELDS.STRING": "字符串",
+  "PROPERTY.FIELDS.STRING.PLACEHOLDER": "输入字符串",
+  "PROPERTY.FIELDS.IMPLEMENTATION": "实现",
+  "PROPERTY.FIELDS.UNSELECTED": "无选中的字段",
+  "PROPERTY.FORMPROPERTIES.VALUE": "{{length}} 表单属性",
+  "PROPERTY.FORMPROPERTIES.EMPTY": "没有表单属性被配置",
+  "PROPERTY.FORMPROPERTIES.ID": "ID",
+  "PROPERTY.FORMPROPERTIES.ID.PLACEHOLDER": "输入 ID",
+  "PROPERTY.FORMPROPERTIES.NAME": "名称",
+  "PROPERTY.FORMPROPERTIES.NAME.PLACEHOLDER": "输入名称",
+  "PROPERTY.FORMPROPERTIES.TYPE": "类型",
+  "PROPERTY.FORMPROPERTIES.DATEPATTERN": "日期模式",
+  "PROPERTY.FORMPROPERTIES.DATEPATTERN.PLACEHOLDER": "输入日期模式",
+  "PROPERTY.FORMPROPERTIES.VALUES": "值",
+  "PROPERTY.FORMPROPERTIES.EXPRESSION": "表达式",
+  "PROPERTY.FORMPROPERTIES.EXPRESSION.PLACEHOLDER": "输入表达式",
+  "PROPERTY.FORMPROPERTIES.DEFAULT-EXPRESSION": "默认表达式",
+  "PROPERTY.FORMPROPERTIES.DEFAULT-EXPRESSION.PLACEHOLDER": "输入默认表达式",
+  "PROPERTY.FORMPROPERTIES.VARIABLE": "变量",
+  "PROPERTY.FORMPROPERTIES.VARIABLE.PLACEHOLDER": "输入变量",
+  "PROPERTY.FORMPROPERTIES.REQUIRED": "必需",
+  "PROPERTY.FORMPROPERTIES.READABLE": "可读",
+  "PROPERTY.FORMPROPERTIES.WRITABLE": "可写",
+  "PROPERTY.INPARAMETERS.VALUE": "{{length}} 输入参数",
+  "PROPERTY.INPARAMETERS.EMPTY": "没有输入参数被配置",
+  "PROPERTY.OUTPARAMETERS.VALUE": "{{length}} 输出参数",
+  "PROPERTY.OUTPARAMETERS.EMPTY": "没有输出参数被配置",
+  "PROPERTY.PARAMETER.SOURCE": "源",
+  "PROPERTY.PARAMETER.SOURCE.PLACEHOLDER": "输入源",
+  "PROPERTY.PARAMETER.SOURCEEXPRESSION": "源表达式",
+  "PROPERTY.PARAMETER.SOURCEEXPRESSION.PLACEHOLDER": "输入源表达式",
+  "PROPERTY.PARAMETER.TARGET": "目标",
+  "PROPERTY.PARAMETER.TARGET.PLACEHOLDER": "输入目标",
+  "PROPERTY.PARAMETER.EMPTY": "无选中的参数",
+  "PROPERTY.SUBPROCESSREFERENCE.EMPTY": "无选中的引用",
+  "PROPERTY.SUBPROCESSREFERENCE.TITLE": "折叠的子流程引用",
+  "PROPERTY.SUBPROCESSREFERENCE.CREATE-TITLE": "创建折叠的子流程",
+  "PROPERTY.SUBPROCESSREFERENCE.CREATE-DESCRIPTION": "创建新的嵌入式子流程",
+  "PROPERTY.SUBPROCESSREFERENCE.NAME": "子流程名称",
+  "PROPERTY.SUBPROCESSREFERENCE.DESCRIPTION": "子流程说明",
+  "PROPERTY.SUBPROCESSREFERENCE.ERROR.SUBPROCESS": "加载子流程时出现错误。请稍后重试",
+  "PROPERTY.SUBPROCESSREFERENCE.FOLDER.ROOT": "文件夹",
+  "PROPERTY.SUBPROCESSREFERENCE.FOLDER.LOADING": "正在加载文件夹...",
+  "PROPERTY.SUBPROCESSREFERENCE.FOLDER.EMPTY": "这个文件夹不含子文件夹",
+  "PROPERTY.SUBPROCESSREFERENCE.SUBPROCESS.LOADING": "正在加载子流程...",
+  "PROPERTY.SUBPROCESSREFERENCE.SUBPROCESS.EMPTY": "这个文件夹不含子流程",
+  "PROPERTY.SUBPROCESSREFERENCE.REUSABLE": "可重复使用的子流程",
+  "PROPERTY.FORMREFERENCE.EMPTY": "无选中的引用",
+  "PROPERTY.FORMREFERENCE.TITLE": "表单引用",
+  "PROPERTY.FORMREFERENCE.ERROR.FORM": "加载表单时出现错误。请稍后重试",
+  "PROPERTY.FORMREFERENCE.FOLDER.ROOT": "文件夹",
+  "PROPERTY.FORMREFERENCE.FOLDER.LOADING": "正在加载文件夹...",
+  "PROPERTY.FORMREFERENCE.FOLDER.EMPTY": "这个文件夹不含子文件夹",
+  "PROPERTY.FORMREFERENCE.FORM.LOADING": "正在加载表单 ...",
+  "PROPERTY.FORMREFERENCE.FORM.EMPTY": "这个文件夹不含表单",
+  "PROPERTY.DECISIONTABLEREFERENCE.EMPTY": "无选中的引用",
+  "PROPERTY.DECISIONTABLEREFERENCE.TITLE": "决策表引用",
+  "PROPERTY.DECISIONTABLEREFERENCE.ERROR.FORM": "加载决策表时出现错误。请稍后重试",
+  "PROPERTY.DECISIONTABLEREFERENCE.FOLDER.ROOT": "文件夹",
+  "PROPERTY.DECISIONTABLEREFERENCE.FOLDER.LOADING": "正在加载文件夹...",
+  "PROPERTY.DECISIONTABLEREFERENCE.FOLDER.EMPTY": "这个文件夹不含子文件夹",
+  "PROPERTY.DECISIONTABLEREFERENCE.DECISIONTABLE.LOADING": "正在加载决策表...",
+  "PROPERTY.DECISIONTABLEREFERENCE.DECISIONTABLE.EMPTY": "这个文件夹无决策表",
+  "PROPERTY.TASKLISTENERS.VALUE": "{{length}} 任务监听器",
+  "PROPERTY.TASKLISTENERS.EMPTY": "没有任务监听器被配置",
+  "PROPERTY.TASKLISTENERS.EVENT": "事件",
+  "PROPERTY.TASKLISTENERS.CLASS": "类",
+  "PROPERTY.TASKLISTENERS.CLASS.PLACEHOLDER": "输入类名称",
+  "PROPERTY.TASKLISTENERS.EXPRESSION": "表达式",
+  "PROPERTY.TASKLISTENERS.EXPRESSION.PLACEHOLDER": "输入表达式",
+  "PROPERTY.TASKLISTENERS.DELEGATEEXPRESSION": "委派表达式",
+  "PROPERTY.TASKLISTENERS.DELEGATEEXPRESSION.PLACEHOLDER": "输入委派表达式",
+  "PROPERTY.TASKLISTENERS.UNSELECTED": "无选中的任务监听器",
+  "PROPERTY.TASKLISTENERS.FIELDS.NAME": "名称",
+  "PROPERTY.TASKLISTENERS.FIELDS.NAME.PLACEHOLDER": "输入名称",
+  "PROPERTY.TASKLISTENERS.FIELDS.EXPRESSION": "表达式",
+  "PROPERTY.TASKLISTENERS.FIELDS.EXPRESSION.PLACEHOLDER": "输入表达式",
+  "PROPERTY.TASKLISTENERS.FIELDS.STRINGVALUE": "字符串值",
+  "PROPERTY.TASKLISTENERS.FIELDS.STRINGVALUE.PLACEHOLDER": "输入字符串值",
+  "PROPERTY.TASKLISTENERS.FIELDS.STRING": "字符串",
+  "PROPERTY.TASKLISTENERS.FIELDS.STRING.PLACEHOLDER": "输入字符串",
+  "PROPERTY.TASKLISTENERS.FIELDS.IMPLEMENTATION": "实现",
+  "PROPERTY.TASKLISTENERS.FIELDS.EMPTY": "无选中的字段",
+  "PROPERTY.EVENTLISTENERS.DISPLAY": "{{length}} 事件监听器",
+  "PROPERTY.EVENTLISTENERS.EMPTY": "没有事件监听器被配置",
+  "PROPERTY.EVENTLISTENERS.EVENTS": "事件",
+  "PROPERTY.EVENTLISTENERS.RETHROW": "重新抛出事件？",
+  "PROPERTY.EVENTLISTENERS.CLASS": "类",
+  "PROPERTY.EVENTLISTENERS.CLASS.PLACEHOLDER": "输入类名称",
+  "PROPERTY.EVENTLISTENERS.DELEGATEEXPRESSION": "委派表达式",
+  "PROPERTY.EVENTLISTENERS.DELEGATEEXPRESSION.PLACEHOLDER": "输入委派表达式",
+  "PROPERTY.EVENTLISTENERS.ENTITYTYPE": "实体类型",
+  "PROPERTY.EVENTLISTENERS.ENTITYTYPE.PLACEHOLDER": "输入实体类型",
+  "PROPERTY.EVENTLISTENERS.RETHROWTYPE": "重新抛出事件类型",
+  "PROPERTY.EVENTLISTENERS.ERRORCODE": "错误代码",
+  "PROPERTY.EVENTLISTENERS.ERRORCODE.PLACEHOLDER": "输入错误代码",
+  "PROPERTY.EVENTLISTENERS.MESSAGENAME": "消息名称",
+  "PROPERTY.EVENTLISTENERS.MESSAGENAME.PLACEHOLDER": "输入消息名称",
+  "PROPERTY.EVENTLISTENERS.SIGNALNAME": "信号名称",
+  "PROPERTY.EVENTLISTENERS.SIGNALNAME.PLACEHOLDER": "输入信号名称",
+  "PROPERTY.EVENTLISTENERS.UNSELECTED": "无选中的事件监听器",
+  "PROPERTY.SIGNALDEFINITIONS.DISPLAY": "{{length}} 信号定义",
+  "PROPERTY.SIGNALDEFINITIONS.EMPTY": "没有信号定义被配置",
+  "PROPERTY.SIGNALDEFINITIONS.SCOPE-GLOBAL": "全局",
+  "PROPERTY.SIGNALDEFINITIONS.SCOPE-PROCESSINSTANCE": "流程实例",
+  "PROPERTY.SIGNALDEFINITIONS.ID": "ID",
+  "PROPERTY.SIGNALDEFINITIONS.NAME": "名称",
+  "PROPERTY.SIGNALDEFINITIONS.SCOPE": "范围",
+  "PROPERTY.MESSAGEDEFINITIONS.DISPLAY": "{{length}} 消息定义",
+  "PROPERTY.MESSAGEDEFINITIONS.EMPTY": "没有消息定义被配置",
+  "PROPERTY.MESSAGEDEFINITIONS.ID": "ID",
+  "PROPERTY.MESSAGEDEFINITIONS.NAME": "名称",
+  "PROPERTY.SEQUENCEFLOW.ORDER.EMPTY": "未确定 sequence flow 顺序",
+  "PROPERTY.SEQUENCEFLOW.ORDER.NOT.EMPTY": "已设置 sequence flow 顺序",
+  "PROPERTY.SEQUENCEFLOW.ORDER.NO.OUTGOING.SEQUENCEFLOW.FOUND": "找不到传出 sequence flow。",
+  "PROPERTY.SEQUENCEFLOW.ORDER.DESCRIPTION": "设置评估 sequence flow 所需的顺序：",
+  "PROPERTY.SEQUENCEFLOW.ORDER.SEQUENCEFLOW.VALUE": "sequence flow 到 {{targetType}} {{targetTitle}}",
+  "PROPERTY.SEQUENCEFLOW.CONDITION.TITLE": "sequence flow 条件",
+  "PROPERTY.SEQUENCEFLOW.CONDITION.TYPE.TITLE": "条件类型",
+  "PROPERTY.SEQUENCEFLOW.CONDITION.TYPE.SIMPLE": "简单",
+  "PROPERTY.SEQUENCEFLOW.CONDITION.TYPE.ADVANCED": "高级",
+  "PROPERTY.SEQUENCEFLOW.CONDITION.TYPE.EXPRESSION": "表达式",
+  "PROPERTY.SEQUENCEFLOW.CONDITION.STATIC": "条件表达式",
+  "PROPERTY.SEQUENCEFLOW.CONDITION.STATIC_PLACEHOLDER": "填充表达式值",
+  "PROPERTY.SEQUENCEFLOW.CONDITION.VARIABLE.TYPE": "变量类型",
+  "PROPERTY.SEQUENCEFLOW.CONDITION.VARIABLE.NO-CONDITION": "无条件",
+  "PROPERTY.SEQUENCEFLOW.CONDITION.VARIABLE.FORM-FIELD": "表单字段",
+  "PROPERTY.SEQUENCEFLOW.CONDITION.VARIABLE.FORM-OUTCOME": "表单结果",
+  "PROPERTY.SEQUENCEFLOW.CONDITION.VARIABLE.SELECT-FIELD": "选择字段",
+  "PROPERTY.SEQUENCEFLOW.CONDITION.VARIABLE.NO-FIELDS-AVAILABLE": "无字段可用",
+  "PROPERTY.SEQUENCEFLOW.CONDITION.VARIABLE.SELECT-FORM": "选择表单",
+  "PROPERTY.SEQUENCEFLOW.CONDITION.VARIABLE.NO-FORMS-AVAILABLE": "无表单可用",
+  "PROPERTY.SEQUENCEFLOW.CONDITION.VARIABLE.SELECT-OPERATOR": "选择运算符",
+  "PROPERTY.SEQUENCEFLOW.CONDITION.VARIABLE.EQUALS": "等于",
+  "PROPERTY.SEQUENCEFLOW.CONDITION.VARIABLE.NOTEQUALS": "不等于",
+  "PROPERTY.SEQUENCEFLOW.CONDITION.VARIABLE.LESSTHAN": "小于",
+  "PROPERTY.SEQUENCEFLOW.CONDITION.VARIABLE.GREATERTHAN": "大于",
+  "PROPERTY.SEQUENCEFLOW.CONDITION.VARIABLE.SELECT-OUTCOME": "选择结果",
+  "PROPERTY.SEQUENCEFLOW.CONDITION.VARIABLE.NO-OUTCOMES-AVAILABLE": "无结果可用",
+  "PROPERTY.SEQUENCEFLOW.CONDITION.NO-CONDITION-DISPLAY": "无条件",
+  "PROPERTY.SEQUENCEFLOW.CONDITION.VARIABLE.SELECT-REST-RESPONSE": "选择变量",
+  "PROPERTY.SEQUENCEFLOW.CONDITION.VARIABLE.NO-REST-RESPONSE-AVAILABLE": "无变量可用",
+  "PROPERTY.SEQUENCEFLOW.CONDITION.VARIABLE.REST-RESPONSE": "变量",
+  "PROPERTY.SEQUENCEFLOW.CONDITION.ADVANCED-CONDITION": "高级条件",
+  "PROPERTY.SEQUENCEFLOW.CONDITION.SIMPLE-CONDITION": "简单条件",
+  "PROPERTY.SEQUENCEFLOW.CONDITION.FIELD.NO-FIELD-AVAILABLE": "无字段可用",
+  "PROPERTY.SEQUENCEFLOW.CONDITION.NO-CONDITION": "没有条件被配置",
+  "PROPERTY.SEQUENCEFLOW.CONDITION.AVAILABLE": "已配置条件",
+  "PROPERTY.DUEDATE.EMPTY": "无截止日期",
+  "PROPERTY.DUEDATE.DEFINED": "已定义截止日期",
+  "PROPERTY.DUEDATE.TITLE": "截止日期",
+  "PROPERTY.DUEDATE.EXPRESSION-LABEL": "截止日期表达式",
+  "PROPERTY.DUEDATE.TASK-DUE-DATE-OPTIONS.NO-DUEDATE": "无截止日期",
+  "PROPERTY.DUEDATE.TASK-DUE-DATE-OPTIONS.EXPRESSION": "表达式定义",
+  "PROPERTY.DUEDATE.TASK-DUE-DATE-OPTIONS.STATIC": "创建任务后的固定持续时间",
+  "PROPERTY.DUEDATE.TASK-DUE-DATE-OPTIONS.FIELD": "基于字段",
+  "PROPERTY.DUEDATE.TASK-DUE-DATE-OPTIONS.VARIABLE": "基于变量",
+  "PROPERTY.ALFRESCOCONTENT.EMPTY": "无选中的内容",
+  "PROPERTY.ALFRESCOCONTENT.NOT.EMPTY": "已选择内容",
+  "PROPERTY.ALFRESCODESTINATION.EMPTY": "无选中的目标",
+  "PROPERTY.ALFRESCODESTINATION.NOT.EMPTY": "已选择目标",
+  "PROPERTY.ALFRESCOMETADATA.EMPTY": "没有属性被映射",
+  "PROPERTY.ALFRESCOMETADATA.NOT.EMPTY": "已配置属性",
+  "PROPERTY.BOXCONTENT.EMPTY": "无选中的内容",
+  "PROPERTY.BOXCONTENT.NOT.EMPTY": "已选择内容",
+  "PROPERTY.BOXDESTINATION.EMPTY": "无选中的目标",
+  "PROPERTY.BOXDESTINATION.NOT.EMPTY": "已选择目标",
+  "PROPERTY.GOOGLE-DRIVE-CONTENT.EMPTY": "无选中的内容",
+  "PROPERTY.GOOGLE-DRIVE-CONTENT.NOT.EMPTY": "已选择内容",
+  "PROPERTY.GOOGLE-DRIVE-DESTINATION.EMPTY": "无选中的目标",
+  "PROPERTY.GOOGLE-DRIVE-DESTINATION.NOT.EMPTY": "已选择目标",
+  "PROPERTY.RESTCALL.ENDPOINT.EMPTY": "没有 Endpoint 被配置",
+  "PROPERTY.RESTCALL.ENDPOINT.NOT.EMPTY": "已配置 Endpoint",
+  "PROPERTY.RESTCALL.REQUEST.MAPPING.EMPTY": "没有 request 映射被配置",
+  "PROPERTY.RESTCALL.REQUEST.MAPPING.NOT.EMPTY": "已配置 request 映射",
+  "PROPERTY.RESTCALL.RESPONSE.MAPPING.EMPTY": "无选中的 response 映射",
+  "PROPERTY.RESTCALL.RESPONSE.MAPPING.NOT.EMPTY": "已选择 response 映射",
+  "PROPERTY.RESTCALL.REQUEST.HEADERS.EMPTY": "没有 request header 被配置",
+  "PROPERTY.RESTCALL.REQUEST.HEADERS.NOT.EMPTY": "已配置 request header",
+  "PROPERTY.EXECUTION.VARIABLES.EMPTY": "没有变量被配置",
+  "PROPERTY.EXECUTION.VARIABLES.DISPLAY": "已配置 {{length}} 变量",
+  "PROPERTY.EXECUTION.VARIABLES.UNSELECTED": "无选中的变量",
+  "PROPERTY.EXECUTION.VARIABLES.EXECUTIONVARIABLENAME.LABEL": "Execution 变量名称",
+  "PROPERTY.EXECUTION.VARIABLES.EXECUTIONVARIABLENAME.PLACEHOLDER": "输入 execution 变量名称",
+  "PROPERTY.EXECUTION.VARIABLES.VARIABLETYPE.LABEL": "变量类型",
+  "PROPERTY.EXECUTION.VARIABLES.VARIABLETYPE.PLACEHOLDER": "选择变量类型",
+  "PROPERTY.EXECUTION.VARIABLES.VARIABLENAME.LABEL": "变量名称",
+  "PROPERTY.EXECUTION.VARIABLES.VARIABLENAME.PLACEHOLDER": "输入变量名称",
+  "PROPERTY.EXECUTION.VARIABLES.MAPVARIABLE.LABEL": "映射带有数据模型实体的变量？",
+  "PROPERTY.EXECUTION.VARIABLES.MAPPEDDATAMODEL.LABEL": "映射的数据模型",
+  "PROPERTY.EXECUTION.VARIABLES.MAPPEDENTITY.LABEL": "映射的实体",
+  "PROPERTY.EXECUTION.VARIABLES.MAPPEDCOLUMN.LABEL": "映射的列",
+  "PROPERTY.EXECUTION.VARIABLES.MAPPEDVARIABLENAME.LABEL": "映射的变量名称",
+  "PROPERTY.FIELDS.TO.VARIABLES.EMPTY": "没有映射被配置",
+  "PROPERTY.FIELDS.TO.VARIABLES.DISPLAY": "已配置 {{length}} 映射",
+  "PROPERTY.FIELDS.TO.VARIABLES.UNSELECTED": "无选中的映射",
+  "PROPERTY.FIELDS.TO.VARIABLES.FORMFIELD.LABEL": "表单字段",
+  "PROPERTY.FIELDS.TO.VARIABLES.SELECT-FIELD": "选择表单字段",
+  "PROPERTY.FIELDS.TO.VARIABLES.NO-FIELDS-AVAILABLE": "无表单字段可用",
+  "PROPERTY.FIELDS.TO.VARIABLES.MAPPEDDATAMODEL.LABEL": "映射的数据模型",
+  "PROPERTY.FIELDS.TO.VARIABLES.MAPPEDENTITY.LABEL": "映射的实体",
+  "PROPERTY.FIELDS.TO.VARIABLES.MAPPEDCOLUMN.LABEL": "映射的属性",
+  "PROPERTY.FIELDS.TO.VARIABLES.MAPPEDENDPOINT.LABEL": "映射的 Endpoint",
+  "PROPERTY.FIELDS.TO.VARIABLES.MAPPEDVARIABLENAME.LABEL": "映射的变量名称",
+  "PROPERTY.FIELDS.TO.VARIABLES.MAPPEDVARIABLENAME.PLACEHOLDER": "输入变量名称",
+  "PROPERTY.FIELDS.TO.VARIABLES.MAPPED_ENDPOINT_ELEMENT.LABEL": "Endpoint 元素 ID",
+  "PROPERTY.FIELDS.TO.VARIABLES.MAPPED_ENDPOINT_VALUE.LABEL": "映射的值",
+  "PROPERTY.FIELDS.TO.VARIABLES.ENDPOINT_VALUE_TYPE.LABEL": "映射的值类型",
+  "PROPERTY.FIELDS.TO.VARIABLES.VALUE-TYPE-STATIC": "静态值",
+  "PROPERTY.FIELDS.TO.VARIABLES.VALUE-TYPE-FIELD": "表单字段",
+  "PROPERTY.FIELDS.TO.VARIABLES.VALUE-TYPE-VARIABLE": "变量",
+  "PROPERTY.FIELDS.TO.VARIABLES.SELECT-VARIABLE.LABEL": "选择一个变量",
+  "PROPERTY.ENTITY-ATTRIBUTE-MAPPING.EMPTY": "没有映射被配置",
+  "PROPERTY.ENTITY-ATTRIBUTE-MAPPING.DISPLAY": "已配置 {{length}} 映射",
+  "PROPERTY.ENTITY-ATTRIBUTE-MAPPING.UNSELECTED": "无选中的映射",
+  "PROPERTY.ENTITY-ATTRIBUTE-MAPPING.FORMFIELD.LABEL": "表单字段",
+  "PROPERTY.ENTITY-ATTRIBUTE-MAPPING.SELECT-FIELD": "选择表单字段",
+  "PROPERTY.ENTITY-ATTRIBUTE-MAPPING.NO-FIELDS-AVAILABLE": "无表单字段可用",
+  "PROPERTY.ENTITY-ATTRIBUTE-MAPPING.MAPPEDDATAMODEL.LABEL": "映射的数据模型",
+  "PROPERTY.ENTITY-ATTRIBUTE-MAPPING.MAPPEDENTITY.LABEL": "映射的实体",
+  "PROPERTY.ENTITY-ATTRIBUTE-MAPPING.CREATE-ENDPOINT.LABEL": "创建 Endpoint",
+  "PROPERTY.ENTITY-ATTRIBUTE-MAPPING.UPDATE-ENDPOINT.LABEL": "更新 Endpoint",
+  "PROPERTY.ENTITY-ATTRIBUTE-MAPPING.VARIABLE.LABEL": "新的/更新的实体的变量",
+  "PROPERTY.ENTITY-ATTRIBUTE-MAPPING.VARIABLE-TYPE-NEW": "新变量",
+  "PROPERTY.ENTITY-ATTRIBUTE-MAPPING.VARIABLE-TYPE-EXISTING": "现有变量",
+  "PROPERTY.ENTITY-ATTRIBUTE-MAPPING.ATTRIBUTE-NAME.LABEL": "属性名称",
+  "PROPERTY.ENTITY-ATTRIBUTE-MAPPING.PRIMARY-KEY.LABEL": "Primary key",
+  "PROPERTY.ENTITY-ATTRIBUTE-MAPPING.IDENTITY.LABEL": "身份",
+  "PROPERTY.ENTITY-ATTRIBUTE-MAPPING.REQUIRED.LABEL": "必需",
+  "PROPERTY.ENTITY-ATTRIBUTE-MAPPING.MAPPING-VALUE-TYPE.LABEL": "映射的值类型",
+  "PROPERTY.ENTITY-ATTRIBUTE-MAPPING.MAPPING-VALUE.LABEL": "映射的值",
+  "PROPERTY.ENTITY-ATTRIBUTE-MAPPING.VALUE-TYPE-STATIC": "静态值",
+  "PROPERTY.ENTITY-ATTRIBUTE-MAPPING.VALUE-TYPE-FIELD": "表单字段",
+  "PROPERTY.ENTITY-ATTRIBUTE-MAPPING.VALUE-TYPE-FIELD-VALUE-PATH": "字段值路径",
+  "PROPERTY.ENTITY-ATTRIBUTE-MAPPING.VALUE-TYPE-VARIABLE": "变量",
+  "PROPERTY.ENTITY-ATTRIBUTE-MAPPING.SELECT-VARIABLE.LABEL": "选择一个变量",
+  "PROPERTY.EXECUTION.VARIABLE.DOCUMENT.EMPTY": "没有文档变量被配置",
+  "PROPERTY.EXECUTION.VARIABLE.DOCUMENT.DISPLAY": "已配置文档变量",
+  "PROPERTY.EXECUTION.VARIABLE.STRING.EMPTY": "没有字符串变量被配置",
+  "PROPERTY.EXECUTION.VARIABLE.STRING.DISPLAY": "已配置字符串变量",
+  "PROPERTY.GENERATEDOCUMENT.PDF": "PDF",
+  "PROPERTY.GENERATEDOCUMENT.WORD": "Word",
+  "PROPERTY.GENERATEDOCUMENT.TEMPLATE.DESCRIPTION": "选择要用于生成文档的模板。直接在此处上传文档（其只会用于这个流程模型）或从下面的列表中选择一个系统模板。",
+  "PROPERTY.GENERATEDOCUMENT.TEMPLATE.SELECTED-TEMPLATE": "选择的模板： ",
+  "PROPERTY.GENERATEDOCUMENT.TEMPLATE.NO-TEMPLATE-SELECTED": "无选中的模板",
+  "PROPERTY.GENERATEDOCUMENT.TEMPLATE.UPLOAD": "上传新模板",
+  "PROPERTY.GENERATEDOCUMENT.TEMPLATE.UPLOAD-DESCRIPTION": "上传可在流程中用作模板的 Microsoft Word (.docx) 文件。",
+  "PROPERTY.GENERATEDOCUMENT.TEMPLATE.UPLOAD-DROPZONE": "将模板文件拖放至此处",
+  "PROPERTY.GENERATEDOCUMENT.TEMPLATE.UPLOAD-CANCEL": "取消上传",
+  "PROPERTY.GENERATEDOCUMENT.TEMPLATE.UPLOAD-ERROR": "上传时出现错误",
+  "PROPERTY.GENERATEDOCUMENT.TEMPLATE.NO-FOUND": "找不到文档模板",
+  "PROPERTY.GENERATEDOCUMENT.TEMPLATE.MATCHING-TEMPLATES": "找到 {{total | number}} 个匹配的模板，显示 {{start + 1}} 至 {{start + size}} 个",
+  "PROPERTY.GENERATEDOCUMENT.TEMPLATE.SHOW-NEXT": "显示下一个",
+  "PROPERTY.GENERATEDOCUMENT.TEMPLATE.SHOW-PREVIOUS": "显示上一个",
+  "PROPERTY.GENERATEDOCUMENT.TEMPLATE.SORT-NAME-ASC": "按名称排序 (A-Z)",
+  "PROPERTY.GENERATEDOCUMENT.TEMPLATE.SORT-NAME-DESC": "按名称排序 (Z-A)",
+  "PROPERTY.GENERATEDOCUMENT.TEMPLATE.SORT-CREATED-ASC": "按创建日期排序，最旧的排前面",
+  "PROPERTY.GENERATEDOCUMENT.TEMPLATE.SORT-CREATED-DESC": "按创建日期排序，最新的排前面",
+  "PROPERTY.GENERATEDOCUMENT.TEMPLATE.NAME": "名称",
+  "PROPERTY.GENERATEDOCUMENT.TEMPLATE.UPLOAD-DATE": "已上传",
+  "PROPERTY.GENERATEDOCUMENT.TEMPLATE.DOWNLOAD": "下载",
+  "PROPERTY.GENERATEDOCUMENT.TEMPLATE.SELECT": "选择",
+  "PROPERTY.GENERATEDOCUMENT.TEMPLATE.TAB-TENANT-TEMPLATES-TTITLE": "全局模板",
+  "PROPERTY.GENERATEDOCUMENT.TEMPLATE.TAB-UPLOAD-TITLE": "自定义模板",
+  "PROPERTY.CUSTOM-VARIABLE.EMPTY": "没有变量被配置",
+  "PROPERTY.METADATA.DISPLAY": "已配置 {{length}} 字段",
+  "PROPERTY.METADATA.UNSELECTED": "无选中的属性字段",
+  "PROPERTY.METADATA.EMPTY": "没有属性被定义",
+  "PROPERTY.METADATA.KEY": "Key",
+  "PROPERTY.METADATA.KEY-PLACEHOLDER": "输入字段 Key",
+  "PROPERTY.METADATA.VALUE": "值",
+  "PROPERTY.METADATA.VALUE-PLACEHOLDER": "输入字段值",
+  "MODEL.SAVE.TITLE": "保存模型",
+  "MODEL.NAME": "名称",
+  "MODEL.DESCRIPTION": "说明",
+  "MODEL.SAVE.NEWVERSION": "将这个保存为新版本？这意味着您可以始终返回到上一版本",
+  "MODEL.SAVE.COMMENT": "注释",
+  "MODEL.SAVE.SAVING": "保存模型",
+  "MODEL.LASTMODIFIEDDATE": "最近保存时间",
+  "MODEL.SAVE.ERROR": "意外错误：无法保存模型",
+  "MODEL.VALIDATIONERRORS": "模型包含验证错误。这意味着模型无法以当前状态在 Sequential 引擎上部署。",
+  "MODEL.RELATIONSWARNING": "将创建这个表单的副本，因为其他流程也在使用它",
+  "MODEL.VALIDATION.ERRORS.HEADER": "验证错误：",
+  "MODEL.VALIDATION.ERRORS.DESCRIPTION": "说明",
+  "MODEL.VALIDATION.ERRORS.WARNING": "警告",
+  "MODEL.VALIDATION.ERRORS.SET": "验证程序已设置",
+  "MODEL.CONFLICT.WRITE": "无法保存模型：'{{userFullName}}' 对这个模型进行了更改",
+  "MODEL.CONFLICT.WRITE.OPTIONS": "选择一个选项以解决这个冲突：",
+  "MODEL.CONFLICT.WRITE.OPTION.OVERWRITE": "覆盖其他模型",
+  "MODEL.CONFLICT.WRITE.OPTION.DISCARDCHANGES": "丢弃我的更改",
+  "MODEL.CONFLICT.WRITE.OPTION.SAVEAS": "另存为新模型",
+  "MODEL.CONFLICT.WRITE.OPTION.NEWVERSION": "创建新版本",
+  "MODEL.CONFLICT.SAVEAS": "另存为：",
+  "EVENT_TYPE.ACTIVITY.COMPENSATE.TOOLTIP": "将执行一个活动以补偿另一个活动。事件把为补偿而被执行的活动作为目标",
+  "EVENT_TYPE.ACTIVITY.COMPLETED.TOOLTIP": "活动已成功完成",
+  "EVENT_TYPE.ACTIVITY.ERROR.RECEIVED.TOOLTIP": "活动收到一个错误事件。活动收到实际错误之前已派遣",
+  "EVENT_TYPE.MEMBERSHIP.CREATED.TOOLTIP": "已创建新的成员关系",
+  "EVENT_TYPE.MEMBERSHIP.DELETED.TOOLTIP": "已删除单个成员关系",
+  "EVENT_TYPE.MEMBERSHIPS.DELETED.TOOLTIP": "已删除相关组中的所有成员关系。因为可能的性能原因，不会派遣单个事件",
+  "EVENT_TYPE.TASK.ASSIGNED.TOOLTIP": "已指派一个任务。这与 ENTITY_UPDATED 事件同时抛出",
+  "EVENT_TYPE.TASK.COMPLETED.TOOLTIP": "已完成一个任务。删除任务实体之前已派遣",
+  "EVENT_TYPE.UNCAUGHT.BPMNERROR.TOOLTIP": "抛出一个 BPMN 错误，但没有在流程中捕获",
+  "EVENT_TYPE.VARIABLE.CREATED.TOOLTIP": "已创建新的变量",
+  "EVENT_TYPE.VARIABLE.DELETED.TOOLTIP": "已删除现有变量",
+  "EVENT_TYPE.VARIABLE.UPDATED.TOOLTIP": "已更新现有变量",
+  "STEP.MOVE.TOOLTIP": "移动这个步骤",
+  "STEP.REMOVE.TOOLTIP": "删除这个步骤",
+  "GOOGLE-DRIVE-PUBLISH-TASK": {
+    "DESTINATION": {
+      "ACCOUNT": "帐户",
+      "DESTINATION": "目标",
+      "NO-DESTINATION": "无选中的目标...",
+      "NETWORK": "网络",
+      "SELECT-USER": "选择用户...",
+      "PUBLISH-AS-LABEL": "发布为",
+      "SPECIFIC-USER": "特定用户",
+      "PROCESS-INITIATOR": "流程发起者",
+      "SITE": "站点",
+      "PATH": "路径",
+      "DOCUMENT-LIBRARY": "文档库",
+      "SUB-FOLDER": "子文件夹",
+      "USE-SUB-FOLDER": "创建或重新使用子文件夹",
+      "FIELD": "基于字段",
+      "SEARCH": "搜索"
+    }
+  },
+  "BOX-PUBLISH-TASK": {
+    "DESTINATION": {
+      "ACCOUNT": "帐户",
+      "DESTINATION": "目标",
+      "NO-DESTINATION": "无选中的目标...",
+      "NETWORK": "网络",
+      "SELECT-USER": "选择用户...",
+      "PUBLISH-AS-LABEL": "发布为",
+      "SPECIFIC-USER": "特定用户",
+      "PROCESS-INITIATOR": "流程发起者",
+      "SITE": "站点",
+      "PATH": "路径",
+      "DOCUMENT-LIBRARY": "文档库",
+      "SUB-FOLDER": "子文件夹",
+      "USE-SUB-FOLDER": "创建或重新使用子文件夹",
+      "FIELD": "基于字段",
+      "SEARCH": "搜索"
+    }
+  }
+}

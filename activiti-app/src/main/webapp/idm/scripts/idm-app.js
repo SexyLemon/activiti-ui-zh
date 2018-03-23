@@ -95,10 +95,11 @@ activitiApp.config(['$provide', '$routeProvider', '$translateProvider', function
           suffix: '.json'
         });
 
-        $translateProvider.registerAvailableLanguageKeys(['en'], {
+    $translateProvider.registerAvailableLanguageKeys(['zh-CN', 'en'], {
             'en_*': 'en',
             'en-*': 'en'
         });
+    $translateProvider.preferredLanguage('zh-CN');
 
   }])
     .run(['$rootScope', '$location', '$window', 'AuthenticationSharedService', '$translate', 'appResourceRoot', '$modal',
@@ -179,12 +180,12 @@ activitiApp.config(['$provide', '$routeProvider', '$translateProvider', function
     .run(['$rootScope', '$timeout', '$translate', '$location', '$window', 'AuthenticationSharedService',
         function($rootScope, $timeout, $translate, $location, $window, AuthenticationSharedService) {
 
-            var proposedLanguage = $translate.proposedLanguage();
-            if (proposedLanguage !== 'de' && proposedLanguage !== 'en' && proposedLanguage !== 'es' && proposedLanguage !== 'fr'
-                && proposedLanguage !== 'it' && proposedLanguage !== 'ja') {
-                
-                $translate.use('en');
-            }
+            // var proposedLanguage = $translate.proposedLanguage();
+            // if (proposedLanguage !== 'de' && proposedLanguage !== 'en' && proposedLanguage !== 'es' && proposedLanguage !== 'fr'
+            //     && proposedLanguage !== 'it' && proposedLanguage !== 'ja') {
+            //
+            //     $translate.use('en');
+            // }
             
             // Common model (eg selected tenant id)
             $rootScope.common = {};

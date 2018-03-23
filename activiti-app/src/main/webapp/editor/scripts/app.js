@@ -187,7 +187,7 @@ activitiModeler
                     verify: authRouteResolver
                 }
             });
-            
+
         if (ACTIVITI.CONFIG.appDefaultRoute) {
             $routeProvider.when('/', {
                 redirectTo: ACTIVITI.CONFIG.appDefaultRoute
@@ -213,11 +213,11 @@ activitiModeler
             suffix: '.json'
         });
 
-        $translateProvider.registerAvailableLanguageKeys(['en'], {
+      $translateProvider.registerAvailableLanguageKeys(['zh-CN', 'en'], {
             'en_*': 'en',
             'en-*': 'en'
         });
-        
+      $translateProvider.preferredLanguage('zh-CN');
   }])
   .run(['$rootScope', '$timeout', '$modal', '$translate', '$location', '$window', 'appResourceRoot',
         function($rootScope, $timeout, $modal, $translate, $location, $window, appResourceRoot) {
@@ -388,13 +388,13 @@ activitiModeler
   ])
   .run(['$rootScope', '$location', 'AuthenticationSharedService', 'Account', '$translate', '$window', '$modal',
         function($rootScope, $location, AuthenticationSharedService, Account, $translate, $window , $modal) {
-      
-            var proposedLanguage = $translate.proposedLanguage();
-            if (proposedLanguage !== 'de' && proposedLanguage !== 'en' && proposedLanguage !== 'es' && proposedLanguage !== 'fr'
-                && proposedLanguage !== 'it' && proposedLanguage !== 'ja') {
-              
-                $translate.use('en');
-            }
+
+            // var proposedLanguage = $translate.proposedLanguage();
+            // if (proposedLanguage !== 'de' && proposedLanguage !== 'en' && proposedLanguage !== 'es' && proposedLanguage !== 'fr'
+            //     && proposedLanguage !== 'it' && proposedLanguage !== 'ja') {
+            //
+            //     $translate.use('en');
+            // }
 
             var fixedUrlPart = '/editor/';
 

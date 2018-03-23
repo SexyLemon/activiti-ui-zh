@@ -1,0 +1,764 @@
+{
+  "COMMON": {
+    "SELECT-FOLDER": "选择文件夹...",
+    "ACCOUNTS": {
+      "box": "Box",
+      "alfresco-cloud": "Alfresco Content Services in the Cloud",
+      "alfresco-*": "Alfresco ({{name}})",
+      "google-drive": "Google Drive"
+    },
+    "AUTHORIZE": {
+      "EXTERNAL-REPOSITORY-CONFIGURED": "为您配置了一个 {{moduleName}} 帐户。",
+      "EXTERNAL-REPOSITORY-KEY-EXPIRE-AT": "Key 将于 {{expireDateTime  | date: 'MM/dd/yyyy h:mma' }} 过期",
+      "NO-EXTERNAL-REPOSITORY-CONFIGURED": "没有为您配置 {{moduleName}} 帐户。",
+      "EXTERNAL-REAUTHORIZE-ADVICE": "您可以按下面的按钮重新授权 Alfresco Process Services 发布到 {{moduleName}}。",
+      "MODULE-DISABLED": "{{moduleName}} 集成当前已禁用。",
+      "TITLE": "授权"
+    },
+    "AUTHORIZATION_COMPLETED": "已完成授权",
+    "NOBODY": "没有人",
+    "NOBODY-LETTERS": "NB",
+    "FILTER": {
+      "NEW-FILTER": "新筛选器",
+      "EDIT": "编辑",
+      "RESET": "重置",
+      "DELETE": "删除",
+      "NEW-FILTER-NAME": "新筛选器",
+      "FILTER-ICON-AND-NAME": "筛选器图标和名称",
+      "SAVE": "保存",
+      "SAVE-HINT": "满意您的筛选器吗？<br/>选择一个图标和名称，然后单击保存。",
+      "SEARCH-RESULTS": "搜索结果"
+    },
+    "WARNING": {
+      "APP-LICENSE-ISSUE-INVALID": "Alfresco Process Services 为只读模式，因为本地许可证无效。",
+      "APP-LICENSE-ISSUE-NOT-FOUND": "Alfresco Process Services 为只读模式，因为没有找到本地许可证。",
+      "APP-LICENSE-ISSUE-INVALID-DATE": "Alfresco Process Services 为只读模式，因为本地许可证的日期无效（过期或起始日期还未到）。",
+      "APP-LICENSE-WARNING-ABOUT-TO-EXPIRE": "您的许可证即将过期！Alfresco Process Services 将变为只读模式。"
+    }
+  },
+  "GENERAL": {
+    "MAIN-TITLE": "我的任务",
+    "ERROR": {
+      "GENERIC": "出现错误...",
+      "UNKNOWN": "执行请求的操作时出现错误。",
+      "BAD_REQUEST": "执行请求的操作时出现错误",
+      "NOT_FOUND": "您尝试访问的资源不存在",
+      "UNAUTHORIZED": "您需要登录才能执行请求的操作。",
+      "FORBIDDEN": "您不可以执行请求的操作",
+      "INTERNAL_SERVER_ERROR": "执行请求的操作时出现意外错误。",
+      "UPLOAD-LIMIT-EXCEEDED": "您尝试上传的文件太大",
+      "UPLOAD-LIMIT-EXCEEDED-TRIAL-USER": "您尝试上传的文件太大。升级到企业版以上传大于 {{quota}} 的文件！",
+      "QUOTA-EXCEEDED-RUNTIME-PROCESSES": "作为试用用户，您同时只能运行 {{quota}} 个活动流程。",
+      "QUOTA-EXCEEDED-COMPLETED-PROCESSES": "作为试用用户，您同时只能完成 {{quota}} 个流程。删除完成的流程以启动新流程。",
+      "QUOTA-EXCEEDED-TOTAL-CONTENT-SIZE": "作为试用用户，您只能存储共 {{quota}} 的内容。删除内容或完成的流程以释放空间来存储新内容。"
+    },
+    "NAVIGATION": {
+      "TASKS": "任务",
+      "PROCESSES": "流程",
+      "START-PROCESS": "启动",
+      "DESIGN": "设计",
+      "CREATE": "+ 创建",
+      "LOGIN": "登录",
+      "REPORTS": "报告"
+    },
+    "TITLE": {
+      "ADD-COMMENT": "创建注释",
+      "INVOLVE-PEOPLE": "选择人员",
+      "RECENT-PEOPLE": "最近的人员",
+      "MATCHING-PEOPLE": "匹配的人员",
+      "SELECT-GROUP": "选择组",
+      "MATCHING-GROUPS": "匹配的组",
+      "FILTER": "筛选器",
+      "SELECT-DATE": "选择一个日期"
+    },
+    "ACTION": {
+      "ABOUT": "关于 Alfresco Process Services",
+      "LOGOUT": "退出",
+      "EDIT-PROFILE": "编辑配置文件",
+      "ADD-COMMENT": "添加注释",
+      "ADD-CHECKLIST": "添加检查表",
+      "SAVE": "保存",
+      "CANCEL": "取消",
+      "CLOSE": "关闭",
+      "CONFIRM": "确认",
+      "SHOW-MORE": "显示更多",
+      "HELP-DOCS-LINK": "帮助"
+    },
+    "MESSAGE": {
+      "SELECT-PEOPLE-HELP": "使用 &uparrow; 和 &downarrow; 选择并按 Enter 以确认",
+      "SELECT-GROUP-HELP": "使用 &uparrow; 和 &downarrow; 选择并按 Enter 以确认",
+      "SELECT-GROUP-SEARCH-PLACEHOLDER": "搜索组",
+      "SELECT-GROUP-NO-MATCHING-RESULTS": "使用上面的搜索框查找组。",
+      "UPLOAD-CONTENT": "选择或拖放文件",
+      "UPLOAD-CONTENT-NO-DROP": "选择一个要上传的文件",
+      "DROPZONE": "拖放一个要上传的文件",
+      "YES": "是",
+      "NO": "否"
+    },
+    "TIME": {
+      "HOURS": "小时",
+      "MINUTES": "分",
+      "SECONDS": "秒"
+    },
+    "ABOUT": {
+      "TYPE": "类型",
+      "LICENSED-TO": "授权给",
+      "EXPIRES": "过期",
+      "COPYRIGHT": "© 2005-2018 Alfresco Software Inc. 保留所有权利。",
+      "LEGAL": "法律和许可"
+    }
+  },
+  "LOGIN": {
+    "TITLE": "登录",
+    "USERNAME": "用户名",
+    "USERNAME-PLACEHOLDER": "输入用户名",
+    "PASSWORD": "密码",
+    "PASSWORD-PLACEHOLDER": "输入密码",
+    "ACTION": {
+      "CONFIRM": "登录"
+    }
+  },
+  "TASK": {
+    "SECTION": {
+      "PEOPLE": "人员",
+      "GROUPS": "组",
+      "CONTENT": "内容",
+      "COMMENTS": "注释",
+      "CHECKLISTS": "检查表",
+      "NOTES": "说明"
+    },
+    "FILTER": {
+      "SORT": "排序",
+      "CREATED-DESC": "最新的排前面",
+      "CREATED-ASC": "最旧的排前面",
+      "DUE-DESC": "到期的排后面",
+      "DUE-ASC": "到期的排前面",
+      "TEXT": "筛选器",
+      "TEXT-PLACEHOLDER": "按任务名称搜索",
+      "TEXT-SUMMARY": "筛选方式：{{text}}",
+      "PROCESS-DEFINITION": "流程定义",
+      "PROCESS-DEFINITION-PLACEHOLDER": "选择流程定义 ...",
+      "STATE": "状态",
+      "STATE-OPEN": "打开",
+      "STATE-COMPLETED": "已完成",
+      "ASSIGNMENT": "指派",
+      "ASSIGNMENT-INVOLVED": "我参与的任务",
+      "ASSIGNMENT-ASSIGNEE": "我在其中是被指派者的任务",
+      "ASSIGNMENT-CANDIDATE": "我在其中是候选者的任务",
+      "ASSIGNMENT-GROUP": "指派至组\"{{name}}\"的任务",
+      "RESET": "重置筛选器",
+      "SINGLE-TASK": "显示 '{{name || (\"TASK.MESSAGE.NO-NAME\" | translate)}}'",
+      "NO-SINGLE-TASK": "找不到 ID 为 '{{id}}' 的任务",
+      "INVOLVED-FILTER-NAME": "参与的任务",
+      "ASSIGNEE-FILTER-NAME": "我的任务",
+      "COMPLETED-FILTER-NAME": "完成的任务",
+      "CANDIDATE-FILTER-NAME": "排队列的任务",
+      "TASK-NAME": "任务名称",
+      "SEARCH": "搜索",
+      "NEW-SEARCH": "新搜索？",
+      "CREATE-FILTER": "创建新筛选器或从下面选择",
+      "EDIT-FILTER": "编辑搜索",
+      "FILTER-NAME-PLACEHOLDER": "自定义筛选器的名称",
+      "CREATE-TASK": "创建任务",
+      "SEARCH-PLACEHOLDER": "搜索",
+      "NO-FILTER-RESULTS": "未在\"{{name}}\"中找到任何内容，您可以尝试另一个列表。要尝试从全新条件开始，您可以：",
+      "NO-SEARCH-RESULTS": "没有任务匹配您的搜索条件，您可以尝试其他条件。要尝试从全新条件开始，您可以："
+    },
+    "ALERT": {
+      "COMMENT-ADDED": "注释已添加至\"{{name}}\"",
+      "CHECKLIST-ADDED": "任务\"{{name}}\"已添加到检查表",
+      "CHECKLIST-REMOVED": "任务\"{{name}}\"已从检查表中删除",
+      "PERSON-INVOLVED": "{{userName}} 现在参与\"{{taskName}}\"",
+      "PERSON-INVOLVED-EMAIL-NOT-ALLOWED": "无法通过电子邮件 '{{emailAddress}}'.\" 让外部人员参与",
+      "PERSON-NO-LONGER-INVOLVED": "{{userName}} 不再参与\"{{taskName}}\"",
+      "GROUP-INVOLVED": "任务 \"{{taskName}}\" 中现在涉及组 \"{{groupName}}\"",
+      "GROUP-NO-LONGER-INVOLVED": "任务 \"{{taskName}}\" 中不再涉及组 \"{{groupName}}\"",
+      "CREATED": "已创建任务\"{{name}}\"",
+      "COMPLETED": "已完成任务",
+      "SAVED": "已保存任务表单",
+      "ASSIGNED": "任务\"{{taskName}}\"现在已被指派至 {{userName}}。",
+      "RELATED-CONTENT-ADDED": "\"{{name}}\"已被添加至任务",
+      "RELATED-CONTENT-ADDED-LOADING": "\"{{name}}\"已被添加至任务。内容将在其从外部源检索之后可用。",
+      "FORM-ATTACHED": "附加的表单\"{{name}}\"",
+      "FORM-REMOVED": "删除的表单\"{{name}}\""
+    },
+    "ACTION": {
+      "BACK-TO-LIST": "返回到任务列表",
+      "COMPLETE-TASK-WITH-FORM": "完成的表单",
+      "COMPLETE": "完成",
+      "CLAIM": "申领",
+      "UNCLAIM": "重新排队",
+      "ASSIGN": "指派",
+      "REASSIGN": "重新指派",
+      "CREATE": "+ 创建任务",
+      "CREATE-CONFIRM": "创建",
+      "INVOLVE": "+ 让人员参与",
+      "INVOLVE-GROUP": "涉及组",
+      "ADD-COMMENT": "+ 添加注释",
+      "ADD-COMMENT-CONFIRM": "添加注释",
+      "ADD-CHECKLIST": "+ 添加任务到检查表",
+      "ADD-CHECKLIST-CONFIRM": "添加任务到检查表",
+      "ADD-CONTENT": "+ 添加内容",
+      "CLEAR-DUEDATE": "清除截止日期",
+      "DUE-TODAY": "今天截止",
+      "CLEAR-DATE": "清除日期",
+      "DATE-TODAY": "今天的日期",
+      "AUDIT-LOG": "审计日志"
+    },
+    "TITLE": {
+      "ASSIGN": "选择被指派者",
+      "ASSIGNEE": "被指派者",
+      "CONTENT": "相关内容",
+      "CREATE-NEW": "新任务",
+      "NEW-TASK-NAME": "新任务",
+      "EDIT-NAME": "编辑任务名称",
+      "FORM": "表单",
+      "DETAILS": "详细信息",
+      "ADD-RELATED-CONTENT": "添加相关内容",
+      "SELECT-DUEDATE": "选择截止日期",
+      "SELECT-DATE": "选择日期",
+      "NO-CONTENT-ITEMS": "无内容项",
+      "NO-PEOPLE-INVOLVED": "没有参与的人员",
+      "NO-GROUPS-INVOLVED": "无涉及的组",
+      "NO-COMMENTS": "无注释",
+      "COMMENT-COUNT": "注释",
+      "COMMENTS-COUNT": "注释",
+      "NO-CHECKLISTS": "没有检查表",
+      "CHECKLIST-COUNT": "检查表中的任务",
+      "CHECKLISTS-COUNT": "检查表中的任务",
+      "SHOW-DETAILS": "显示详细信息",
+      "SHOW-FORM": "显示表单",
+      "GROUPS-INVOLVED": "涉及 {{groupCount}} 个组"
+    },
+    "FIELD": {
+      "NAME": "名称",
+      "DESCRIPTION": "说明",
+      "ASSIGNEE": "被指派者",
+      "DUE": "截止时间",
+      "FORM": "表单",
+      "PROCESS-INSTANCE": "流程的一部分",
+      "PARENT-TASK": "一部分",
+      "ENDED": "已结束",
+      "DURATION": "持续时间"
+    },
+    "MESSAGE": {
+      "NO-NAME": "无名称任务",
+      "NO-ASSIGNEE": "没有被指派给任何人",
+      "NO-DUEDATE": "无截止日期",
+      "DUE-ON": "截止时间",
+      "NO-FORM": "无表单",
+      "CREATED-ON": "已创建",
+      "ENDED-ON": "已完成",
+      "EXECUTION-FAILED": "执行失败",
+      "COMPLETED-BY": "完成者 {{username}}， ",
+      "NO-DESCRIPTION": "这个任务没有说明",
+      "NO-RELATED-CONTENT": "这个任务没有相关的内容...",
+      "NO-PEOPLE-INVOLVED": "这个任务没有参与的人员...",
+      "NO-COMMENTS": "这个任务没有注释...",
+      "INVOLVE-PEOPLE-PLACEHOLDER": "+ 添加人员",
+      "CONTENT-UPLOADED-BY": "添加者 ",
+      "ASSIGNEE": "已指派到 {{username}}",
+      "NEW-COMMENT-PLACEHOLDER": "输入注释以添加到这个任务",
+      "NEW-CHECKLIST-PLACEHOLDER": "输入任务名称",
+      "COMMENT-HEADER": "添加者：{{createdBy | username}}，{{created | dateformat:\"fromNow\"}}",
+      "NO-FILTER": "显示您的任务，无应用的筛选器",
+      "FILTERED": "显示您的任务，已筛选",
+      "NO-TASKS": "找不到匹配的任务...",
+      "DURATION": "接受 {{duration}}",
+      "CLAIM-TASK-FIRST": "要处理这个任务，您需要首先申领它。您可以通过按上面的申领按钮完成申领。",
+      "NO-TASKS-HELP": "似乎没有适合您的任务！要启动某任务，您可以：",
+      "NO-SUCH-TASK-HELP": "找不到您正在查找的任务！如果需要，可以：",
+      "NO-SUCH-TASK-RETURN-TO-LIST": "返回到任务列表",
+      "NO-TASKS-CREATE-TASK": "为自己创建任务，或将其指派给其他人",
+      "NO-TASKS-CREATE-PROCESS": "启动新流程，然后跟踪其进度",
+      "CANNOT-CLAIM-TASK": "该任务无法再申领。"
+    },
+    "HELP": {
+      "DESCRIPTION": "这个任务没有详细信息。您可以通过选择一个操作对此进行更改：",
+      "COMPLETED-DESCRIPTION": "这个完成的任务没有详细信息。",
+      "DESCRIPTION-WITH-CLAIM": "这个任务没有详细信息。您可以通过选择以下一个操作对此进行更改：此外，要完成这个任务，您需要首先按上面的申领按钮来申领它。",
+      "ADD-FORM-DESCRIPTION": "这个任务没有表单。您可以使用库中的表单来捕获这个任务的更多信息：",
+      "ADD-FORM": "立即添加表单",
+      "COMPLETED-NOFORM": "这个完成的任务没有表单。",
+      "ADD-PEOPLE": "让其他人参与并开始合作",
+      "ADD-FIRST-PEOPLE": "让其他人参与并开始合作",
+      "ADD-FIRST-GROUP": "邀请几组人员并开始合作",
+      "ADD-COMMENT": "通过添加注释提示其他人",
+      "ADD-FIRST-COMMENT": "为自己或参与的其他人添加注释",
+      "ADD-CHECKLIST": "添加任务到检查表",
+      "ADD-FIRST-CHECKLIST": "为这个任务创建您自己的所需项检查表。您可以将某个项指派给其他人，指定截止日期并从库中附加表单",
+      "ADD-CONTENT": "添加文档并共享知识",
+      "ADD-FIRST-CONTENT": "附加与这个任务相关的其他文件"
+    },
+    "DYNAMIC-TABLE": {
+      "ROW-EDIT-HEADER": "立即编辑表",
+      "ROW-DETAILS-HEADER": "表行详细信息"
+    },
+    "FORM-SELECT": {
+      "TITLE": "选择表单",
+      "EMPTY": "无选中的表单",
+      "FORMS-ERROR": "加载表单时出现错误",
+      "LOADING": "正在加载表单 ...",
+      "NO-FORMS": "找不到表单",
+      "ATTACH-FORM": "附加表单",
+      "REMOVE-FORM": "删除表单",
+      "CURRENT-FORM": "{{name}}（当前）",
+      "FORM-LOAD-ERROR": "加载表单时出现错误"
+    }
+  },
+  "PROCESS": {
+    "ALERT": {
+      "COMMENT-ADDED": "已添加注释",
+      "STARTED": "新的\"{{processDefinitionName}}\"流程已启动",
+      "START-PROCESS-CONTENT-ADD-FAILED": "无法将 {{noOfFiles}} 个文件添加到流程"
+    },
+    "TITLE": {
+      "DIAGRAM": "流程图"
+    },
+    "FILTER": {
+      "CREATED-DESC": "最新的排前面",
+      "CREATED-ASC": "最旧的排前面",
+      "ENDED-DESC": "最近完成",
+      "ENDED-ASC": "至少最近完成",
+      "STATE-SUMMARY": "显示 {{state.title | translate}} 流程",
+      "STATE": "流程状态",
+      "STATE-RUNNING": "运行",
+      "STATE-COMPLETED": "已完成",
+      "STATE-ALL": "全部",
+      "PROCESS-NAME": "流程名称",
+      "PROCESS-DEFINITION": "流程定义",
+      "SORT": "排序",
+      "TEXT-PLACEHOLDER": "按流程名称搜索",
+      "RUNNING-FILTER-NAME": "运行",
+      "COMPLETED-FILTER-NAME": "已完成",
+      "ALL-FILTER-NAME": "全部",
+      "SINGLE-PROCESS": "显示 '{{name || processDefinitionName}}'",
+      "NO-SINGLE-PROCESS": "找不到 ID 为 '{{id}}' 的流程",
+      "NO-FILTER-RESULTS": "在 \"{{name}}\" 中找不到任何内容，您可以选择另一个列表。要尝试从全新条件开始，您可以：",
+      "NO-SEARCH-RESULTS": "没有流程匹配您的搜索，您可以尝试选择其他搜索条件。要尝试从全新条件开始，您可以：",
+      "FILTER-NAME-PLACEHOLDER": "自定义筛选器的名称"
+    },
+    "MESSAGE": {
+      "NO-DESCRIPTION": "这个流程实例没有说明",
+      "NO-FILTER": "显示所有没有筛选的流程实例",
+      "NO-INSTANCES": "找不到匹配的流程实例...",
+      "NO-INSTANCES-HELP": "现在没有运行的流程。完成流程后，您可以使用流程列表筛选器查找它们。要尝试从全新条件开始，您可以：",
+      "NO-INSTANCES-HELP-START": "启动新流程并跟踪其进度",
+      "NO-TASKS": "当前没有任务处于活动状态 ...",
+      "NO-COMPLETED-TASKS": "没有任何任务被完成...",
+      "NO-BUSINESS-KEY": "无设置的商业 Key",
+      "CATEGORY": "类别：{{processDefinitionCategory}}",
+      "NEW-COMMENT-PLACEHOLDER": "输入注释以将其添加到这个流程",
+      "COMMENT-HEADER": "添加者：{{createdBy | username}}，{{created | dateformat:\"fromNow\"}}",
+      "SELECT-DEFINITION": "选择一个流程以从下面的列表开始",
+      "NO-PROCESS-DEFINITIONS": "您无法启动流程，因为没有流程定义可用",
+      "START-PROCESS": "启动流程",
+      "STARTED-BY": "启动者 {{username}}",
+      "NO-PROCESS-DEFINITION-SELECTED-HELP": "选择一个流程定义",
+      "NO-SUCH-PROCESS-HELP": "找不到您正在查找的流程！如果需要，可以：",
+      "NO-SUCH-PROCESS-RETURN-TO-LIST": "返回到流程列表"
+    },
+    "HELP": {
+      "ADD-FIRST-COMMENT": "为自己或参与的其他人添加注释"
+    },
+    "ACTION": {
+      "CREATE": "启动流程",
+      "BACK-TO-LIST": "返回到流程实例",
+      "SHOW-DIAGRAM": "显示流程图",
+      "CANCEL": "取消流程",
+      "DELETE": "删除流程",
+      "ADD-COMMENT": "+ 添加注释",
+      "ADD-COMMENT-CONFIRM": "添加注释",
+      "AUDIT-LOG": "审计日志",
+      "SEARCH-PLACEHOLDER": "搜索",
+      "ZOOMIN": "放大",
+      "ZOOMOUT": "缩小"
+    },
+    "FIELD": {
+      "BUSINESS-KEY": "商业 Key",
+      "CATEGORY": "类别",
+      "PROCESS-DEFINITION": "流程定义",
+      "STARTED": "已启动",
+      "STARTED-BY": "启动者",
+      "ENDED": "已结束",
+      "NAME": "流程实例名称",
+      "NAME-PLACEHOLDER": "为正在启动的流程输入可选名称"
+    },
+    "SECTION": {
+      "ACTIVE-TASKS": "活动的任务",
+      "START-FORM": "启动表单",
+      "COMPLETED-TASKS": "完成的任务",
+      "COMPLETED-DECISION-TASKS": "执行的决策表   ",
+      "COMMENTS": "注释",
+      "CONTENT": "内容"
+    },
+    "POPUP": {
+      "CANCEL-TITLE": "取消流程？",
+      "CANCEL-DESCRIPTION": "确定要取消流程 {{name}}？",
+      "DELETE-TITLE": "删除流程？",
+      "DELETE-DESCRIPTION": "确定要删除流程 {{name}}？与这个流程相关的所有任务、内容和注释将被永久删除。"
+    },
+    "DECISION": {
+      "TABLE": {
+        "HEADER": "决策表 \"{{name}}\"",
+        "HIT-POLICY": "命中策略",
+        "HIT-POLICIES": {
+          "FIRST": "首个（单次通过）",
+          "ANY": "任何（单次通过）"
+        },
+        "TOOLTIP": {
+          "INPUT-EXCEPTION": "如果表达式匹配输入值：{{error}}，测试时出现异常",
+          "INPUT-MATCH": "输入值匹配表达式。",
+          "INPUT-EMPTYEXPRESSION": "空表达式已作为匹配处理。",
+          "INPUT-NOMATCH": "输入值与表达式不匹配。",
+          "INPUT-NOTEXECUTED": "从未测试这个表达式。",
+          "OUTPUT-EXCEPTION": "使用表达式：\n {{expression}} 设置值时出现异常。\n错误消息：{{error}}",
+          "OUTPUT-RESULT": "值已使用以下表达式进行测试：\n {{expression}}",
+          "OUTPUT-NOTEXECUTED": "从未执行以下表达式：\n {{expression}}",
+          "OUTPUT-NOEXPRESSION": "没有为这个单元格定义表达式"
+        },
+        "INPUT-VARIABLE": "条件",
+        "OUTPUT-VARIABLE": "结果",
+        "INPUT-VARIABLES": "输入值",
+        "NO-INPUT-VARIABLES": "执行决策表时没有输入值",
+        "OUTPUT-VARIABLES": "计算的值",
+        "NO-OUTPUT-VARIABLES": "决策表没有生成计算的值",
+        "METADATA-NAME": "名称",
+        "METADATA-VALUE": "值",
+        "LOAD-ERROR": "提取决策表和审计跟踪活动 '{{activityId}}' 的执行 '{{executionId}}' 时出现错误"
+      }
+    }
+  },
+  "INVOLVE-PEOPLE": {
+    "NO-MATCHING-RESULTS": "使用上面的搜索框查找用户或 ",
+    "NO-MATCHING-RESULTS-NO-EMAIL": "使用上面的搜索框查找用户",
+    "SEARCH-PLACEHOLDER": "搜索用户",
+    "USE-EMAIL": "使用电子邮件地址选择某人",
+    "ASSIGN-YOURSELF-LEAD": "或",
+    "ASSIGN-YOURSELF": "指派自己",
+    "SELECT-YOURSELF-LEAD": "或",
+    "SELECT-YOURSELF": "选择自己",
+    "EMAIL-PLACEHOLDER": "输入电子邮件地址",
+    "EMAIL-HELP": "按 Enter 或单击按钮以继续。这个人员将收到电子邮件通知或被邀请注册",
+    "BACK-TO-SEARCH": "返回搜索",
+    "ACTION-SELECT": "选择"
+  },
+  "INTEGRATION": {
+    "GENERIC": {
+      "MESSAGE": {
+        "FILTER": "筛选器",
+        "SEARCHING": "正在搜索",
+        "NO_MATCHING_RESULTS_FOUND": "找不到匹配的结果。"
+      }
+    },
+    "ALFRESCO": {
+      "MESSAGE": {
+        "SELECT-FOLDER-DESCRIPTION": "从您的 Alfresco 帐户中选择文件夹",
+        "SELECT-FOLDER": "选择文件夹",
+        "CHOOSE-NETWORK": "选择网络",
+        "NETWORK": "网络",
+        "CHOOSE-SITE": "选择站点",
+        "NO-CONTENT": "这个文件夹中无内容"
+      }
+    },
+    "BOX": {
+      "MESSAGE": {
+        "ACCOUNT_NAME": "Box",
+        "FILTER": "筛选器",
+        "SEARCHING": "正在搜索",
+        "NO-CONTENT": "找不到匹配的结果。",
+        "SELECT-FOLDER-DESCRIPTION": "从您的 Box 帐户中选择文件夹",
+        "SELECT-FILE-DESCRIPTION": "从您的 Box 帐户中选择文件",
+        "SELECT-FOLDER": "选择文件夹"
+      }
+    },
+    "ALFRESCO-CLOUD": {
+      "TITLE": {
+        "BROWSE-CLOUD": "浏览 Alfresco Content Services in the Cloud",
+        "BROWSE-ON-PREM": "浏览 {{name}}"
+      },
+      "MESSAGE": {
+        "ON-PREM-BROWSE": "选择一个文件以从 {{name}} 导入",
+        "CLOUD-BROWSE": "选择一个文件以从您的 Alfresco Content Services in the Cloud 帐户导入"
+      }
+    },
+    "GOOGLE": {
+      "MESSAGE": {
+        "TITLE": "Google Drive",
+        "FILTER": "筛选器",
+        "SEARCHING": "正在搜索",
+        "NO-CONTENT": "找不到匹配的结果",
+        "SELECT-FILE-DESCRIPTION": "从您的 Google Drive 帐户中选择文件",
+        "SELECT-FOLDER-DESCRIPTION": "从您的 Google Drive 帐户中选择文件夹"
+      }
+    },
+    "ALERT": {
+      "ALFRESCO-CLOUD-NOT-AUTHORIZED": "Alfresco Content Services in the Cloud 的访问权限已过期，您需要重新输入凭据。",
+      "GOOGLE-DRIVE-NOT-AUTHORIZED": "Google Drive 的访问权限已过期，您需要重新输入凭据。",
+      "ALFRESCO-ERROR": "连接 Alfresco 时出现错误",
+      "BOX-ERROR": "连接 Box 时出现错误",
+      "GOOGLE-DRIVE-ERROR": "连接 Google Drive 时出现错误"
+    }
+  },
+  "CONTENT": {
+    "SIMPLE-TYPE": {
+      "WORD": "文档",
+      "EXCEL": "电子表格",
+      "PDF": "PDF 文档",
+      "IMAGE": "图像",
+      "FOLDER": "文件夹",
+      "CONTENT": "内容"
+    },
+    "MESSAGE": {
+      "NO-PREVIEW-AVAILABLE": "无预览可用",
+      "PREVIEW-PENDING": "正在创建预览...",
+      "CONTENT-PENDING": "正在获取内容...",
+      "NOT-FOUND": "找不到内容",
+      "DELETE-CONFIRMATION": "确定要删除 {{name}}？",
+      "DROP": "拖放或 ",
+      "SELECT": "选择一个文件",
+      "DRAGOVER": "拖放文件以上传",
+      "EXTERNAL-ONLY": "选择内容源",
+      "NO-EXTERNAL-SOURCE": "无外部源可用"
+    },
+    "TITLE": {
+      "DELETE": "删除内容",
+      "NOT-FOUND": "找不到文件"
+    },
+    "ACTION": {
+      "OPEN-IN-GOOGLE-DRIVE": "在 Google Drive 中打开",
+      "OPEN-IN-ALFRESCO-CLOUD": "在 Alfresco Content Services in the Cloud 中打开",
+      "OPEN-IN-ALFRESCO": "在 Alfresco 中打开",
+      "OPEN-IN-BOX": "在 Box 中打开"
+    }
+  },
+  "FORM": {
+    "ACTION": {
+      "SAVE": "保存"
+    },
+    "DEFAULT-OUTCOME": {
+      "COMPLETE": "完成",
+      "START-PROCESS": "启动流程"
+    },
+    "MESSAGE": {
+      "SELECT-PERSON": "无选中的人员...",
+      "SELECT-GROUP": "无选中的组...",
+      "EMPTY": "（空）"
+    },
+    "FIELD-PREVIEW": {
+      "DISPLAY-REF": "显示值",
+      "SELECT-FIELD": "（无选中的字段）",
+      "FIELD-VALUE": "显示字段 \"{{name}}\" 的值",
+      "UNKNOWN-TYPE": "未知字段类型 {{type}}",
+      "TEXT-VALUE": "文本",
+      "MULTI-TEXT-VALUE": "多行文本",
+      "NUMBER-VALUE": "123",
+      "DATE-VALUE": "日期",
+      "DATETIME-VALUE": "日期和时间",
+      "DROPDOWN-VALUE": "选择...",
+      "UPLOAD-VALUE": "上传或导入内容...",
+      "RADIOS-OPTION1": "选项 1"
+    }
+  },
+  "APP-DEFINITION": {
+    "MESSAGE": {
+      "NOT-FOUND": "找不到带有给定 ID 的 App 定义",
+      "MISSING": "Alfresco Process Services 正在集成模式下运行，但所需 App 定义缺失"
+    }
+  },
+  "APP": {
+    "KICKSTART": {
+      "TITLE": "App Designer",
+      "TITLE-PROCESSES": "流程模型",
+      "TITLE-FORMS": "表单模型",
+      "TITLE-APPS": "App 模型",
+      "TITLE-STENCILS": "模板",
+      "TITLE-DECISION-TABLES": "决策表",
+      "TITLE-DATA-MODELS": "数据模型"
+    },
+    "ADMINISTRATOR": {
+      "TITLE": "Admin App"
+    },
+    "TASKS": {
+      "TITLE": "任务 App",
+      "TITLE-TASKS": "任务",
+      "TITLE-PROCESSES": "流程",
+      "TITLE-PROCESSES?MODE=START": "启动"
+    },
+    "IDENTITY-MANAGEMENT": {
+      "TITLE": "配置文件",
+      "TITLE-TENANT-ADMIN": "身份管理",
+      "TITLE-TENANT-ADMIN-TENANT-MGMT": "租户",
+      "TITLE-TENANT-ADMIN-USER-MGMT": "用户",
+      "TITLE-TENANT-ADMIN-SYSTEM-GROUP-MGMT": "功能",
+      "TITLE-TENANT-ADMIN-FUNCTIONAL-GROUP-MGMT": "组织",
+      "TITLE-TENANT-ADMIN-PROFILE": "配置文件",
+      "TITLE-PROFILE": "配置文件"
+    },
+    "ANALYTICS": {
+      "TITLE": "报表与分析 App"
+    },
+    "CUSTOM-APP": {
+      "TITLE-TASKS": "{{name}} 任务",
+      "TITLE-PROCESSES": "{{name}} 流程",
+      "TITLE-PROCESSES?MODE=START": "{{name}} 开始"
+    },
+    "TITLE": {
+      "ERROR": "错误"
+    }
+  },
+  "REPORTING": {
+    "NO-REPORTS": "您可以获取有关流程的各种重要报告，帮助确定瓶颈或性能改进。",
+    "GENERATE-REPORTS": "立即添加一些标准报告。",
+    "NO-REPORT-SELECTED": "无选中的报告。从左侧的列表中选择报告",
+    "NO-DATA-FOUND": "找不到数据",
+    "CONFIG-REPORTS": "使用报表与分析 App 配置报告",
+    "FETCHING-PROC-DEFS": "提取流程定义...",
+    "GENERATING": "正在生成报告...",
+    "SAVE-REPORT": "保存这个报告",
+    "EXPORT-REPORT": "导出数据",
+    "SHOW": "单击以显示",
+    "HIDE": "单击以重新隐藏",
+    "FILL-PARAMS": "找不到报告数据。填充参数以生成报告",
+    "PROCESS-STATUS": "流程状态",
+    "TASK-STATUS": "任务状态",
+    "STATUS": {
+      "ACTIVE": "活动",
+      "ALL": "全部",
+      "COMPLETE": "完成"
+    },
+    "PARAMETER-WIDGETS": {
+      "NO-TASKS": "找不到当前流程定义的已完成任务",
+      "DATE-RANGE": {
+        "TODAY": "今天",
+        "YESTERDAY": "昨天",
+        "LAST-7-DAYS": "过去 7 天",
+        "PREVIOUS-MONTH": "上一月",
+        "CURRENT-YEAR": "当前年度",
+        "CUSTOM-RANGE": "自定义范围",
+        "APPLY": "应用",
+        "CANCEL": "取消",
+        "FROM": "从",
+        "TO": "至"
+      },
+      "DATE-INTERVAL-OPTIONS": {
+        "HOUR": "按小时",
+        "DAY": "按天",
+        "WEEK": "按周",
+        "MONTH": "按月",
+        "YEAR": "按年"
+      },
+      "DURATION": {
+        "SECONDS": "秒",
+        "MINUTES": "分",
+        "HOURS": "小时",
+        "DAYS": "天"
+      }
+    },
+    "DEFAULT-REPORTS": {
+      "TASK-OVERVIEW": {
+        "PROCESS-DEFINITION": "流程定义",
+        "DATE-RANGE": "日期范围",
+        "DATE-RANGE-INTERVAL": "日期合计方式",
+        "TASK-COUNT-TITLE": "任务计数",
+        "TASK-COUNT-DESCRIPTION": "这个表显示给定日期范围内任务的总数",
+        "TASK-DURATIONS-TITLE": "任务持续时间",
+        "TASK-DURATIONS-DESCRIPTION": "这个表显示给定日期范围内已完成任务的平均、最小和最大持续时间（单位为小时）。x 轴显示任务在下面详细的表中的行号。",
+        "TASK-COUNT-BY-ASSIGNEE-TITLE": "被指派者完成任务的数量",
+        "TASK-COUNT-BY-ASSIGNEE-DESCRIPTION": "这个饼状图显示所选流程定义的任务数量（按每个被指派者）",
+        "DETAILED-TASK-STATS-TITLE": "详细的任务统计数据",
+        "DETAILED-TASK-STATS-DESCRIPTION": "这个表显示所有任务的累计统计数据单击任何任务已查看详细信息所有时间信息以小时为单位表示。",
+        "DETAILED-TASK-STATS-TASK": "任务",
+        "DETAILED-TASK-STATS-ASSIGNEE": "被指派者",
+        "TASK-HISTOGRAM-TITLE": "任务书除以日期间隔",
+        "TASK-HISTOGRAM-TABLE": "表：以表格格式显示的上一图表数据",
+        "TASK-HISTOGRAM-TABLE-DATE": "日期",
+        "COUNT": "计数",
+        "SUM": "总和",
+        "MIN-DURATION": "最短持续时间",
+        "MAX-DURATION": "最长持续时间",
+        "AVERAGE": "平均",
+        "STDDEV": "标准偏差"
+      },
+      "PROCESS-INSTANCES-OVERVIEW": {
+        "PROCESS-DEFINITION": "流程定义",
+        "DATE-RANGE": "日期范围",
+        "SLOW-PROC-INST-NUMBER": "应显示多少个最慢的流程实例？",
+        "HISTOGRAM-TITLE": "流程实例数量",
+        "HISTOGRAM-DESCRIPTION": "下表显示在所选日期范围内开始和完成的流程实例数量",
+        "ACTIVITY-DURATION-TABLE-TITLE": "活动持续时间详细信息",
+        "ACTIVITY-DURATION-TABLE-DESCRIPTION": "下表显示流程中各种活动的计时，按花费的累积总时间排序。所有时间信息以小时为单位表示。",
+        "ACTIVITY-DURATION-TABLE-ACTIVITY": "活动",
+        "ACTIVITY-DURATION-CHART-TITLE": "流程步骤总时间",
+        "ACTIVITY-DURATION-CHART-DESCRIPTION": "这个表显示时间花费在哪些活动上。数量时该活动的所有持续时间总和，如下表所示。",
+        "SLOWEST-PROCESS-INSTANCES-TITLE": "最慢流程实例",
+        "SLOWEST-PROCESS-INSTANCES-DESCRIPTION": "这个表显示所配置日期范围中完成的最慢流程实例。单击任意条目以查看特定流程实例的流程变量",
+        "SLOWEST-PROCESS-INSTANCES-ACTIVITI-DURATION": "持续时间",
+        "SLOWEST-PROCESS-INSTANCES-ID": "内部 ID",
+        "SLOWEST-PROCESS-INSTANCES-BUSINESS-KEY": "商业 Key",
+        "SLOWEST-PROCESS-INSTANCES-CREATE-TIME": "创建时间",
+        "SLOWEST-PROCESS-INSTANCES-END-TIME": "结束时间",
+        "SLOWEST-PROCESS-INSTANCES-VARIABLES": "变量",
+        "SLOWEST-PROCESS-INSTANCES-VARIABLE-NAME": "变量名称",
+        "SLOWEST-PROCESS-INSTANCES-VARIABLE-VALUE": "变量值",
+        "COUNT": "计数",
+        "SUM": "总和",
+        "MIN-DURATION": "最短持续时间",
+        "MAX-DURATION": "最长持续时间",
+        "AVERAGE": "平均",
+        "STDDEV": "标准偏差"
+      },
+      "TASK-SLA": {
+        "PROCESS-DEFINITION": "流程定义",
+        "TASK": "任务",
+        "DATE-RANGE": "日期范围",
+        "SLA-DURATION": "SLA 中规定的这个任务完成时间是什么？",
+        "SLA-NOT-OK": "服务器级别协议有没有问题",
+        "ASSIGNEE-TABLE": "没有在 SLA 界限内完成任务的被指派者",
+        "ASSIGNEE": "被指派者",
+        "COUNT": "计数"
+      },
+      "PROCESS-DEFINITION-OVERVIEW": {
+        "GENERAL-TABLE-TOTAL-PROCESS-DEFINITIONS": "流程定义的总数： ",
+        "GENERAL-TABLE-TOTAL-PROCESS-INSTANCES": "流程实例的总数： ",
+        "GENERAL-TABLE-ACTIVE-PROCESS-INSTANCES": "活动状态的流程实例的总数： ",
+        "GENERAL-TABLE-COMPLETED-PROCESS-INSTANCES": "完成的流程实例的总数： ",
+        "DETAIL-TABLE": "流程定义详细信息",
+        "DETAIL-TABLE-PROCESS": "流程定义",
+        "DETAIL-TABLE-TOTAL": "总数",
+        "DETAIL-TABLE-ACTIVE": "活动",
+        "DETAIL-TABLE-COMPLETED": "已完成",
+        "PROC-INST-CHART-TITLE": "总流程实例概览",
+        "DURATIONS-CHART-TITLE": "每个流程定义的平均时间",
+        "DURATIONS-CHART-DESCRIPTION": "已完成流程实例的平均持续时间（和标准偏差），单位为小时。x 轴数字对应上表中的条目。"
+      },
+      "PROCESS-HEAT-MAP": {
+        "TITLE": "流程热图",
+        "TYPE-FILTERING": "包括所有流程步骤（取消选中这个选项将删除直通步骤，例如开始事件、网关等）？",
+        "METRIC-TOTAL-COUNT": "执行一个步骤的次数",
+        "METRIC-TOTAL-TIME": "完成一个流程步骤花费的总时间",
+        "METRIC-AVG-TIME": "完成一个流程步骤花费的平均时间",
+        "METRIC-TOTAL-COUNT-TOOLTIP": "时间",
+        "METRIC-TOTAL-TIME-TOOLTIP": "小时",
+        "METRIC-AVERAGE-TIME-TOOLTIP": "小时",
+        "GENERATING": "生成流程热图..."
+      }
+    },
+    "MODAL": {
+      "SAVE-REPORT": {
+        "TITLE": "保存报告",
+        "DESCRIPTION": "当前参数设置将被存储，新报告将在报告列表中显示。单击特定报告后，将使用这些保存的参数值生成报告。",
+        "NAME": "名称"
+      },
+      "EXPORT-REPORT": {
+        "TITLE": "导出数据",
+        "NAME": "名称"
+      },
+      "DELETE-REPORT": {
+        "TITLE": "删除报告",
+        "DESCRIPTION": "是否确定要删除这个报告？",
+        "CONFIRM": "删除报告"
+      }
+    }
+  }
+}
