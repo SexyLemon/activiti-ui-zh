@@ -340,6 +340,7 @@ activitiApp.config(['$provide', '$routeProvider', '$translateProvider', function
     .filter('dateformat', function() {
         return function(date, format) {
             if (date) {
+                moment.lang('zh-cn');
                 if (format) {
                     return moment(date).format(format);
                 } else {

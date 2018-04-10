@@ -436,6 +436,7 @@ activitiApp
     .filter('dateformat', function() {
         return function(date, format) {
             if (date) {
+                moment.lang('zh-cn');
                 if(format == 'fromNow') {
                     return moment(date).fromNow();
                 } else if(format == 'fromNowFull') {
