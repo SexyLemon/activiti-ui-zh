@@ -439,7 +439,7 @@ activitiApp
                 if(format == 'fromNow') {
                     return moment(date).fromNow();
                 } else if(format == 'fromNowFull') {
-                    return moment(date).fromNow() + ' (' + moment(date).format('MMMM Do YYYY') + ')';
+                    return moment(date).fromNow() + ' (' + moment(date).format('YYYY-MM-DD') + ')';
                 } else if (format) {
                     return moment(date).format(format);
                 } else {

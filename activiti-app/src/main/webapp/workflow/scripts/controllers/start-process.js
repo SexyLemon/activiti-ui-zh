@@ -51,7 +51,7 @@ angular.module('activitiApp')
                $scope.loadStartForm(definition);
             }
             else {
-               $scope.processName = definition.name + ' - ' + new moment().format('MMMM Do YYYY');
+                $scope.processName = definition.name + ' - ' + new moment().format('yyyy-MM-dd');
                $scope.processDefinitionWithStartFormId = null;
                $scope.startFormDefinition = null;
             }
@@ -149,7 +149,7 @@ angular.module('activitiApp')
                   }
                }
 
-               $scope.processName = definition.name + ' - ' + new moment().format('MMMM Do YYYY');
+                $scope.processName = definition.name + ' - ' + new moment().format('YYYY-MM-DD');
                $scope.processDefinition = definition;
                $scope.processDefinitionWithStartFormId = definition.id;
                $scope.startFormDefinition = formData;

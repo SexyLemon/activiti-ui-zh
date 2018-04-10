@@ -457,7 +457,7 @@ angular.module('activitiApp')
 
     $scope.selectProcessDefinition = function (definition) {
         $scope.newProcessInstance.processDefinitionId = definition.id;
-        $scope.newProcessInstance.name = definition.name + ' - ' + new moment().format('MMMM Do YYYY');
+        $scope.newProcessInstance.name = definition.name + ' - ' + new moment().format('YYYY-MM-DD');
 
         $timeout(function () {
             angular.element('#start-process-name').focus();
