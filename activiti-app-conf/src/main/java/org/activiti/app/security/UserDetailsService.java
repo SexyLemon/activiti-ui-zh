@@ -12,10 +12,6 @@
  */
 package org.activiti.app.security;
 
-import java.util.ArrayList;
-import java.util.Collection;
-
-import org.activiti.app.security.ActivitiAppUser;
 import org.activiti.app.service.api.UserCache;
 import org.activiti.app.service.api.UserCache.CachedUser;
 import org.activiti.engine.IdentityService;
@@ -31,6 +27,9 @@ import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.security.crypto.password.StandardPasswordEncoder;
 import org.springframework.transaction.annotation.Transactional;
+
+import java.util.ArrayList;
+import java.util.Collection;
 
 /**
  * This class is called AFTER successful authentication, to populate the user object with additional details The default (no ldap) way of authentication is a bit hidden in Spring Security magic. But
@@ -111,7 +110,7 @@ public class UserDetailsService implements org.springframework.security.core.use
 
     // The Spring security docs clearly state a new instance must be returned on every invocation
     User user = cachedUser.getUser();
-    String actualUserId = user.getEmail();
+    String actualUserId = user.getId();
 
     // Set authentication globally for Activiti
     Authentication.setAuthenticatedUserId(String.valueOf(user.getId()));

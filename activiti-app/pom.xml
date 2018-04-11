@@ -73,6 +73,7 @@
                     <path>/activiti-app</path>
                     <port>9999</port>
                     <protocol>org.apache.coyote.http11.Http11NioProtocol</protocol>
+                    <uriEncoding>UTF-8</uriEncoding>
                     <systemProperties>
                         <com.sun.management.jmxremote.port>4000</com.sun.management.jmxremote.port>
                     </systemProperties>
