@@ -12,11 +12,7 @@
  */
 package org.activiti.app.rest.runtime;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
-
+import com.fasterxml.jackson.databind.ObjectMapper;
 import org.activiti.app.model.common.ResultListDataRepresentation;
 import org.activiti.app.model.runtime.AppDefinitionRepresentation;
 import org.activiti.engine.RepositoryService;
@@ -25,7 +21,10 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 
-import com.fasterxml.jackson.databind.ObjectMapper;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 
 public abstract class AbstractAppDefinitionsResource {
 
@@ -50,8 +49,8 @@ public abstract class AbstractAppDefinitionsResource {
     resultList.add(kickstartAppDefinitionRepresentation);
 
     // Default app: tasks and IDM (available for all)
-    resultList.add(taskAppDefinitionRepresentation);
-    resultList.add(idmAppDefinitionRepresentation);
+//    resultList.add(taskAppDefinitionRepresentation);
+//    resultList.add(idmAppDefinitionRepresentation);
 
     // Custom apps
     Map<String, Deployment> deploymentMap = new HashMap<String, Deployment>();
