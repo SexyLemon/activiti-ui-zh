@@ -690,6 +690,19 @@
       "refToView" : "border"
     } ]
   }, {
+    "name": "formreferencepackage",
+    "properties": [
+      {
+        "id": "formreference",
+        "type": "Complex",
+        "title": "BPMN-EDITOR.PROPERTY.FORM-REFERENCE.TITLE",
+        "value": "",
+        "description": "BPMN-EDITOR.PROPERTY.FORM-REFERENCE.DESCRIPTION",
+        "popular": true
+      }
+    ]
+  },
+    {
     "name" : "terminateAllpackage",
     "properties" : [ {
       "id" : "terminateAll",
@@ -730,7 +743,8 @@
       "executionlistenerspackage",
       "initiatorpackage",
       "formkeydefinitionpackage",
-      "formpropertiespackage"
+      "formpropertiespackage",
+      "formreferencepackage"
     ],
     "hiddenPropertyPackages" : [ ],
     "roles" : [ "sequence_start", "Startevents_all", "StartEventsMorph", "all" ]
@@ -814,6 +828,7 @@
       "duedatedefinitionpackage",
       "prioritydefinitionpackage",
       "formpropertiespackage",
+      "formreferencepackage",
       "tasklistenerspackage"
     ],
     "hiddenPropertyPackages" : [ ],

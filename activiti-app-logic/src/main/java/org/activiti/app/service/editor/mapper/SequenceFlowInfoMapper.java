@@ -21,9 +21,9 @@ public class SequenceFlowInfoMapper extends AbstractInfoMapper {
 		SequenceFlow sequenceFlow = (SequenceFlow) element;
 		
 		if (StringUtils.isNotEmpty(sequenceFlow.getConditionExpression())) {
-		    createPropertyNode("Condition expression", sequenceFlow.getConditionExpression());
-		}
-		
-		createListenerPropertyNodes("Execution listeners", sequenceFlow.getExecutionListeners());
+            createPropertyNode("条件表达式", sequenceFlow.getConditionExpression());
+        }
+
+        createListenerPropertyNodes("执行监听器", sequenceFlow.getExecutionListeners());
 	}
 }

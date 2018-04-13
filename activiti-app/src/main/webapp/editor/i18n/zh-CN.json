@@ -1594,7 +1594,8 @@
     },
     "POPUP": {
       "EDIT-TITLE": "编辑 {{'FORM-BUILDER.FIELD-TYPE.'+type | uppercase | translate}} field '{{name}}'",
-      "EDIT-CUSTOM-TITLE": "编辑自定义字段 '{{name}}'"
+      "EDIT-CUSTOM-TITLE": "编辑自定义字段 '{{name}}'",
+      "EXPRESSION-TITLE": "编辑表达式"
     },
     "FIELD-TYPE": {
       "TEXT": "文本",
@@ -1619,8 +1620,10 @@
       "READONLY-TEXT": "显示文本"
     },
     "MESSAGE": {
+      "EXPRESSION-HELP": "您也可以显示先前在任何表单中提交的值作为显示文本的一部分，通过例如$ { myfieldid }的符号引用它们。",
       "EMPTY-CANVAS": "表单当前为空。通过拖动左侧列表中所需的组件，将组件添加到表单。单击画布上的组件以更改标签和其他属性...",
       "SELECT-FIELD": "（无选中的字段）",
+      "EMPTY-EXPRESSION": "(无表达式的值)",
       "FIELD-VALUE": "显示 \"{{name}}\" 的值",
       "SELECT-READONLY-FIELD": "字段：",
       "READONLY-TEXT-HELP": "您也可以显示先前作为文本的一部分在任何表单中提交的值。选择下面的字段以在光标位置将其插入。",
@@ -1632,7 +1635,7 @@
       "READONLY-TEXT-SELECT-RESPONSE-VARIABLE": "选择变量...",
       "HYPERLINK-HELP": "您也可以显示先前作为超链接 URL 的一部分在任何表单中提交的值。选择下面的字段以在光标位置将其插入。",
       "HYPERLINK-HELP-RESPONSE-VARIABLE": "您也可以将变量作为超链接 URL 的一部分显示。选择下面的字段以在光标位置将其插入。",
-      "DISPLAY-TEXT-HELP": "您也可以显示先前作为显示文本的一部分在任何表单中提交的值。选择下面的字段以在光标位置将其插入。",
+      "DISPLAY-TEXT-HELP": "您也可以显示先前在任何表单中提交的值作为显示文本的一部分。选择下面的字段以在光标位置将其插入。",
       "RESPONSE-VARIABLE-HELP": "您也可以将变量作为 REST URL 的一部分显示。选择下面的字段以在光标位置将其插入。",
       "REQUEST-HEADER-INSERT-FIELD-HELP": "您也可以显示先前作为 Header 值的一部分在任何表单中提交的值。选择下面的字段以在光标位置将其插入。",
       "REQUEST-HEADER-INSERT-VARIABLE-HELP": "您也可以将变量作为 Header 值的一部分显示。选择下面的字段以在光标位置将其插入。"
@@ -1646,6 +1649,7 @@
     },
     "COMPONENT": {
       "LABEL": "标签：",
+      "EXPRESSION": "表达式：",
       "NAME": "名称：",
       "OVERRIDEID": "覆盖 ID？",
       "ID": "ID：",

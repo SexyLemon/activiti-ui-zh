@@ -12,24 +12,24 @@
  */
 package org.activiti.app.service.editor.mapper;
 
-import java.util.ArrayList;
-import java.util.List;
-
 import org.activiti.bpmn.model.FormProperty;
 import org.activiti.bpmn.model.UserTask;
 import org.activiti.editor.language.json.converter.util.CollectionUtils;
 import org.apache.commons.lang3.StringUtils;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class UserTaskInfoMapper extends AbstractInfoMapper {
 
 	protected void mapProperties(Object element) {
 		UserTask userTask = (UserTask) element;
-		createPropertyNode("Assignee", userTask.getAssignee());
-		createPropertyNode("Candidate users", userTask.getCandidateUsers());
-		createPropertyNode("Candidate groups", userTask.getCandidateGroups());
-		createPropertyNode("Due date", userTask.getDueDate());
-		createPropertyNode("Form key", userTask.getFormKey());
-		createPropertyNode("Priority", userTask.getPriority());
+		createPropertyNode("指派", userTask.getAssignee());
+		createPropertyNode("候选用户", userTask.getCandidateUsers());
+		createPropertyNode("候选组", userTask.getCandidateGroups());
+		createPropertyNode("到期日期", userTask.getDueDate());
+		createPropertyNode("自定义表单", userTask.getFormKey());
+		createPropertyNode("优先级", userTask.getPriority());
 		if (CollectionUtils.isNotEmpty(userTask.getFormProperties())) {
 		    List<String> formPropertyValues = new ArrayList<String>();
 		    for (FormProperty formProperty : userTask.getFormProperties()) {
@@ -44,15 +44,15 @@ public class UserTaskInfoMapper extends AbstractInfoMapper {
 		            propertyBuilder.append(formProperty.getType());
 		        }
 		        if (formProperty.isRequired()) {
-		            propertyBuilder.append(" (required)");
+					propertyBuilder.append(" (不为空)");
 		        } else {
-		            propertyBuilder.append(" (not required)");
+					propertyBuilder.append(" (可为空)");
 		        }
                 formPropertyValues.add(propertyBuilder.toString());
             }
-		    createPropertyNode("Form properties", formPropertyValues);
+			createPropertyNode("表单属性", formPropertyValues);
 		}
-		createListenerPropertyNodes("Task listeners", userTask.getTaskListeners());
-		createListenerPropertyNodes("Execution listeners", userTask.getExecutionListeners());
+		createListenerPropertyNodes("任务监听器", userTask.getTaskListeners());
+		createListenerPropertyNodes("执行监听器", userTask.getExecutionListeners());
 	}
 }

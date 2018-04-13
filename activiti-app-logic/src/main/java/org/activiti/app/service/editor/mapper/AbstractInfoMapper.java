@@ -12,23 +12,18 @@
  */
 package org.activiti.app.service.editor.mapper;
 
+import com.fasterxml.jackson.databind.ObjectMapper;
+import com.fasterxml.jackson.databind.node.ArrayNode;
+import com.fasterxml.jackson.databind.node.ObjectNode;
+import org.activiti.bpmn.model.*;
+import org.activiti.editor.language.json.converter.util.CollectionUtils;
+import org.apache.commons.lang3.StringUtils;
+
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
-
-import org.activiti.bpmn.model.ActivitiListener;
-import org.activiti.bpmn.model.Activity;
-import org.activiti.bpmn.model.FieldExtension;
-import org.activiti.bpmn.model.FlowElement;
-import org.activiti.bpmn.model.MultiInstanceLoopCharacteristics;
-import org.activiti.editor.language.json.converter.util.CollectionUtils;
-import org.apache.commons.lang3.StringUtils;
-
-import com.fasterxml.jackson.databind.ObjectMapper;
-import com.fasterxml.jackson.databind.node.ArrayNode;
-import com.fasterxml.jackson.databind.node.ObjectNode;
 
 public abstract class AbstractInfoMapper implements InfoMapper {
 
@@ -41,31 +36,31 @@ public abstract class AbstractInfoMapper implements InfoMapper {
 		if (element instanceof FlowElement) {
 		    FlowElement flowElement = (FlowElement) element;
 		    if (StringUtils.isNotEmpty(flowElement.getDocumentation())) {
-	            createPropertyNode("Documentation", flowElement.getDocumentation());
+                createPropertyNode("描述", flowElement.getDocumentation());
 	        }
 		    
 		    if (element instanceof Activity) {
 		        Activity activity = (Activity) element;
 		        if (activity.getLoopCharacteristics() != null) {
 		            MultiInstanceLoopCharacteristics multiInstanceDef = activity.getLoopCharacteristics();
-		            createPropertyNode("Multi-instance activity", "");
+                    createPropertyNode("多实例活动", "");
 		            createPropertyNode("Sequential", multiInstanceDef.isSequential());
 		            if (StringUtils.isNotEmpty(multiInstanceDef.getInputDataItem())) {
-		                createPropertyNode("Collection", multiInstanceDef.getInputDataItem());
+                        createPropertyNode("集合", multiInstanceDef.getInputDataItem());
 		            }
 		            if (StringUtils.isNotEmpty(multiInstanceDef.getElementVariable())) {
-                        createPropertyNode("Element variable", multiInstanceDef.getElementVariable());
+                        createPropertyNode("元素变量", multiInstanceDef.getElementVariable());
                     }
 		            if (StringUtils.isNotEmpty(multiInstanceDef.getLoopCardinality())) {
-                        createPropertyNode("Loop cardinality", multiInstanceDef.getLoopCardinality());
+                        createPropertyNode("基数", multiInstanceDef.getLoopCardinality());
                     }
 		            if (StringUtils.isNotEmpty(multiInstanceDef.getCompletionCondition())) {
-                        createPropertyNode("Completion condition", multiInstanceDef.getCompletionCondition());
+                        createPropertyNode("完成条件", multiInstanceDef.getCompletionCondition());
                     }
 		            createPropertyNode("", "");
                 }
     		    if (StringUtils.isNotEmpty(activity.getDefaultFlow())) {
-                    createPropertyNode("Default flow", activity.getDefaultFlow());
+                    createPropertyNode("默认流程", activity.getDefaultFlow());
                 }
 		    }
 		}
